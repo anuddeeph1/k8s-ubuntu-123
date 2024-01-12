@@ -1,0 +1,62 @@
+apiVersion: kyverno.io/v1
+kind: ClusterPolicy
+metadata:
+  name: require-ro-rootfs-dev-26
+  annotations:
+    policies.kyverno.io/title: Require Read-Only Root Filesystem
+    policies.kyverno.io/description: >-
+      A read-only root file system helps to enforce an immutable infrastructure strategy;
+      the container only needs to write on the mounted volume that persists the state.
+      An immutable root filesystem can also prevent malicious binaries from writing to the
+      host system. This policy validates that containers define a securityContext
+      with `readOnlyRootFilesystem: true`.      
+spec:
+  validationFailureAction: enforce
+  background: false
+  rules:
+  - name: validate-readOnlyRootFilesystem-26
+    exclude:
+      any:
+      - resources:
+          kinds:
+          - Pod
+          selector:
+            matchExpressions:
+              - key: environment.tess.io/name
+                operator: In
+                values:
+                - dev
+                - feature
+                - lnp
+                - staging
+                - stagingpci
+                - stagingrnpci
+              - key: application.tess.io/name
+                operator: In
+                values:
+                - tfap-lnp
+    match:
+      any:
+      - resources:
+          kinds:
+            - Pod
+          namespaces:
+            - tfap-lnp
+          selector:
+            matchExpressions:
+              - key: environment.tess.io/name
+                operator: In
+                values:
+                - dev
+                - feature
+                - lnp
+                - staging
+                - stagingpci
+                - stagingrnpci
+    validate:
+      message: "Root filesystem must be read-only."
+      pattern:
+        spec:
+          containers:
+          - securityContext:
+              readOnlyRootFilesystem: true

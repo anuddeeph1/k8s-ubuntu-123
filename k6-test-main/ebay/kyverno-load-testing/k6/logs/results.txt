@@ -1,0 +1,9 @@
+kyverno-pods-ebay.js-1000vu-10000it-logs.txt:	     http_req_duration..............: avg=4.19s    min=1.73s   med=3.58s  max=9.66s    p(90)=6.48s    p(95)=8.66s   
+     checks.........................: 100.00% ✓ 10000      ✗ 0     
+kyverno-pods-ebay.js-2000vu-10000it-logs.txt:	     http_req_duration..............: avg=6.35s   min=2.88s    med=6.32s  max=11.23s   p(90)=7.9s    p(95)=8.37s  
+     checks.........................: 100.00% ✓ 10000      ✗ 0     
+kyverno-pods-ebay.js-5000vu-10000it-logs.txt:	     http_req_duration..............: avg=14.77s   min=4.58s    med=14.66s  max=26.94s   p(90)=18.52s   p(95)=19.66s  
+     checks.........................: 100.00% ✓ 10000      ✗ 0     
+kyverno-pods-ebay.js-10000vu-10000it-logs.txt:	     http_req_duration..............: avg=26.89s   min=1.04s    med=28.2s    max=30.52s   p(90)=30.01s   p(95)=30.05s  
+     checks.........................: 73.36% ✓ 7336       ✗ 2664   
+kyverno-pods-ebay.js-10000vu-100000it-logs.txt:	

@@ -1,0 +1,60 @@
+apiVersion: kyverno.io/v1
+kind: ClusterPolicy
+metadata:
+  name: restrict-ihostpath-mounts-dev-18
+  annotations:
+    policies.kyverno.io/title: Restrict Volume Types
+    policies.kyverno.io/description: >-
+      In addition to restricting HostPath volumes, the restricted pod security profile
+      limits usage of non-core volume types to those defined through PersistentVolumes.
+      This policy blocks any other type of volume other than those in the allow list.
+spec:
+  validationFailureAction: enforce
+  background: false
+  rules:
+    - name: restricted-volumess-hostpath-18
+      match:
+        any:
+        - resources:
+            kinds:
+              - Pod
+            namespaces:
+              - tfap-lnp
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+                  - stagingrnpci
+                - key: application.tess.io/name
+                  operator: In
+                  values:
+                  - tfap-lnp
+      preconditions:
+        all:
+        - key: "{{ request.object.spec.volumes[?hostPath] | length(@) }}"
+          operator: GreaterThanOrEquals
+          value: 1
+        - key: "{{request.operation || 'BACKGROUND'}}"
+          operator: AnyIn
+          value:
+          - CREATE
+          - UPDATE
+      validate:
+        message: hostPath volumes are confined to /data.
+        foreach:
+        - list: "request.object.spec.volumes[?hostPath].hostPath"
+          deny:
+            conditions:
+              all:
+              - key: "{{ element.path  | to_string(@) | split(@, '/') | [1] }}"
+                operator: NotEquals
+                value: customvolume
+              - key: "{{ request.object.spec.[containers, initContainers, ephemeralContainers][].volumeMounts[?name == '{{element.name}}'][] | length(@) }}"
+                operator: NotEquals
+                value: "{{ request.object.spec.[containers, initContainers, ephemeralContainers][].volumeMounts[?name == '{{element.name}}' && readOnly] [] | length(@) }}"

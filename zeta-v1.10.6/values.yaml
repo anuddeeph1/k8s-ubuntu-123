@@ -1,0 +1,91 @@
+#olympus-atlantis-policy-manager:
+atlantis-pm:
+    vaultAnnotations:
+        vault.security.banzaicloud.io/vault-addr: "https://vault.atlantis:8200"
+        vault.security.banzaicloud.io/vault-role: "vault-secrets-webhook"
+        vault.security.banzaicloud.io/vault-skip-verify: "true"
+        vault.security.banzaicloud.io/vault-agent: "false"
+        vault.security.banzaicloud.io/vault-path: "kubernetes"
+        imageverfication: false
+    kyverno:
+    # dont forget to add tolerations
+        # disable it after exclusions
+        features:
+            backgroundScan:
+                enabled: false
+    #   
+        admissionController:
+            enabled: true
+            replicas: 3
+            hostNetwork: true
+            dnsPolicy: ClusterFirstWithHostNet
+            nodeAffinity:
+                requiredDuringSchedulingIgnoredDuringExecution:
+                    nodeSelectorTerms:
+                    - matchExpressions:
+                        - key: schedule-on
+                          operator: In
+                          values:
+                          - "management-subnet"
+            serviceMonitor:
+                enabled: true
+            container:
+                resources:
+                    # -- Pod resource limits
+                    requests:
+                        cpu: 500m
+                        memory: 512Mi
+                    limits:
+                        memory: 4096Mi
+        backgroundController:
+            enabled: true
+            replicas: 2
+            hostNetwork: true
+            dnsPolicy: ClusterFirstWithHostNet
+            serviceMonitor:
+                enabled: true
+            nodeAffinity:
+                requiredDuringSchedulingIgnoredDuringExecution:
+                    nodeSelectorTerms:
+                    - matchExpressions:
+                        - key: schedule-on
+                          operator: In
+                          values:
+                          - "management-subnet"
+        cleanupController:
+            enabled: true
+            replicas: 2
+            hostNetwork: true
+            dnsPolicy: ClusterFirstWithHostNet
+            serviceMonitor:
+                enabled: true
+            nodeAffinity:
+                requiredDuringSchedulingIgnoredDuringExecution:
+                    nodeSelectorTerms:
+                    - matchExpressions:
+                        - key: schedule-on
+                          operator: In
+                          values:
+                          - "management-subnet"
+        reportsController:
+            enabled: true   
+            replicas: 2
+            hostNetwork: true
+            dnsPolicy: ClusterFirstWithHostNet
+            serviceMonitor:
+                enabled: true
+            nodeAffinity:
+                requiredDuringSchedulingIgnoredDuringExecution:
+                    nodeSelectorTerms:
+                    - matchExpressions:
+                        - key: schedule-on
+                          operator: In
+                          values:
+                          - "management-subnet"
+            resources:
+              limits:
+                  memory: 8Gi
+        
+              requests:
+                  cpu: 100m
+                  memory: 128Mi

@@ -1,0 +1,1216 @@
+
+          /\      |‾‾| /‾‾/   /‾‾/   
+     /\  /  \     |  |/  /   /  /    
+    /  \/    \    |     (   /   ‾‾\  
+   /          \   |  |\  \ |  (‾)  | 
+  / __________ \  |__| \__\ \_____/ .io
+
+  execution: local
+     script: /script/script.js
+     output: -
+
+  scenarios: (100.00%) 1 scenario, 1000 max VUs, 10m30s max duration (incl. graceful stop):
+           * default: 1000 iterations shared among 1000 VUs (maxDuration: 10m0s, gracefulStop: 30s)
+
+time="2023-12-20T09:19:47Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 201 201 Created" source=console
+
+running (00m00.8s), 1000/1000 VUs, 1 complete and 0 interrupted iterations
+default   [   0% ] 1000 VUs  00m00.8s/10m0s  0001/1000 shared iters
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+time="2023-12-20T09:19:47Z" level=info msg="received response 429 429 Too Many Requests" source=console
+
+running (00m01.8s), 0545/1000 VUs, 455 complete and 0 interrupted iterations
+default   [  46% ] 1000 VUs  00m01.8s/10m0s  0455/1000 shared iters
+time="2023-12-20T09:19:48Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:48Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:48Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:48Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:48Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:48Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:48Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:48Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:48Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:48Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:48Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:48Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:48Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:48Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:48Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:48Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:49Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:49Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:49Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:49Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:49Z" level=info msg="received response 201 201 Created" source=console
+
+running (00m02.8s), 0524/1000 VUs, 476 complete and 0 interrupted iterations
+default   [  48% ] 1000 VUs  00m02.8s/10m0s  0476/1000 shared iters
+time="2023-12-20T09:19:49Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:49Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:49Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:49Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:49Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:49Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:49Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:49Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:49Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:49Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:49Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:49Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:49Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:49Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:49Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:49Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:49Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:49Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:49Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:49Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:49Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:49Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:49Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:49Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:49Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:49Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:49Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:49Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:49Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:49Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:50Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:50Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:50Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:50Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:50Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:50Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:50Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:50Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:50Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:50Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:50Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:50Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:50Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:50Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:50Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:50Z" level=info msg="received response 201 201 Created" source=console
+
+running (00m03.8s), 0478/1000 VUs, 522 complete and 0 interrupted iterations
+default   [  52% ] 1000 VUs  00m03.8s/10m0s  0522/1000 shared iters
+time="2023-12-20T09:19:50Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:50Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:50Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:50Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:50Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:50Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:50Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:50Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:50Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:50Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:50Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:50Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:50Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:50Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:50Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:50Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:50Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:50Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:50Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:50Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:50Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:50Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:50Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:50Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:50Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:50Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:50Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:50Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:50Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:50Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:50Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:50Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:50Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:50Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:50Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:50Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:51Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:51Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:51Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:51Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:51Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:51Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:51Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:51Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:51Z" level=info msg="received response 201 201 Created" source=console
+
+running (00m04.8s), 0433/1000 VUs, 567 complete and 0 interrupted iterations
+default   [  57% ] 1000 VUs  00m04.8s/10m0s  0567/1000 shared iters
+time="2023-12-20T09:19:51Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:51Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:51Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:51Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:51Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:51Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:51Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:51Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:51Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:51Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:51Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:51Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:51Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:51Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:51Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:51Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:51Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:51Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:51Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:51Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:51Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:51Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:51Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:51Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:51Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:51Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:51Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:51Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:51Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:51Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:51Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:51Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:52Z" level=info msg="received response 201 201 Created" source=console
+
+running (00m05.8s), 0388/1000 VUs, 612 complete and 0 interrupted iterations
+default   [  61% ] 1000 VUs  00m05.8s/10m0s  0612/1000 shared iters
+time="2023-12-20T09:19:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:53Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:53Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:53Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:53Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:53Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:53Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:53Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:53Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:53Z" level=info msg="received response 201 201 Created" source=console
+
+running (00m06.8s), 0336/1000 VUs, 664 complete and 0 interrupted iterations
+default   [  66% ] 1000 VUs  00m06.8s/10m0s  0664/1000 shared iters
+time="2023-12-20T09:19:53Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:53Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:53Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:53Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:53Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:53Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:53Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:53Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:53Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:53Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:53Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:53Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:53Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:53Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:53Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:53Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:53Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:53Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:53Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:53Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:53Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:53Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:53Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:53Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:53Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:53Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:53Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:54Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:54Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:54Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:54Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:54Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:54Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:54Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:54Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:54Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:54Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:54Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:54Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:54Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:54Z" level=info msg="received response 201 201 Created" source=console
+
+running (00m07.8s), 0295/1000 VUs, 705 complete and 0 interrupted iterations
+default   [  70% ] 1000 VUs  00m07.8s/10m0s  0705/1000 shared iters
+time="2023-12-20T09:19:54Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:54Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:54Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:54Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:54Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:54Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:54Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:54Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:54Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:54Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:54Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:54Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:54Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:54Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:54Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:54Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:54Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:54Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:54Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:54Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:54Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:54Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:54Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:54Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:54Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:54Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:54Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:54Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:54Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:54Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:54Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:54Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:55Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:55Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:55Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:55Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:55Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:55Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:55Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:55Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:55Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:55Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:55Z" level=info msg="received response 201 201 Created" source=console
+
+running (00m08.8s), 0252/1000 VUs, 748 complete and 0 interrupted iterations
+default   [  75% ] 1000 VUs  00m08.8s/10m0s  0748/1000 shared iters
+time="2023-12-20T09:19:55Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:55Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:55Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:55Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:55Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:55Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:55Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:55Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:55Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:55Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:55Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:55Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:55Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:55Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:55Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:55Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:55Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:55Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:55Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:55Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:55Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:55Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:55Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:56Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:56Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:56Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:56Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:56Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:56Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:56Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:56Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:56Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:56Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:56Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:56Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:56Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:56Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:56Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:56Z" level=info msg="received response 201 201 Created" source=console
+
+running (00m09.8s), 0213/1000 VUs, 787 complete and 0 interrupted iterations
+default   [  79% ] 1000 VUs  00m09.8s/10m0s  0787/1000 shared iters
+time="2023-12-20T09:19:56Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:56Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:56Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:56Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:56Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:56Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:56Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:56Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:56Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:56Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:56Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:56Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:56Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:56Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:56Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:56Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:56Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:56Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:56Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:56Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:56Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:56Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:56Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:56Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:56Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:56Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:56Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:56Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:56Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:56Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:56Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:57Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:57Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:57Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:57Z" level=info msg="received response 201 201 Created" source=console
+
+running (00m10.8s), 0178/1000 VUs, 822 complete and 0 interrupted iterations
+default   [  82% ] 1000 VUs  00m10.8s/10m0s  0822/1000 shared iters
+time="2023-12-20T09:19:57Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:57Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:57Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:57Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:57Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:57Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:57Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:57Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:57Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:57Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:57Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:57Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:57Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:57Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:57Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:57Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:57Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:57Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:57Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:57Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:57Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:57Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:57Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:57Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:57Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:57Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:57Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:57Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:57Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:57Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:57Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:57Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:57Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:57Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:57Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+
+running (00m11.8s), 0136/1000 VUs, 865 complete and 0 interrupted iterations
+default   [  86% ] 1000 VUs  00m11.8s/10m0s  0865/1000 shared iters
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+
+running (00m12.8s), 0072/1000 VUs, 928 complete and 0 interrupted iterations
+default   [  93% ] 1000 VUs  00m12.8s/10m0s  0928/1000 shared iters
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-20T09:19:59Z" level=info msg="received response 201 201 Created" source=console
+
+     ✗ verify response code of POST is 201
+      ↳  54% — ✓ 548 / ✗ 452
+
+     █ teardown
+
+     checks.........................: 54.80% ✓ 548       ✗ 452   
+     data_received..................: 2.7 MB 203 kB/s
+     data_sent......................: 1.2 MB 94 kB/s
+     http_req_blocked...............: avg=216.18ms min=170ns    med=114.16ms max=1.07s    p(90)=620.04ms p(95)=721.46ms
+     http_req_connecting............: avg=71.89ms  min=0s       med=12.63ms  max=765.69ms p(90)=199.99ms p(95)=227.9ms 
+     http_req_duration..............: avg=4.18s    min=497.9µs  med=3.12s    max=12.34s   p(90)=11.28s   p(95)=11.89s  
+       { expected_response:true }...: avg=7.58s    min=470.16ms med=7.62s    max=12.34s   p(90)=11.86s   p(95)=12.04s  
+     http_req_failed................: 45.20% ✓ 452       ✗ 548   
+     http_req_receiving.............: avg=9.21ms   min=18.68µs  med=304.01µs max=165.63ms p(90)=26.92ms  p(95)=62.68ms 
+     http_req_sending...............: avg=2.32ms   min=40.21µs  med=95.31µs  max=413.83ms p(90)=163.64µs p(95)=354.26µs
+     http_req_tls_handshaking.......: avg=126.55ms min=0s       med=59.57ms  max=940.65ms p(90)=341.65ms p(95)=484.63ms
+     http_req_waiting...............: avg=4.17s    min=307.19µs med=3.12s    max=12.33s   p(90)=11.27s   p(95)=11.88s  
+     http_reqs......................: 1000   75.726868/s
+     iteration_duration.............: avg=4.41s    min=3.37µs   med=3.26s    max=13.19s   p(90)=11.75s   p(95)=12.25s  
+     iterations.....................: 1000   75.726868/s
+     vus............................: 72     min=72      max=1000
+     vus_max........................: 1000   min=1000    max=1000
+
+
+running (00m13.2s), 0000/1000 VUs, 1000 complete and 0 interrupted iterations
+default ✓ [ 100% ] 1000 VUs  00m13.2s/10m0s  1000/1000 shared iters
+============== STRIP ==============
+{
+    "metrics": {
+        "http_req_connecting": {
+            "max": 765.697107,
+            "p(90)": 199.9971828,
+            "p(95)": 227.90972479999996,
+            "avg": 71.89368023199998,
+            "min": 0,
+            "med": 12.6372915
+        },
+        "vus_max": {
+            "value": 1000,
+            "min": 1000,
+            "max": 1000
+        },
+        "http_req_tls_handshaking": {
+            "avg": 126.55283354199992,
+            "min": 0,
+            "med": 59.579874000000004,
+            "max": 940.657316,
+            "p(90)": 341.6582220000001,
+            "p(95)": 484.63730609999993
+        },
+        "iteration_duration": {
+            "avg": 4414.313398542452,
+            "min": 0.003376,
+            "med": 3266.340343,
+            "max": 13193.463965,
+            "p(90)": 11752.011658,
+            "p(95)": 12254.698937
+        },
+        "vus": {
+            "min": 72,
+            "max": 1000,
+            "value": 72
+        },
+        "http_req_failed": {
+            "fails": 548,
+            "passes": 452,
+            "value": 0.452
+        },
+        "http_req_duration{expected_response:true}": {
+            "med": 7622.905398000001,
+            "max": 12340.9094,
+            "p(90)": 11860.269936800001,
+            "p(95)": 12041.14447605,
+            "avg": 7589.644033315698,
+            "min": 470.166435
+        },
+        "http_req_waiting": {
+            "p(95)": 11882.4618326,
+            "avg": 4170.837563692996,
+            "min": 0.307193,
+            "med": 3125.174497,
+            "max": 12339.632687,
+            "p(90)": 11271.129893199999
+        },
+        "data_sent": {
+            "count": 1245191,
+            "rate": 94294.41470851975
+        },
+        "http_reqs": {
+            "count": 1000,
+            "rate": 75.72686817405501
+        },
+        "iterations": {
+            "count": 1000,
+            "rate": 75.72686817405501
+        },
+        "data_received": {
+            "count": 2678274,
+            "rate": 202817.30213199902
+        },
+        "http_req_blocked": {
+            "min": 0.00017,
+            "med": 114.1613185,
+            "max": 1079.823064,
+            "p(90)": 620.0486362,
+            "p(95)": 721.4658242,
+            "avg": 216.18309568200004
+        },
+        "http_req_receiving": {
+            "avg": 9.219303048,
+            "min": 0.018685,
+            "med": 0.3040125,
+            "max": 165.63346,
+            "p(90)": 26.9230935,
+            "p(95)": 62.68522169999997
+        },
+        "http_req_duration": {
+            "avg": 4182.379793762002,
+            "min": 0.497909,
+            "med": 3128.2100835,
+            "max": 12340.9094,
+            "p(90)": 11283.6626693,
+            "p(95)": 11893.978296
+        },
+        "http_req_sending": {
+            "p(90)": 0.16364710000000002,
+            "p(95)": 0.3542662999999996,
+            "avg": 2.322927021000001,
+            "min": 0.040215,
+            "med": 0.095313,
+            "max": 413.832892
+        },
+        "checks": {
+            "passes": 548,
+            "fails": 452,
+            "value": 0.548
+        }
+    },
+    "root_group": {
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "teardown": {
+                "id": "a8a9942382e8ffe2e56ef29e664b8229",
+                "groups": {},
+                "checks": {},
+                "name": "teardown",
+                "path": "::teardown"
+            }
+        },
+        "checks": {
+            "verify response code of POST is 201": {
+                "name": "verify response code of POST is 201",
+                "path": "::verify response code of POST is 201",
+                "id": "8c3ca26510f8061c444b510eb133612e",
+                "passes": 548,
+                "fails": 452
+            }
+        },
+        "name": ""
+    }
+}

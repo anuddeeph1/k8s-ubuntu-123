@@ -1,0 +1,835 @@
+level=info msg="Memory available for map entries (0.003% of 481769828352B): 1204424570B" subsys=config
+level=info msg="option bpf-ct-global-tcp-max set by dynamic sizing to 4226051" subsys=config
+level=info msg="option bpf-ct-global-any-max set by dynamic sizing to 2113025" subsys=config
+level=info msg="option bpf-nat-global-max set by dynamic sizing to 4226051" subsys=config
+level=info msg="option bpf-neigh-global-max set by dynamic sizing to 4226051" subsys=config
+level=info msg="option bpf-sock-rev-map-max set by dynamic sizing to 2113025" subsys=config
+level=info msg="  --agent-health-port='9879'" subsys=daemon
+level=info msg="  --agent-labels=''" subsys=daemon
+level=info msg="  --agent-liveness-update-interval='1s'" subsys=daemon
+level=info msg="  --agent-not-ready-taint-key='node.cilium.io/agent-not-ready'" subsys=daemon
+level=info msg="  --allocator-list-timeout='3m0s'" subsys=daemon
+level=info msg="  --allow-icmp-frag-needed='true'" subsys=daemon
+level=info msg="  --allow-localhost='auto'" subsys=daemon
+level=info msg="  --annotate-k8s-node='false'" subsys=daemon
+level=info msg="  --api-rate-limit=''" subsys=daemon
+level=info msg="  --arping-refresh-period='30s'" subsys=daemon
+level=info msg="  --auto-create-cilium-node-resource='true'" subsys=daemon
+level=info msg="  --auto-direct-node-routes='false'" subsys=daemon
+level=info msg="  --bgp-announce-lb-ip='false'" subsys=daemon
+level=info msg="  --bgp-announce-pod-cidr='false'" subsys=daemon
+level=info msg="  --bgp-config-path='/var/lib/cilium/bgp/config.yaml'" subsys=daemon
+level=info msg="  --bpf-auth-map-max='524288'" subsys=daemon
+level=info msg="  --bpf-ct-global-any-max='262144'" subsys=daemon
+level=info msg="  --bpf-ct-global-tcp-max='524288'" subsys=daemon
+level=info msg="  --bpf-ct-timeout-regular-any='1m0s'" subsys=daemon
+level=info msg="  --bpf-ct-timeout-regular-tcp='6h0m0s'" subsys=daemon
+level=info msg="  --bpf-ct-timeout-regular-tcp-fin='10s'" subsys=daemon
+level=info msg="  --bpf-ct-timeout-regular-tcp-syn='1m0s'" subsys=daemon
+level=info msg="  --bpf-ct-timeout-service-any='1m0s'" subsys=daemon
+level=info msg="  --bpf-ct-timeout-service-tcp='6h0m0s'" subsys=daemon
+level=info msg="  --bpf-ct-timeout-service-tcp-grace='1m0s'" subsys=daemon
+level=info msg="  --bpf-filter-priority='1'" subsys=daemon
+level=info msg="  --bpf-fragments-map-max='8192'" subsys=daemon
+level=info msg="  --bpf-lb-acceleration='disabled'" subsys=daemon
+level=info msg="  --bpf-lb-affinity-map-max='0'" subsys=daemon
+level=info msg="  --bpf-lb-algorithm='random'" subsys=daemon
+level=info msg="  --bpf-lb-dev-ip-addr-inherit=''" subsys=daemon
+level=info msg="  --bpf-lb-dsr-dispatch='opt'" subsys=daemon
+level=info msg="  --bpf-lb-dsr-l4-xlate='frontend'" subsys=daemon
+level=info msg="  --bpf-lb-external-clusterip='false'" subsys=daemon
+level=info msg="  --bpf-lb-maglev-hash-seed='JLfvgnHc2kaSUFaI'" subsys=daemon
+level=info msg="  --bpf-lb-maglev-map-max='0'" subsys=daemon
+level=info msg="  --bpf-lb-maglev-table-size='16381'" subsys=daemon
+level=info msg="  --bpf-lb-map-max='65536'" subsys=daemon
+level=info msg="  --bpf-lb-mode='snat'" subsys=daemon
+level=info msg="  --bpf-lb-rev-nat-map-max='0'" subsys=daemon
+level=info msg="  --bpf-lb-rss-ipv4-src-cidr=''" subsys=daemon
+level=info msg="  --bpf-lb-rss-ipv6-src-cidr=''" subsys=daemon
+level=info msg="  --bpf-lb-service-backend-map-max='0'" subsys=daemon
+level=info msg="  --bpf-lb-service-map-max='0'" subsys=daemon
+level=info msg="  --bpf-lb-sock='false'" subsys=daemon
+level=info msg="  --bpf-lb-sock-hostns-only='false'" subsys=daemon
+level=info msg="  --bpf-lb-source-range-map-max='0'" subsys=daemon
+level=info msg="  --bpf-map-dynamic-size-ratio='0.0025'" subsys=daemon
+level=info msg="  --bpf-map-event-buffers=''" subsys=daemon
+level=info msg="  --bpf-nat-global-max='524288'" subsys=daemon
+level=info msg="  --bpf-neigh-global-max='524288'" subsys=daemon
+level=info msg="  --bpf-policy-map-max='16384'" subsys=daemon
+level=info msg="  --bpf-root='/sys/fs/bpf'" subsys=daemon
+level=info msg="  --bpf-sock-rev-map-max='262144'" subsys=daemon
+level=info msg="  --bypass-ip-availability-upon-restore='false'" subsys=daemon
+level=info msg="  --certificates-directory='/var/run/cilium/certs'" subsys=daemon
+level=info msg="  --cflags=''" subsys=daemon
+level=info msg="  --cgroup-root='/run/cilium/cgroupv2'" subsys=daemon
+level=info msg="  --cilium-endpoint-gc-interval='5m0s'" subsys=daemon
+level=info msg="  --cluster-health-port='4240'" subsys=daemon
+level=info msg="  --cluster-id='0'" subsys=daemon
+level=info msg="  --cluster-name='kubernetes'" subsys=daemon
+level=info msg="  --cluster-pool-ipv4-cidr='10.0.0.0/8'" subsys=daemon
+level=info msg="  --cluster-pool-ipv4-mask-size='24'" subsys=daemon
+level=info msg="  --clustermesh-config='/var/lib/cilium/clustermesh/'" subsys=daemon
+level=info msg="  --cmdref=''" subsys=daemon
+level=info msg="  --cni-chaining-mode='none'" subsys=daemon
+level=info msg="  --cni-chaining-target=''" subsys=daemon
+level=info msg="  --cni-exclusive='true'" subsys=daemon
+level=info msg="  --cni-log-file='/var/run/cilium/cilium-cni.log'" subsys=daemon
+level=info msg="  --cnp-node-status-gc-interval='0s'" subsys=daemon
+level=info msg="  --config=''" subsys=daemon
+level=info msg="  --config-dir='/tmp/cilium/config-map'" subsys=daemon
+level=info msg="  --config-sources='config-map:kube-system/cilium-config'" subsys=daemon
+level=info msg="  --conntrack-gc-interval='0s'" subsys=daemon
+level=info msg="  --crd-wait-timeout='5m0s'" subsys=daemon
+level=info msg="  --custom-cni-conf='false'" subsys=daemon
+level=info msg="  --datapath-mode='veth'" subsys=daemon
+level=info msg="  --debug='false'" subsys=daemon
+level=info msg="  --debug-verbose=''" subsys=daemon
+level=info msg="  --derive-masquerade-ip-addr-from-device=''" subsys=daemon
+level=info msg="  --devices=''" subsys=daemon
+level=info msg="  --direct-routing-device=''" subsys=daemon
+level=info msg="  --disable-cnp-status-updates='true'" subsys=daemon
+level=info msg="  --disable-endpoint-crd='false'" subsys=daemon
+level=info msg="  --disable-envoy-version-check='false'" subsys=daemon
+level=info msg="  --disable-iptables-feeder-rules=''" subsys=daemon
+level=info msg="  --dns-max-ips-per-restored-rule='1000'" subsys=daemon
+level=info msg="  --dns-policy-unload-on-shutdown='false'" subsys=daemon
+level=info msg="  --dnsproxy-concurrency-limit='0'" subsys=daemon
+level=info msg="  --dnsproxy-concurrency-processing-grace-period='0s'" subsys=daemon
+level=info msg="  --dnsproxy-lock-count='128'" subsys=daemon
+level=info msg="  --dnsproxy-lock-timeout='500ms'" subsys=daemon
+level=info msg="  --egress-gateway-policy-map-max='16384'" subsys=daemon
+level=info msg="  --egress-gateway-reconciliation-trigger-interval='1s'" subsys=daemon
+level=info msg="  --egress-masquerade-interfaces=''" subsys=daemon
+level=info msg="  --egress-multi-home-ip-rule-compat='false'" subsys=daemon
+level=info msg="  --enable-auto-protect-node-port-range='true'" subsys=daemon
+level=info msg="  --enable-bandwidth-manager='false'" subsys=daemon
+level=info msg="  --enable-bbr='false'" subsys=daemon
+level=info msg="  --enable-bgp-control-plane='false'" subsys=daemon
+level=info msg="  --enable-bpf-clock-probe='false'" subsys=daemon
+level=info msg="  --enable-bpf-masquerade='false'" subsys=daemon
+level=info msg="  --enable-bpf-tproxy='false'" subsys=daemon
+level=info msg="  --enable-cilium-api-server-access='*'" subsys=daemon
+level=info msg="  --enable-cilium-endpoint-slice='false'" subsys=daemon
+level=info msg="  --enable-cilium-health-api-server-access='*'" subsys=daemon
+level=info msg="  --enable-custom-calls='false'" subsys=daemon
+level=info msg="  --enable-endpoint-health-checking='true'" subsys=daemon
+level=info msg="  --enable-endpoint-routes='false'" subsys=daemon
+level=info msg="  --enable-envoy-config='false'" subsys=daemon
+level=info msg="  --enable-external-ips='false'" subsys=daemon
+level=info msg="  --enable-health-check-nodeport='true'" subsys=daemon
+level=info msg="  --enable-health-checking='true'" subsys=daemon
+level=info msg="  --enable-high-scale-ipcache='false'" subsys=daemon
+level=info msg="  --enable-host-firewall='false'" subsys=daemon
+level=info msg="  --enable-host-legacy-routing='false'" subsys=daemon
+level=info msg="  --enable-host-port='false'" subsys=daemon
+level=info msg="  --enable-hubble='true'" subsys=daemon
+level=info msg="  --enable-hubble-recorder-api='true'" subsys=daemon
+level=info msg="  --enable-icmp-rules='true'" subsys=daemon
+level=info msg="  --enable-identity-mark='true'" subsys=daemon
+level=info msg="  --enable-ip-masq-agent='false'" subsys=daemon
+level=info msg="  --enable-ipsec='false'" subsys=daemon
+level=info msg="  --enable-ipsec-key-watcher='true'" subsys=daemon
+level=info msg="  --enable-ipv4='true'" subsys=daemon
+level=info msg="  --enable-ipv4-big-tcp='false'" subsys=daemon
+level=info msg="  --enable-ipv4-egress-gateway='false'" subsys=daemon
+level=info msg="  --enable-ipv4-fragment-tracking='true'" subsys=daemon
+level=info msg="  --enable-ipv4-masquerade='true'" subsys=daemon
+level=info msg="  --enable-ipv6='false'" subsys=daemon
+level=info msg="  --enable-ipv6-big-tcp='false'" subsys=daemon
+level=info msg="  --enable-ipv6-masquerade='true'" subsys=daemon
+level=info msg="  --enable-ipv6-ndp='false'" subsys=daemon
+level=info msg="  --enable-k8s='true'" subsys=daemon
+level=info msg="  --enable-k8s-api-discovery='false'" subsys=daemon
+level=info msg="  --enable-k8s-endpoint-slice='true'" subsys=daemon
+level=info msg="  --enable-k8s-event-handover='false'" subsys=daemon
+level=info msg="  --enable-k8s-networkpolicy='true'" subsys=daemon
+level=info msg="  --enable-k8s-terminating-endpoint='true'" subsys=daemon
+level=info msg="  --enable-l2-announcements='false'" subsys=daemon
+level=info msg="  --enable-l2-neigh-discovery='true'" subsys=daemon
+level=info msg="  --enable-l2-pod-announcements='false'" subsys=daemon
+level=info msg="  --enable-l7-proxy='true'" subsys=daemon
+level=info msg="  --enable-local-node-route='true'" subsys=daemon
+level=info msg="  --enable-local-redirect-policy='false'" subsys=daemon
+level=info msg="  --enable-mke='false'" subsys=daemon
+level=info msg="  --enable-monitor='true'" subsys=daemon
+level=info msg="  --enable-nat46x64-gateway='false'" subsys=daemon
+level=info msg="  --enable-node-port='false'" subsys=daemon
+level=info msg="  --enable-pmtu-discovery='false'" subsys=daemon
+level=info msg="  --enable-policy='default'" subsys=daemon
+level=info msg="  --enable-recorder='false'" subsys=daemon
+level=info msg="  --enable-remote-node-identity='true'" subsys=daemon
+level=info msg="  --enable-runtime-device-detection='false'" subsys=daemon
+level=info msg="  --enable-sctp='false'" subsys=daemon
+level=info msg="  --enable-service-topology='false'" subsys=daemon
+level=info msg="  --enable-session-affinity='false'" subsys=daemon
+level=info msg="  --enable-srv6='false'" subsys=daemon
+level=info msg="  --enable-stale-cilium-endpoint-cleanup='true'" subsys=daemon
+level=info msg="  --enable-svc-source-range-check='true'" subsys=daemon
+level=info msg="  --enable-tracing='false'" subsys=daemon
+level=info msg="  --enable-unreachable-routes='false'" subsys=daemon
+level=info msg="  --enable-vtep='false'" subsys=daemon
+level=info msg="  --enable-well-known-identities='false'" subsys=daemon
+level=info msg="  --enable-wireguard='false'" subsys=daemon
+level=info msg="  --enable-wireguard-userspace-fallback='false'" subsys=daemon
+level=info msg="  --enable-xdp-prefilter='false'" subsys=daemon
+level=info msg="  --enable-xt-socket-fallback='true'" subsys=daemon
+level=info msg="  --encrypt-interface=''" subsys=daemon
+level=info msg="  --encrypt-node='false'" subsys=daemon
+level=info msg="  --endpoint-gc-interval='5m0s'" subsys=daemon
+level=info msg="  --endpoint-queue-size='25'" subsys=daemon
+level=info msg="  --endpoint-status=''" subsys=daemon
+level=info msg="  --envoy-config-timeout='2m0s'" subsys=daemon
+level=info msg="  --envoy-log=''" subsys=daemon
+level=info msg="  --exclude-local-address=''" subsys=daemon
+level=info msg="  --external-envoy-proxy='false'" subsys=daemon
+level=info msg="  --fixed-identity-mapping=''" subsys=daemon
+level=info msg="  --fqdn-regex-compile-lru-size='1024'" subsys=daemon
+level=info msg="  --gops-port='9890'" subsys=daemon
+level=info msg="  --http-403-msg=''" subsys=daemon
+level=info msg="  --http-idle-timeout='0'" subsys=daemon
+level=info msg="  --http-max-grpc-timeout='0'" subsys=daemon
+level=info msg="  --http-normalize-path='true'" subsys=daemon
+level=info msg="  --http-request-timeout='3600'" subsys=daemon
+level=info msg="  --http-retry-count='3'" subsys=daemon
+level=info msg="  --http-retry-timeout='0'" subsys=daemon
+level=info msg="  --hubble-disable-tls='false'" subsys=daemon
+level=info msg="  --hubble-event-buffer-capacity='4095'" subsys=daemon
+level=info msg="  --hubble-event-queue-size='0'" subsys=daemon
+level=info msg="  --hubble-export-file-compress='false'" subsys=daemon
+level=info msg="  --hubble-export-file-max-backups='5'" subsys=daemon
+level=info msg="  --hubble-export-file-max-size-mb='10'" subsys=daemon
+level=info msg="  --hubble-export-file-path=''" subsys=daemon
+level=info msg="  --hubble-listen-address=':4244'" subsys=daemon
+level=info msg="  --hubble-metrics=''" subsys=daemon
+level=info msg="  --hubble-metrics-server=''" subsys=daemon
+level=info msg="  --hubble-monitor-events=''" subsys=daemon
+level=info msg="  --hubble-prefer-ipv6='false'" subsys=daemon
+level=info msg="  --hubble-recorder-sink-queue-size='1024'" subsys=daemon
+level=info msg="  --hubble-recorder-storage-path='/var/run/cilium/pcaps'" subsys=daemon
+level=info msg="  --hubble-skip-unknown-cgroup-ids='true'" subsys=daemon
+level=info msg="  --hubble-socket-path='/var/run/cilium/hubble.sock'" subsys=daemon
+level=info msg="  --hubble-tls-cert-file='/var/lib/cilium/tls/hubble/server.crt'" subsys=daemon
+level=info msg="  --hubble-tls-client-ca-files='/var/lib/cilium/tls/hubble/client-ca.crt'" subsys=daemon
+level=info msg="  --hubble-tls-key-file='/var/lib/cilium/tls/hubble/server.key'" subsys=daemon
+level=info msg="  --identity-allocation-mode='crd'" subsys=daemon
+level=info msg="  --identity-change-grace-period='5s'" subsys=daemon
+level=info msg="  --identity-gc-interval='15m0s'" subsys=daemon
+level=info msg="  --identity-heartbeat-timeout='30m0s'" subsys=daemon
+level=info msg="  --identity-restore-grace-period='10m0s'" subsys=daemon
+level=info msg="  --install-egress-gateway-routes='false'" subsys=daemon
+level=info msg="  --install-iptables-rules='true'" subsys=daemon
+level=info msg="  --install-no-conntrack-iptables-rules='false'" subsys=daemon
+level=info msg="  --ip-allocation-timeout='2m0s'" subsys=daemon
+level=info msg="  --ip-masq-agent-config-path='/etc/config/ip-masq-agent'" subsys=daemon
+level=info msg="  --ipam='cluster-pool'" subsys=daemon
+level=info msg="  --ipam-cilium-node-update-rate='15s'" subsys=daemon
+level=info msg="  --ipam-multi-pool-pre-allocation='default=8'" subsys=daemon
+level=info msg="  --ipsec-key-file=''" subsys=daemon
+level=info msg="  --ipsec-key-rotation-duration='5m0s'" subsys=daemon
+level=info msg="  --iptables-lock-timeout='5s'" subsys=daemon
+level=info msg="  --iptables-random-fully='false'" subsys=daemon
+level=info msg="  --ipv4-native-routing-cidr=''" subsys=daemon
+level=info msg="  --ipv4-node='auto'" subsys=daemon
+level=info msg="  --ipv4-pod-subnets=''" subsys=daemon
+level=info msg="  --ipv4-range='auto'" subsys=daemon
+level=info msg="  --ipv4-service-loopback-address='169.254.42.1'" subsys=daemon
+level=info msg="  --ipv4-service-range='auto'" subsys=daemon
+level=info msg="  --ipv6-cluster-alloc-cidr='f00d::/64'" subsys=daemon
+level=info msg="  --ipv6-mcast-device=''" subsys=daemon
+level=info msg="  --ipv6-native-routing-cidr=''" subsys=daemon
+level=info msg="  --ipv6-node='auto'" subsys=daemon
+level=info msg="  --ipv6-pod-subnets=''" subsys=daemon
+level=info msg="  --ipv6-range='auto'" subsys=daemon
+level=info msg="  --ipv6-service-range='auto'" subsys=daemon
+level=info msg="  --join-cluster='false'" subsys=daemon
+level=info msg="  --k8s-api-server=''" subsys=daemon
+level=info msg="  --k8s-client-burst='10'" subsys=daemon
+level=info msg="  --k8s-client-qps='5'" subsys=daemon
+level=info msg="  --k8s-heartbeat-timeout='30s'" subsys=daemon
+level=info msg="  --k8s-kubeconfig-path=''" subsys=daemon
+level=info msg="  --k8s-namespace='kube-system'" subsys=daemon
+level=info msg="  --k8s-require-ipv4-pod-cidr='false'" subsys=daemon
+level=info msg="  --k8s-require-ipv6-pod-cidr='false'" subsys=daemon
+level=info msg="  --k8s-service-cache-size='128'" subsys=daemon
+level=info msg="  --k8s-service-proxy-name=''" subsys=daemon
+level=info msg="  --k8s-sync-timeout='3m0s'" subsys=daemon
+level=info msg="  --k8s-watcher-endpoint-selector='metadata.name!=kube-scheduler,metadata.name!=kube-controller-manager,metadata.name!=etcd-operator,metadata.name!=gcp-controller-manager'" subsys=daemon
+level=info msg="  --keep-config='false'" subsys=daemon
+level=info msg="  --kube-proxy-replacement='disabled'" subsys=daemon
+level=info msg="  --kube-proxy-replacement-healthz-bind-address=''" subsys=daemon
+level=info msg="  --kvstore=''" subsys=daemon
+level=info msg="  --kvstore-connectivity-timeout='2m0s'" subsys=daemon
+level=info msg="  --kvstore-lease-ttl='15m0s'" subsys=daemon
+level=info msg="  --kvstore-max-consecutive-quorum-errors='2'" subsys=daemon
+level=info msg="  --kvstore-opt=''" subsys=daemon
+level=info msg="  --kvstore-periodic-sync='5m0s'" subsys=daemon
+level=info msg="  --l2-announcements-lease-duration='15s'" subsys=daemon
+level=info msg="  --l2-announcements-renew-deadline='5s'" subsys=daemon
+level=info msg="  --l2-announcements-retry-period='2s'" subsys=daemon
+level=info msg="  --l2-pod-announcements-interface=''" subsys=daemon
+level=info msg="  --label-prefix-file=''" subsys=daemon
+level=info msg="  --labels=''" subsys=daemon
+level=info msg="  --lib-dir='/var/lib/cilium'" subsys=daemon
+level=info msg="  --local-max-addr-scope='252'" subsys=daemon
+level=info msg="  --local-router-ipv4=''" subsys=daemon
+level=info msg="  --local-router-ipv6=''" subsys=daemon
+level=info msg="  --log-driver=''" subsys=daemon
+level=info msg="  --log-opt=''" subsys=daemon
+level=info msg="  --log-system-load='false'" subsys=daemon
+level=info msg="  --max-controller-interval='0'" subsys=daemon
+level=info msg="  --mesh-auth-enabled='true'" subsys=daemon
+level=info msg="  --mesh-auth-gc-interval='5m0s'" subsys=daemon
+level=info msg="  --mesh-auth-mutual-listener-port='0'" subsys=daemon
+level=info msg="  --mesh-auth-queue-size='1024'" subsys=daemon
+level=info msg="  --mesh-auth-rotated-identities-queue-size='1024'" subsys=daemon
+level=info msg="  --mesh-auth-spiffe-trust-domain='spiffe.cilium'" subsys=daemon
+level=info msg="  --mesh-auth-spire-admin-socket=''" subsys=daemon
+level=info msg="  --metrics=''" subsys=daemon
+level=info msg="  --mke-cgroup-mount=''" subsys=daemon
+level=info msg="  --monitor-aggregation='medium'" subsys=daemon
+level=info msg="  --monitor-aggregation-flags='all'" subsys=daemon
+level=info msg="  --monitor-aggregation-interval='5s'" subsys=daemon
+level=info msg="  --monitor-queue-size='0'" subsys=daemon
+level=info msg="  --mtu='0'" subsys=daemon
+level=info msg="  --node-encryption-opt-out-labels='node-role.kubernetes.io/control-plane'" subsys=daemon
+level=info msg="  --node-port-acceleration='disabled'" subsys=daemon
+level=info msg="  --node-port-algorithm='random'" subsys=daemon
+level=info msg="  --node-port-bind-protection='true'" subsys=daemon
+level=info msg="  --node-port-mode='snat'" subsys=daemon
+level=info msg="  --node-port-range='30000,32767'" subsys=daemon
+level=info msg="  --nodes-gc-interval='5m0s'" subsys=daemon
+level=info msg="  --operator-api-serve-addr='127.0.0.1:9234'" subsys=daemon
+level=info msg="  --policy-audit-mode='false'" subsys=daemon
+level=info msg="  --policy-queue-size='100'" subsys=daemon
+level=info msg="  --policy-trigger-interval='1s'" subsys=daemon
+level=info msg="  --pprof='false'" subsys=daemon
+level=info msg="  --pprof-address='localhost'" subsys=daemon
+level=info msg="  --pprof-port='6060'" subsys=daemon
+level=info msg="  --preallocate-bpf-maps='false'" subsys=daemon
+level=info msg="  --prepend-iptables-chains='true'" subsys=daemon
+level=info msg="  --procfs='/host/proc'" subsys=daemon
+level=info msg="  --prometheus-serve-addr=':9962'" subsys=daemon
+level=info msg="  --proxy-connect-timeout='2'" subsys=daemon
+level=info msg="  --proxy-gid='1337'" subsys=daemon
+level=info msg="  --proxy-idle-timeout-seconds='60'" subsys=daemon
+level=info msg="  --proxy-max-connection-duration-seconds='0'" subsys=daemon
+level=info msg="  --proxy-max-requests-per-connection='0'" subsys=daemon
+level=info msg="  --proxy-prometheus-port='9964'" subsys=daemon
+level=info msg="  --read-cni-conf=''" subsys=daemon
+level=info msg="  --remove-cilium-node-taints='true'" subsys=daemon
+level=info msg="  --restore='true'" subsys=daemon
+level=info msg="  --route-metric='0'" subsys=daemon
+level=info msg="  --routing-mode='tunnel'" subsys=daemon
+level=info msg="  --set-cilium-is-up-condition='true'" subsys=daemon
+level=info msg="  --set-cilium-node-taints='true'" subsys=daemon
+level=info msg="  --sidecar-istio-proxy-image='cilium/istio_proxy'" subsys=daemon
+level=info msg="  --single-cluster-route='false'" subsys=daemon
+level=info msg="  --skip-cnp-status-startup-clean='false'" subsys=daemon
+level=info msg="  --socket-path='/var/run/cilium/cilium.sock'" subsys=daemon
+level=info msg="  --srv6-encap-mode='reduced'" subsys=daemon
+level=info msg="  --state-dir='/var/run/cilium'" subsys=daemon
+level=info msg="  --synchronize-k8s-nodes='true'" subsys=daemon
+level=info msg="  --tofqdns-dns-reject-response-code='refused'" subsys=daemon
+level=info msg="  --tofqdns-enable-dns-compression='true'" subsys=daemon
+level=info msg="  --tofqdns-endpoint-max-ip-per-hostname='50'" subsys=daemon
+level=info msg="  --tofqdns-idle-connection-grace-period='0s'" subsys=daemon
+level=info msg="  --tofqdns-max-deferred-connection-deletes='10000'" subsys=daemon
+level=info msg="  --tofqdns-min-ttl='0'" subsys=daemon
+level=info msg="  --tofqdns-pre-cache=''" subsys=daemon
+level=info msg="  --tofqdns-proxy-port='0'" subsys=daemon
+level=info msg="  --tofqdns-proxy-response-max-delay='100ms'" subsys=daemon
+level=info msg="  --trace-payloadlen='128'" subsys=daemon
+level=info msg="  --trace-sock='true'" subsys=daemon
+level=info msg="  --tunnel=''" subsys=daemon
+level=info msg="  --tunnel-port='0'" subsys=daemon
+level=info msg="  --tunnel-protocol='vxlan'" subsys=daemon
+level=info msg="  --unmanaged-pod-watcher-interval='15'" subsys=daemon
+level=info msg="  --use-cilium-internal-ip-for-ipsec='false'" subsys=daemon
+level=info msg="  --version='false'" subsys=daemon
+level=info msg="  --vlan-bpf-bypass=''" subsys=daemon
+level=info msg="  --vtep-cidr=''" subsys=daemon
+level=info msg="  --vtep-endpoint=''" subsys=daemon
+level=info msg="  --vtep-mac=''" subsys=daemon
+level=info msg="  --vtep-mask=''" subsys=daemon
+level=info msg="  --write-cni-conf-when-ready='/host/etc/cni/net.d/05-cilium.conflist'" subsys=daemon
+level=info msg="     _ _ _" subsys=daemon
+level=info msg=" ___|_| |_|_ _ _____" subsys=daemon
+level=info msg="|  _| | | | | |     |" subsys=daemon
+level=info msg="|___|_|_|_|___|_|_|_|" subsys=daemon
+level=info msg="Cilium 1.14.0 b5013e15 2023-07-26T10:28:38+02:00 go version go1.20.5 linux/amd64" subsys=daemon
+level=info msg="clang (10.0.0) and kernel (5.15.0) versions: OK!" subsys=linux-datapath
+level=info msg="linking environment: OK!" subsys=linux-datapath
+level=info msg="Kernel config file not found: if the agent fails to start, check the system requirements at https://docs.cilium.io/en/stable/operations/system_requirements" subsys=probes
+level=info msg="Detected mounted BPF filesystem at /sys/fs/bpf" subsys=bpf
+level=info msg="Mounted cgroupv2 filesystem at /run/cilium/cgroupv2" subsys=cgroups
+level=info msg="Parsing base label prefixes from default label list" subsys=labels-filter
+level=info msg="Parsing additional label prefixes from user inputs: []" subsys=labels-filter
+level=info msg="Final label prefixes to be used for identity evaluation:" subsys=labels-filter
+level=info msg=" - reserved:.*" subsys=labels-filter
+level=info msg=" - :io\\.kubernetes\\.pod\\.namespace" subsys=labels-filter
+level=info msg=" - :io\\.cilium\\.k8s\\.namespace\\.labels" subsys=labels-filter
+level=info msg=" - :app\\.kubernetes\\.io" subsys=labels-filter
+level=info msg=" - !:io\\.kubernetes" subsys=labels-filter
+level=info msg=" - !:kubernetes\\.io" subsys=labels-filter
+level=info msg=" - !:.*beta\\.kubernetes\\.io" subsys=labels-filter
+level=info msg=" - !:k8s\\.io" subsys=labels-filter
+level=info msg=" - !:pod-template-generation" subsys=labels-filter
+level=info msg=" - !:pod-template-hash" subsys=labels-filter
+level=info msg=" - !:controller-revision-hash" subsys=labels-filter
+level=info msg=" - !:annotation.*" subsys=labels-filter
+level=info msg=" - !:etcd_node" subsys=labels-filter
+level=info msg=Invoked duration="834.736µs" function="pprof.glob..func1 (cell.go:51)" subsys=hive
+level=info msg=Invoked duration="42.052µs" function="gops.registerGopsHooks (cell.go:39)" subsys=hive
+level=info msg=Invoked duration="849.414µs" function="metrics.NewRegistry (registry.go:65)" subsys=hive
+level=info msg=Invoked duration=194.022072ms function="cmd.glob..func4 (daemon_main.go:1589)" subsys=hive
+level=info msg="Spire Delegate API Client is disabled as no socket path is configured" subsys=spire-delegate
+level=info msg="Mutual authentication handler is disabled as no port is configured" subsys=auth
+level=info msg=Invoked duration="253.854µs" function="auth.registerAuthManager (cell.go:85)" subsys=hive
+level=info msg=Invoked duration="8.496µs" function="gc.registerSignalHandler (cell.go:47)" subsys=hive
+level=info msg=Invoked duration="11.442µs" function="utime.initUtimeSync (cell.go:30)" subsys=hive
+level=info msg=Invoked duration="55.215µs" function="agentliveness.newAgentLivenessUpdater (agent_liveness.go:44)" subsys=hive
+level=info msg=Invoked duration="71.547µs" function="l2responder.NewL2ResponderReconciler (l2responder.go:64)" subsys=hive
+level=info msg=Invoked duration="69.382µs" function="garp.newGARPProcessor (processor.go:27)" subsys=hive
+level=info msg=Starting subsys=hive
+level=info msg="Started gops server" address="127.0.0.1:9890" subsys=gops
+level=info msg="Start hook executed" duration="474.406µs" function="gops.registerGopsHooks.func1 (cell.go:44)" subsys=hive
+level=info msg="Start hook executed" duration="1.883µs" function="metrics.NewRegistry.func1 (registry.go:86)" subsys=hive
+level=info msg="Establishing connection to apiserver" host="https://10.96.0.1:443" subsys=k8s-client
+level=info msg="Serving prometheus metrics on :9962" subsys=metrics
+level=info msg="Connected to apiserver" subsys=k8s-client
+level=info msg="Start hook executed" duration=43.16502ms function="client.(*compositeClientset).onStart" subsys=hive
+level=info msg="Start hook executed" duration="11.653µs" function="*resource.resource[*github.com/cilium/cilium/pkg/k8s/slim/k8s/api/core/v1.Node].Start" subsys=hive
+level=info msg="Using autogenerated IPv4 allocation range" subsys=node v4Prefix=10.6.0.0/16
+level=info msg="Opting out from node-to-node encryption on this node as per 'node-encryption-opt-out-labels' label selector" Selector=node-role.kubernetes.io/control-plane subsys=daemon
+level=info msg="Start hook executed" duration=6.519149ms function="node.NewLocalNodeStore.func1 (local_node_store.go:77)" subsys=hive
+level=info msg="Start hook executed" duration=4.738719ms function="authmap.newAuthMap.func1 (cell.go:28)" subsys=hive
+level=info msg="Start hook executed" duration="31.109µs" function="configmap.newMap.func1 (cell.go:24)" subsys=hive
+level=info msg="Start hook executed" duration="27.342µs" function="signalmap.newMap.func1 (cell.go:45)" subsys=hive
+level=info msg="Start hook executed" duration="233.457µs" function="nodemap.newNodeMap.func1 (cell.go:24)" subsys=hive
+level=info msg="Start hook executed" duration="84.391µs" function="eventsmap.newEventsMap.func1 (cell.go:36)" subsys=hive
+level=info msg="Start hook executed" duration=302.003353ms function="datapath.newDatapath.func1 (cells.go:114)" subsys=hive
+level=info msg="Restored 0 node IDs from the BPF map" subsys=linux-datapath
+level=info msg="Start hook executed" duration="44.084µs" function="datapath.newDatapath.func2 (cells.go:127)" subsys=hive
+level=info msg="Start hook executed" duration="3.747µs" function="*resource.resource[*github.com/cilium/cilium/pkg/k8s/slim/k8s/api/core/v1.Service].Start" subsys=hive
+level=info msg="Start hook executed" duration=100.41832ms function="*manager.diffStore[*github.com/cilium/cilium/pkg/k8s/slim/k8s/api/core/v1.Service].Start" subsys=hive
+level=info msg="Start hook executed" duration="2.034µs" function="*resource.resource[*github.com/cilium/cilium/pkg/k8s.Endpoints].Start" subsys=hive
+level=info msg="Using discoveryv1.EndpointSlice" subsys=k8s
+level=info msg="Start hook executed" duration=100.426495ms function="*manager.diffStore[*github.com/cilium/cilium/pkg/k8s.Endpoints].Start" subsys=hive
+level=info msg="Start hook executed" duration="2.595µs" function="*resource.resource[*github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2.CiliumNode].Start" subsys=hive
+level=info msg="Start hook executed" duration="1.263µs" function="*resource.resource[*github.com/cilium/cilium/pkg/k8s/slim/k8s/api/core/v1.Pod].Start" subsys=hive
+level=info msg="Start hook executed" duration="1.022µs" function="*resource.resource[*github.com/cilium/cilium/pkg/k8s/slim/k8s/api/core/v1.Namespace].Start" subsys=hive
+level=info msg="Start hook executed" duration=892ns function="*resource.resource[*github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2.CiliumNetworkPolicy].Start" subsys=hive
+level=info msg="Start hook executed" duration="1.022µs" function="*resource.resource[*github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2.CiliumClusterwideNetworkPolicy].Start" subsys=hive
+level=info msg="Start hook executed" duration="2.364µs" function="*resource.resource[*github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2alpha1.CiliumCIDRGroup].Start" subsys=hive
+level=info msg="Start hook executed" duration="15.22µs" function="endpointmanager.newDefaultEndpointManager.func1 (cell.go:185)" subsys=hive
+level=info msg="Start hook executed" duration="9.108µs" function="cmd.newPolicyTrifecta.func1 (policy.go:130)" subsys=hive
+level=info msg="Start hook executed" duration="15.003µs" function="*manager.manager.Start" subsys=hive
+level=info msg="Start hook executed" duration="62.75µs" function="*cni.cniConfigManager.Start" subsys=hive
+level=info msg="Generating CNI configuration file with mode none" subsys=cni-config
+level=info msg="Serving cilium node monitor v1.2 API at unix:///var/run/cilium/monitor1_2.sock" subsys=monitor-agent
+level=info msg="Start hook executed" duration="198.83µs" function="agent.newMonitorAgent.func1 (cell.go:62)" subsys=hive
+level=info msg="Start hook executed" duration="12.675µs" function="*resource.resource[*github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2alpha1.CiliumL2AnnouncementPolicy].Start" subsys=hive
+level=info msg="Start hook executed" duration="16.351µs" function="*job.group.Start" subsys=hive
+level=info msg="Start hook executed" duration="415.694µs" function="proxy.newProxy.func1 (cell.go:56)" subsys=hive
+level=info msg="Envoy: Starting xDS gRPC server listening on /var/run/cilium/envoy/sockets/xds.sock" subsys=envoy-manager
+level=warning msg="Deprecated value for --kube-proxy-replacement: disabled (use either \"true\", or \"false\")" subsys=daemon
+level=info msg="Auto-disabling \"enable-node-port\", \"enable-external-ips\", \"bpf-lb-sock\", \"enable-host-port\" features and falling back to \"enable-host-legacy-routing\"" subsys=daemon
+level=info msg="Inheriting MTU from external network interface" device=eth0 ipAddr=10.9.0.6 mtu=1500 subsys=mtu
+level=info msg="Removed map pin at /sys/fs/bpf/tc/globals/cilium_ipcache, recreating and re-pinning map cilium_ipcache" file-path=/sys/fs/bpf/tc/globals/cilium_ipcache name=cilium_ipcache subsys=bpf
+level=info msg="Removed map pin at /sys/fs/bpf/tc/globals/cilium_tunnel_map, recreating and re-pinning map cilium_tunnel_map" file-path=/sys/fs/bpf/tc/globals/cilium_tunnel_map name=cilium_tunnel_map subsys=bpf
+level=info msg="Restored services from maps" failedServices=0 restoredServices=0 subsys=service
+level=info msg="Restored backends from maps" failedBackends=0 restoredBackends=0 skippedBackends=0 subsys=service
+level=info msg="Reading old endpoints..." subsys=daemon
+level=info msg="No old endpoints found." subsys=daemon
+level=info msg="Waiting until all Cilium CRDs are available" subsys=k8s
+level=info msg="All Cilium CRDs have been found and are available" subsys=k8s
+level=info msg="Creating or updating CiliumNode resource" node=kyverno-scale-test subsys=nodediscovery
+level=info msg="Creating or updating CiliumNode resource" node=kyverno-scale-test subsys=nodediscovery
+level=warning msg="Unable to update CiliumNode resource, will retry" error="Operation cannot be fulfilled on ciliumnodes.cilium.io \"kyverno-scale-test\": the object has been modified; please apply your changes to the latest version and try again" subsys=nodediscovery
+level=info msg="Retrieved node information from cilium node" nodeName=kyverno-scale-test subsys=k8s
+level=info msg="Received own node information from API server" ipAddr.ipv4=10.9.0.6 ipAddr.ipv6="<nil>" k8sNodeIP=10.9.0.6 labels="map[beta.kubernetes.io/arch:amd64 beta.kubernetes.io/os:linux kubernetes.io/arch:amd64 kubernetes.io/hostname:kyverno-scale-test kubernetes.io/os:linux node-role.kubernetes.io/control-plane: node-role.kubernetes.io/master: node.kubernetes.io/exclude-from-external-load-balancers:]" nodeName=kyverno-scale-test subsys=k8s v4Prefix=10.0.0.0/24 v6Prefix="<nil>"
+level=info msg="k8s mode: Allowing localhost to reach local endpoints" subsys=daemon
+level=info msg="Detected devices" devices="[]" subsys=linux-datapath
+level=info msg="Enabling k8s event listener" subsys=k8s-watcher
+level=info msg="Removing stale endpoint interfaces" subsys=daemon
+level=info msg="Waiting until local node addressing before starting watchers depending on it" subsys=k8s-watcher
+level=info msg="Skipping kvstore configuration" subsys=daemon
+level=info msg="Initializing node addressing" subsys=daemon
+level=info msg="Initializing cluster-pool IPAM" subsys=ipam v4Prefix=10.0.0.0/24 v6Prefix="<nil>"
+level=info msg="Restoring endpoints..." subsys=daemon
+level=info msg="Endpoints restored" failed=0 restored=0 subsys=daemon
+level=info msg="Addressing information:" subsys=daemon
+level=info msg="  Cluster-Name: kubernetes" subsys=daemon
+level=info msg="  Cluster-ID: 0" subsys=daemon
+level=info msg="  Local node-name: kyverno-scale-test" subsys=daemon
+level=info msg="  Node-IPv6: <nil>" subsys=daemon
+level=info msg="  External-Node IPv4: 10.9.0.6" subsys=daemon
+level=info msg="  Internal-Node IPv4: 10.0.0.192" subsys=daemon
+level=info msg="  IPv4 allocation prefix: 10.0.0.0/24" subsys=daemon
+level=info msg="  Loopback IPv4: 169.254.42.1" subsys=daemon
+level=info msg="  Local IPv4 addresses:" subsys=daemon
+level=info msg="  - 10.9.0.6" subsys=daemon
+level=info msg="Adding local node to cluster" node="{kyverno-scale-test kubernetes [{InternalIP 10.9.0.6} {CiliumInternalIP 10.0.0.192}] 10.0.0.0/24 [] <nil> [] 10.0.0.239 <nil> <nil> <nil> 0 local 0 map[beta.kubernetes.io/arch:amd64 beta.kubernetes.io/os:linux kubernetes.io/arch:amd64 kubernetes.io/hostname:kyverno-scale-test kubernetes.io/os:linux node-role.kubernetes.io/control-plane: node-role.kubernetes.io/master: node.kubernetes.io/exclude-from-external-load-balancers:] map[] 1 }" subsys=nodediscovery
+level=info msg="Creating or updating CiliumNode resource" node=kyverno-scale-test subsys=nodediscovery
+level=info msg="Waiting until all pre-existing resources have been received" subsys=k8s-watcher
+level=info msg="Initializing identity allocator" subsys=identity-cache
+level=info msg="Allocating identities between range" cluster-id=0 max=65535 min=256 subsys=identity-cache
+level=info msg="Setting sysctl" subsys=sysctl sysParamName=net.ipv4.conf.cilium_host.forwarding sysParamValue=1
+level=info msg="Setting sysctl" subsys=sysctl sysParamName=net.ipv4.conf.cilium_host.rp_filter sysParamValue=0
+level=info msg="Setting sysctl" subsys=sysctl sysParamName=net.ipv4.conf.cilium_host.accept_local sysParamValue=1
+level=info msg="Setting sysctl" subsys=sysctl sysParamName=net.ipv4.conf.cilium_host.send_redirects sysParamValue=0
+level=info msg="Setting sysctl" subsys=sysctl sysParamName=net.ipv4.conf.cilium_net.forwarding sysParamValue=1
+level=info msg="Setting sysctl" subsys=sysctl sysParamName=net.ipv4.conf.cilium_net.rp_filter sysParamValue=0
+level=info msg="Setting sysctl" subsys=sysctl sysParamName=net.ipv4.conf.cilium_net.accept_local sysParamValue=1
+level=info msg="Setting sysctl" subsys=sysctl sysParamName=net.ipv4.conf.cilium_net.send_redirects sysParamValue=0
+level=info msg="Setting sysctl" subsys=sysctl sysParamName=net.core.bpf_jit_enable sysParamValue=1
+level=info msg="Setting sysctl" subsys=sysctl sysParamName=net.ipv4.conf.all.rp_filter sysParamValue=0
+level=info msg="Setting sysctl" subsys=sysctl sysParamName=net.ipv4.fib_multipath_use_neigh sysParamValue=1
+level=info msg="Setting sysctl" subsys=sysctl sysParamName=kernel.unprivileged_bpf_disabled sysParamValue=1
+level=info msg="Setting sysctl" subsys=sysctl sysParamName=kernel.timer_migration sysParamValue=0
+level=info msg="Setting up BPF datapath" bpfClockSource=ktime bpfInsnSet="<nil>" subsys=datapath-loader
+level=info msg="regenerating all endpoints" reason="one or more identities created or deleted" subsys=endpoint-manager
+level=info msg="regenerating all endpoints" reason="one or more identities created or deleted" subsys=endpoint-manager
+level=info msg="Iptables rules installed" subsys=iptables
+level=info msg="Adding new proxy port rules for cilium-dns-egress:41607" id=cilium-dns-egress subsys=proxy
+level=info msg="Iptables proxy rules installed" subsys=iptables
+level=info msg="Start hook executed" duration=4.567410478s function="cmd.newDaemonPromise.func1 (daemon_main.go:1643)" subsys=hive
+level=info msg="Starting IP identity watcher" subsys=ipcache
+level=info msg="Initializing daemon" subsys=daemon
+level=info msg="Validating configured node address ranges" subsys=daemon
+level=info msg="Starting connection tracking garbage collector" subsys=daemon
+level=info msg="Initial scan of connection tracking completed" subsys=ct-gc
+level=info msg="Regenerating restored endpoints" numRestored=0 subsys=daemon
+level=info msg="Creating host endpoint" subsys=daemon
+level=info msg="Finished regenerating restored endpoints" regenerated=0 subsys=daemon total=0
+level=info msg="Deleted orphan backends" orphanBackends=0 subsys=service
+level=info msg="New endpoint" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=2136 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Resolving identity labels (blocking)" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=2136 identityLabels="k8s:node-role.kubernetes.io/control-plane,k8s:node-role.kubernetes.io/master,k8s:node.kubernetes.io/exclude-from-external-load-balancers,reserved:host" ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Identity of endpoint changed" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=2136 identity=1 identityLabels="k8s:node-role.kubernetes.io/control-plane,k8s:node-role.kubernetes.io/master,k8s:node.kubernetes.io/exclude-from-external-load-balancers,reserved:host" ipv4= ipv6= k8sPodName=/ oldIdentity="no identity" subsys=endpoint
+level=info msg="Launching Cilium health daemon" subsys=daemon
+level=info msg="Found stale ciliumendpoint for local pod that is not being managed, deleting." ciliumEndpointName=metrics-server-f95dcdc9c-tp4z6 k8sNamespace=kube-system subsys=daemon
+level=info msg="Launching Cilium health endpoint" subsys=daemon
+level=info msg="Found stale ciliumendpoint for local pod that is not being managed, deleting." ciliumEndpointName=kyverno-admission-controller-6c578c7bcf-6kbw9 k8sNamespace=kyverno subsys=daemon
+level=info msg="Found stale ciliumendpoint for local pod that is not being managed, deleting." ciliumEndpointName=kyverno-admission-controller-6c578c7bcf-gmd88 k8sNamespace=kyverno subsys=daemon
+level=info msg="Started healthz status API server" address="127.0.0.1:9879" subsys=daemon
+level=info msg="Processing queued endpoint deletion requests from /var/run/cilium/deleteQueue" subsys=daemon
+level=info msg="Start hook executed" duration=74.050676ms function="signal.provideSignalManager.func1 (cell.go:26)" subsys=hive
+level=info msg="Datapath signal listener running" subsys=signal
+level=info msg="Start hook executed" duration=1.14197ms function="auth.registerAuthManager.func1 (cell.go:106)" subsys=hive
+level=info msg="Start hook executed" duration="50.547µs" function="auth.registerGCJobs.func1 (cell.go:155)" subsys=hive
+level=info msg="Start hook executed" duration="17.294µs" function="*job.group.Start" subsys=hive
+level=info msg="Start hook executed" duration="30.409µs" function="utime.initUtimeSync.func1 (cell.go:34)" subsys=hive
+level=info msg="Start hook executed" duration="3.657µs" function="*job.group.Start" subsys=hive
+level=info msg="Start hook executed" duration="40.448µs" function="l2respondermap.newMap.func1 (l2_responder_map4.go:45)" subsys=hive
+level=info msg="Start hook executed" duration="2.325µs" function="*job.group.Start" subsys=hive
+level=info msg="Found stale ciliumendpoint for local pod that is not being managed, deleting." ciliumEndpointName=kyverno-admission-controller-6c578c7bcf-lb6pg k8sNamespace=kyverno subsys=daemon
+level=info msg="Found stale ciliumendpoint for local pod that is not being managed, deleting." ciliumEndpointName=coredns-bd6b6df9f-vbccs k8sNamespace=kube-system subsys=daemon
+level=info msg="Found stale ciliumendpoint for local pod that is not being managed, deleting." ciliumEndpointName=kyverno-admission-controller-6c578c7bcf-9bnwl k8sNamespace=kyverno subsys=daemon
+level=info msg="Found stale ciliumendpoint for local pod that is not being managed, deleting." ciliumEndpointName=kyverno-admission-controller-6c578c7bcf-d7q98 k8sNamespace=kyverno subsys=daemon
+level=info msg="Found stale ciliumendpoint for local pod that is not being managed, deleting." ciliumEndpointName=kyverno-admission-controller-6c578c7bcf-zdk2v k8sNamespace=kyverno subsys=daemon
+level=info msg="Found stale ciliumendpoint for local pod that is not being managed, deleting." ciliumEndpointName=coredns-bd6b6df9f-m9fz9 k8sNamespace=kube-system subsys=daemon
+level=info msg="Compiled new BPF template" BPFCompilationTime=270.806963ms file-path=/var/run/cilium/state/templates/a9450c1ec8c7f8e759305b9529aa783b8e5a92e7da7ba9218130d07ae59e93a7/bpf_host.o subsys=datapath-loader
+level=info msg="Rewrote endpoint BPF program" containerID= datapathPolicyRevision=0 desiredPolicyRevision=1 endpointID=2136 identity=1 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="processing 9 queued deletion requests" subsys=daemon
+level=info msg="Initializing Cilium API" subsys=daemon
+level=info msg="Daemon initialization completed" bootstrapTime=8.277394715s subsys=daemon
+level=info msg="Serving cilium API at unix:///var/run/cilium/cilium.sock" subsys=daemon
+level=info msg="Configuring Hubble server" eventQueueSize=16384 maxFlows=4095 subsys=hubble
+level=info msg="Starting local Hubble server" address="unix:///var/run/cilium/hubble.sock" subsys=hubble
+level=info msg="Beginning to read perf buffer" startTime="2023-10-10 01:32:19.687839459 +0000 UTC m=+11.127688803" subsys=monitor-agent
+level=info msg="Starting Hubble server" address=":4244" subsys=hubble
+level=info msg="Create endpoint request" addressing="&{10.0.0.84 bd252878-8897-4ad2-b24a-d8086fabca39 default   }" containerID=ab0707bae26aaee79f5137ddafe38e0afa2a6836720af3d8c04d676430856135 datapathConfiguration="&{false false false false false <nil>}" interface=lxcaa2f5a45335c k8sPodName=kyverno/kyverno-admission-controller-6c578c7bcf-9bnwl labels="[]" subsys=daemon sync-build=true
+level=info msg="New endpoint" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=2952 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Resolving identity labels (blocking)" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=2952 identityLabels="k8s:app.kubernetes.io/component=admission-controller,k8s:app.kubernetes.io/instance=kyverno,k8s:app.kubernetes.io/part-of=kyverno,k8s:app.kubernetes.io/version=3.0.5-rc1,k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kyverno,k8s:io.cilium.k8s.policy.cluster=kubernetes,k8s:io.cilium.k8s.policy.serviceaccount=kyverno-admission-controller,k8s:io.kubernetes.pod.namespace=kyverno" ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Reusing existing global key" key="k8s:app.kubernetes.io/component=admission-controller;k8s:app.kubernetes.io/instance=kyverno;k8s:app.kubernetes.io/part-of=kyverno;k8s:app.kubernetes.io/version=3.0.5-rc1;k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kyverno;k8s:io.cilium.k8s.policy.cluster=kubernetes;k8s:io.cilium.k8s.policy.serviceaccount=kyverno-admission-controller;k8s:io.kubernetes.pod.namespace=kyverno;" subsys=allocator
+level=info msg="Identity of endpoint changed" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=2952 identity=24345 identityLabels="k8s:app.kubernetes.io/component=admission-controller,k8s:app.kubernetes.io/instance=kyverno,k8s:app.kubernetes.io/part-of=kyverno,k8s:app.kubernetes.io/version=3.0.5-rc1,k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kyverno,k8s:io.cilium.k8s.policy.cluster=kubernetes,k8s:io.cilium.k8s.policy.serviceaccount=kyverno-admission-controller,k8s:io.kubernetes.pod.namespace=kyverno" ipv4= ipv6= k8sPodName=/ oldIdentity="no identity" subsys=endpoint
+level=info msg="Waiting for endpoint to be generated" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=2952 identity=24345 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="New endpoint" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=924 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Resolving identity labels (blocking)" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=924 identityLabels="reserved:health" ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Identity of endpoint changed" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=924 identity=4 identityLabels="reserved:health" ipv4= ipv6= k8sPodName=/ oldIdentity="no identity" subsys=endpoint
+level=info msg="Create endpoint request" addressing="&{10.0.0.100 88bd1917-2832-4361-9c80-8906ca371954 default   }" containerID=b5419fb0a58db09dbc5ef13a61adbf218164eb7c29b86696b44252dfdb67a4eb datapathConfiguration="&{false false false false false <nil>}" interface=lxc920c360ce963 k8sPodName=kyverno/kyverno-admission-controller-6c578c7bcf-zdk2v labels="[]" subsys=daemon sync-build=true
+level=info msg="New endpoint" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=1890 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Resolving identity labels (blocking)" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=1890 identityLabels="k8s:app.kubernetes.io/component=admission-controller,k8s:app.kubernetes.io/instance=kyverno,k8s:app.kubernetes.io/part-of=kyverno,k8s:app.kubernetes.io/version=3.0.5-rc1,k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kyverno,k8s:io.cilium.k8s.policy.cluster=kubernetes,k8s:io.cilium.k8s.policy.serviceaccount=kyverno-admission-controller,k8s:io.kubernetes.pod.namespace=kyverno" ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Identity of endpoint changed" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=1890 identity=24345 identityLabels="k8s:app.kubernetes.io/component=admission-controller,k8s:app.kubernetes.io/instance=kyverno,k8s:app.kubernetes.io/part-of=kyverno,k8s:app.kubernetes.io/version=3.0.5-rc1,k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kyverno,k8s:io.cilium.k8s.policy.cluster=kubernetes,k8s:io.cilium.k8s.policy.serviceaccount=kyverno-admission-controller,k8s:io.kubernetes.pod.namespace=kyverno" ipv4= ipv6= k8sPodName=/ oldIdentity="no identity" subsys=endpoint
+level=info msg="Waiting for endpoint to be generated" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=1890 identity=24345 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Create endpoint request" addressing="&{10.0.0.7 10db1d2c-7904-4085-86f7-09c3dcb026b1 default   }" containerID=2b2446f1b9a82aa6fbdc052cd0462342c55778e770d68af369686fbdef2c9a5e datapathConfiguration="&{false false false false false <nil>}" interface=lxc0cae2feb7323 k8sPodName=kyverno/kyverno-admission-controller-6c578c7bcf-d7q98 labels="[]" subsys=daemon sync-build=true
+level=info msg="New endpoint" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=2676 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Resolving identity labels (blocking)" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=2676 identityLabels="k8s:app.kubernetes.io/component=admission-controller,k8s:app.kubernetes.io/instance=kyverno,k8s:app.kubernetes.io/part-of=kyverno,k8s:app.kubernetes.io/version=3.0.5-rc1,k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kyverno,k8s:io.cilium.k8s.policy.cluster=kubernetes,k8s:io.cilium.k8s.policy.serviceaccount=kyverno-admission-controller,k8s:io.kubernetes.pod.namespace=kyverno" ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Identity of endpoint changed" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=2676 identity=24345 identityLabels="k8s:app.kubernetes.io/component=admission-controller,k8s:app.kubernetes.io/instance=kyverno,k8s:app.kubernetes.io/part-of=kyverno,k8s:app.kubernetes.io/version=3.0.5-rc1,k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kyverno,k8s:io.cilium.k8s.policy.cluster=kubernetes,k8s:io.cilium.k8s.policy.serviceaccount=kyverno-admission-controller,k8s:io.kubernetes.pod.namespace=kyverno" ipv4= ipv6= k8sPodName=/ oldIdentity="no identity" subsys=endpoint
+level=info msg="Waiting for endpoint to be generated" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=2676 identity=24345 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Create endpoint request" addressing="&{10.0.0.190 0764a8e6-4164-41e3-b143-54e2fb77b9ca default   }" containerID=e00499bf77b19f06d590efbb8687ccbfc5c104d96ca0a3ede76c64c9f22c74ef datapathConfiguration="&{false false false false false <nil>}" interface=lxcbda0e9e1ebcc k8sPodName=kyverno/kyverno-admission-controller-6c578c7bcf-lb6pg labels="[]" subsys=daemon sync-build=true
+level=info msg="New endpoint" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=719 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Resolving identity labels (blocking)" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=719 identityLabels="k8s:app.kubernetes.io/component=admission-controller,k8s:app.kubernetes.io/instance=kyverno,k8s:app.kubernetes.io/part-of=kyverno,k8s:app.kubernetes.io/version=3.0.5-rc1,k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kyverno,k8s:io.cilium.k8s.policy.cluster=kubernetes,k8s:io.cilium.k8s.policy.serviceaccount=kyverno-admission-controller,k8s:io.kubernetes.pod.namespace=kyverno" ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Identity of endpoint changed" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=719 identity=24345 identityLabels="k8s:app.kubernetes.io/component=admission-controller,k8s:app.kubernetes.io/instance=kyverno,k8s:app.kubernetes.io/part-of=kyverno,k8s:app.kubernetes.io/version=3.0.5-rc1,k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kyverno,k8s:io.cilium.k8s.policy.cluster=kubernetes,k8s:io.cilium.k8s.policy.serviceaccount=kyverno-admission-controller,k8s:io.kubernetes.pod.namespace=kyverno" ipv4= ipv6= k8sPodName=/ oldIdentity="no identity" subsys=endpoint
+level=info msg="Waiting for endpoint to be generated" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=719 identity=24345 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Create endpoint request" addressing="&{10.0.0.126 e41b5739-92bf-484a-9596-3be6461c28cc default   }" containerID=75d01e12a1b84bb7796a6bd0138d6989dbbebfc718669eeb4721c0393d334e84 datapathConfiguration="&{false false false false false <nil>}" interface=lxc3ee9a8bd3e1c k8sPodName=kube-system/metrics-server-f95dcdc9c-tp4z6 labels="[]" subsys=daemon sync-build=true
+level=info msg="New endpoint" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=37 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Create endpoint request" addressing="&{10.0.0.60 b6c59015-2a21-4771-8315-93b00de915fd default   }" containerID=49f68284d16f501dd5b9dbb0e627eacdf10ca6a80d07063b38e36963d63798ea datapathConfiguration="&{false false false false false <nil>}" interface=lxc6469c27afd68 k8sPodName=kube-system/coredns-bd6b6df9f-m9fz9 labels="[]" subsys=daemon sync-build=true
+level=info msg="New endpoint" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=340 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Resolving identity labels (blocking)" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=37 identityLabels="k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kube-system,k8s:io.cilium.k8s.policy.cluster=kubernetes,k8s:io.cilium.k8s.policy.serviceaccount=metrics-server,k8s:io.kubernetes.pod.namespace=kube-system,k8s:k8s-app=metrics-server" ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Resolving identity labels (blocking)" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=340 identityLabels="k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kube-system,k8s:io.cilium.k8s.policy.cluster=kubernetes,k8s:io.cilium.k8s.policy.serviceaccount=coredns,k8s:io.kubernetes.pod.namespace=kube-system,k8s:k8s-app=kube-dns" ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Reusing existing global key" key="k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kube-system;k8s:io.cilium.k8s.policy.cluster=kubernetes;k8s:io.cilium.k8s.policy.serviceaccount=metrics-server;k8s:io.kubernetes.pod.namespace=kube-system;k8s:k8s-app=metrics-server;" subsys=allocator
+level=info msg="Reusing existing global key" key="k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kube-system;k8s:io.cilium.k8s.policy.cluster=kubernetes;k8s:io.cilium.k8s.policy.serviceaccount=coredns;k8s:io.kubernetes.pod.namespace=kube-system;k8s:k8s-app=kube-dns;" subsys=allocator
+level=info msg="Identity of endpoint changed" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=37 identity=55387 identityLabels="k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kube-system,k8s:io.cilium.k8s.policy.cluster=kubernetes,k8s:io.cilium.k8s.policy.serviceaccount=metrics-server,k8s:io.kubernetes.pod.namespace=kube-system,k8s:k8s-app=metrics-server" ipv4= ipv6= k8sPodName=/ oldIdentity="no identity" subsys=endpoint
+level=info msg="Identity of endpoint changed" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=340 identity=16247 identityLabels="k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kube-system,k8s:io.cilium.k8s.policy.cluster=kubernetes,k8s:io.cilium.k8s.policy.serviceaccount=coredns,k8s:io.kubernetes.pod.namespace=kube-system,k8s:k8s-app=kube-dns" ipv4= ipv6= k8sPodName=/ oldIdentity="no identity" subsys=endpoint
+level=info msg="Waiting for endpoint to be generated" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=37 identity=55387 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Waiting for endpoint to be generated" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=340 identity=16247 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Serving cilium health API at unix:///var/run/cilium/health.sock" subsys=health-server
+level=info msg="Create endpoint request" addressing="&{10.0.0.1 201c1962-a358-45da-9cf2-4170f4c5668c default   }" containerID=c498a7e6ca5cd14ff3f5ea2e202c7239e953fd394d9f002d4b69cfccf2faa4cb datapathConfiguration="&{false false false false false <nil>}" interface=lxc66e32415c2ba k8sPodName=kube-system/coredns-bd6b6df9f-vbccs labels="[]" subsys=daemon sync-build=true
+level=info msg="New endpoint" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=2654 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Resolving identity labels (blocking)" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=2654 identityLabels="k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kube-system,k8s:io.cilium.k8s.policy.cluster=kubernetes,k8s:io.cilium.k8s.policy.serviceaccount=coredns,k8s:io.kubernetes.pod.namespace=kube-system,k8s:k8s-app=kube-dns" ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Identity of endpoint changed" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=2654 identity=16247 identityLabels="k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kube-system,k8s:io.cilium.k8s.policy.cluster=kubernetes,k8s:io.cilium.k8s.policy.serviceaccount=coredns,k8s:io.kubernetes.pod.namespace=kube-system,k8s:k8s-app=kube-dns" ipv4= ipv6= k8sPodName=/ oldIdentity="no identity" subsys=endpoint
+level=info msg="Waiting for endpoint to be generated" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=2654 identity=16247 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Create endpoint request" addressing="&{10.0.0.45 cdf1deeb-8595-453d-af49-cf7e52925a5b default   }" containerID=6ea4f64d99b658898f3423faf4d29541942743ad8d4acbaeffd367f486da97d8 datapathConfiguration="&{false false false false false <nil>}" interface=lxcb4a6764aa607 k8sPodName=kyverno/kyverno-admission-controller-6c578c7bcf-6kbw9 labels="[]" subsys=daemon sync-build=true
+level=info msg="New endpoint" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=89 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Resolving identity labels (blocking)" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=89 identityLabels="k8s:app.kubernetes.io/component=admission-controller,k8s:app.kubernetes.io/instance=kyverno,k8s:app.kubernetes.io/part-of=kyverno,k8s:app.kubernetes.io/version=3.0.5-rc1,k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kyverno,k8s:io.cilium.k8s.policy.cluster=kubernetes,k8s:io.cilium.k8s.policy.serviceaccount=kyverno-admission-controller,k8s:io.kubernetes.pod.namespace=kyverno" ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Identity of endpoint changed" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=89 identity=24345 identityLabels="k8s:app.kubernetes.io/component=admission-controller,k8s:app.kubernetes.io/instance=kyverno,k8s:app.kubernetes.io/part-of=kyverno,k8s:app.kubernetes.io/version=3.0.5-rc1,k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kyverno,k8s:io.cilium.k8s.policy.cluster=kubernetes,k8s:io.cilium.k8s.policy.serviceaccount=kyverno-admission-controller,k8s:io.kubernetes.pod.namespace=kyverno" ipv4= ipv6= k8sPodName=/ oldIdentity="no identity" subsys=endpoint
+level=info msg="Waiting for endpoint to be generated" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=89 identity=24345 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Compiled new BPF template" BPFCompilationTime=990.006248ms file-path=/var/run/cilium/state/templates/bfa523b2184fcd6d4f804e32e1ad7622d6bee2b570bf2c09a8e21d87f33b177a/bpf_lxc.o subsys=datapath-loader
+level=info msg="Rewrote endpoint BPF program" containerID= datapathPolicyRevision=0 desiredPolicyRevision=1 endpointID=89 identity=24345 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Successful endpoint creation" containerID= datapathPolicyRevision=1 desiredPolicyRevision=1 endpointID=89 identity=24345 ipv4= ipv6= k8sPodName=/ subsys=daemon
+level=info msg="Rewrote endpoint BPF program" containerID= datapathPolicyRevision=0 desiredPolicyRevision=1 endpointID=719 identity=24345 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Successful endpoint creation" containerID= datapathPolicyRevision=1 desiredPolicyRevision=1 endpointID=719 identity=24345 ipv4= ipv6= k8sPodName=/ subsys=daemon
+level=info msg="Rewrote endpoint BPF program" containerID= datapathPolicyRevision=0 desiredPolicyRevision=1 endpointID=924 identity=4 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Rewrote endpoint BPF program" containerID= datapathPolicyRevision=0 desiredPolicyRevision=1 endpointID=37 identity=55387 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Successful endpoint creation" containerID= datapathPolicyRevision=1 desiredPolicyRevision=1 endpointID=37 identity=55387 ipv4= ipv6= k8sPodName=/ subsys=daemon
+level=info msg="Rewrote endpoint BPF program" containerID= datapathPolicyRevision=0 desiredPolicyRevision=1 endpointID=340 identity=16247 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Successful endpoint creation" containerID= datapathPolicyRevision=1 desiredPolicyRevision=1 endpointID=340 identity=16247 ipv4= ipv6= k8sPodName=/ subsys=daemon
+level=info msg="Rewrote endpoint BPF program" containerID= datapathPolicyRevision=0 desiredPolicyRevision=1 endpointID=1890 identity=24345 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Successful endpoint creation" containerID= datapathPolicyRevision=1 desiredPolicyRevision=1 endpointID=1890 identity=24345 ipv4= ipv6= k8sPodName=/ subsys=daemon
+level=info msg="Rewrote endpoint BPF program" containerID= datapathPolicyRevision=0 desiredPolicyRevision=1 endpointID=2952 identity=24345 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Successful endpoint creation" containerID= datapathPolicyRevision=1 desiredPolicyRevision=1 endpointID=2952 identity=24345 ipv4= ipv6= k8sPodName=/ subsys=daemon
+level=info msg="Create endpoint request" addressing="&{10.0.0.243 2f89606b-c7a0-4ef5-bee2-4686a474a68a default   }" containerID=bf0b3581e95a590d143435615d42331bfb8fd6bf724a18cd8f91ed7aa7a56efc datapathConfiguration="&{false false false false false <nil>}" interface=lxc90eb19634d32 k8sPodName=kyverno/kyverno-admission-controller-6c578c7bcf-gmd88 labels="[]" subsys=daemon sync-build=true
+level=info msg="New endpoint" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=3453 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Resolving identity labels (blocking)" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=3453 identityLabels="k8s:app.kubernetes.io/component=admission-controller,k8s:app.kubernetes.io/instance=kyverno,k8s:app.kubernetes.io/part-of=kyverno,k8s:app.kubernetes.io/version=3.0.5-rc1,k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kyverno,k8s:io.cilium.k8s.policy.cluster=kubernetes,k8s:io.cilium.k8s.policy.serviceaccount=kyverno-admission-controller,k8s:io.kubernetes.pod.namespace=kyverno" ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Identity of endpoint changed" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=3453 identity=24345 identityLabels="k8s:app.kubernetes.io/component=admission-controller,k8s:app.kubernetes.io/instance=kyverno,k8s:app.kubernetes.io/part-of=kyverno,k8s:app.kubernetes.io/version=3.0.5-rc1,k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kyverno,k8s:io.cilium.k8s.policy.cluster=kubernetes,k8s:io.cilium.k8s.policy.serviceaccount=kyverno-admission-controller,k8s:io.kubernetes.pod.namespace=kyverno" ipv4= ipv6= k8sPodName=/ oldIdentity="no identity" subsys=endpoint
+level=info msg="Waiting for endpoint to be generated" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=3453 identity=24345 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Rewrote endpoint BPF program" containerID= datapathPolicyRevision=0 desiredPolicyRevision=1 endpointID=2676 identity=24345 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Successful endpoint creation" containerID= datapathPolicyRevision=1 desiredPolicyRevision=1 endpointID=2676 identity=24345 ipv4= ipv6= k8sPodName=/ subsys=daemon
+level=info msg="Rewrote endpoint BPF program" containerID= datapathPolicyRevision=0 desiredPolicyRevision=1 endpointID=2654 identity=16247 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Successful endpoint creation" containerID= datapathPolicyRevision=1 desiredPolicyRevision=1 endpointID=2654 identity=16247 ipv4= ipv6= k8sPodName=/ subsys=daemon
+level=info msg="Rewrote endpoint BPF program" containerID= datapathPolicyRevision=0 desiredPolicyRevision=1 endpointID=3453 identity=24345 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Successful endpoint creation" containerID= datapathPolicyRevision=1 desiredPolicyRevision=1 endpointID=3453 identity=24345 ipv4= ipv6= k8sPodName=/ subsys=daemon
+level=info msg="Create endpoint request" addressing="&{10.0.0.174 60775c21-a99b-47ab-901c-ab9a588bc974 default   }" containerID=56d98a078f096155b6af2d9c7538485649164a49b249bf0767e8f4eedf43e781 datapathConfiguration="&{false false false false false <nil>}" interface=lxc7e90eb9d86ec k8sPodName=kyverno/kyverno-cleanup-cluster-admission-reports-28281690-s6lzm labels="[]" subsys=daemon sync-build=true
+level=info msg="New endpoint" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=3255 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Resolving identity labels (blocking)" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=3255 identityLabels="k8s:controller-uid=0104ebbd-9e52-48f3-b4ce-0e111b2215d6,k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kyverno,k8s:io.cilium.k8s.policy.cluster=kubernetes,k8s:io.cilium.k8s.policy.serviceaccount=kyverno-cleanup-jobs,k8s:io.kubernetes.pod.namespace=kyverno,k8s:job-name=kyverno-cleanup-cluster-admission-reports-28281690" ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Skipped non-kubernetes labels when labelling ciliumidentity. All labels will still be used in identity determination" labels="map[k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name:kyverno]" subsys=crd-allocator
+level=info msg="regenerating all endpoints" reason="one or more identities created or deleted" subsys=endpoint-manager
+level=info msg="Invalid state transition skipped" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=3255 endpointState.from=waiting-for-identity endpointState.to=waiting-to-regenerate file=/go/src/github.com/cilium/cilium/pkg/endpoint/policy.go ipv4= ipv6= k8sPodName=/ line=604 subsys=endpoint
+level=info msg="Allocated new global key" key="k8s:controller-uid=0104ebbd-9e52-48f3-b4ce-0e111b2215d6;k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kyverno;k8s:io.cilium.k8s.policy.cluster=kubernetes;k8s:io.cilium.k8s.policy.serviceaccount=kyverno-cleanup-jobs;k8s:io.kubernetes.pod.namespace=kyverno;k8s:job-name=kyverno-cleanup-cluster-admission-reports-28281690;" subsys=allocator
+level=info msg="Identity of endpoint changed" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=3255 identity=35933 identityLabels="k8s:controller-uid=0104ebbd-9e52-48f3-b4ce-0e111b2215d6,k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kyverno,k8s:io.cilium.k8s.policy.cluster=kubernetes,k8s:io.cilium.k8s.policy.serviceaccount=kyverno-cleanup-jobs,k8s:io.kubernetes.pod.namespace=kyverno,k8s:job-name=kyverno-cleanup-cluster-admission-reports-28281690" ipv4= ipv6= k8sPodName=/ oldIdentity="no identity" subsys=endpoint
+level=info msg="Waiting for endpoint to be generated" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=3255 identity=35933 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Create endpoint request" addressing="&{10.0.0.98 49682a03-6b2f-469a-82c7-03225d0c5bbf default   }" containerID=da83068c72c55d8be261e73e2a4932318b17cda6f3ef7c9bc61fc2b9e9ac44ef datapathConfiguration="&{false false false false false <nil>}" interface=lxcc5d06a24e458 k8sPodName=kyverno/kyverno-cleanup-admission-reports-28281690-w9l57 labels="[]" subsys=daemon sync-build=true
+level=info msg="New endpoint" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=2262 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Resolving identity labels (blocking)" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=2262 identityLabels="k8s:controller-uid=59966ee7-8135-438b-8d01-7989cb4e6e7a,k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kyverno,k8s:io.cilium.k8s.policy.cluster=kubernetes,k8s:io.cilium.k8s.policy.serviceaccount=kyverno-cleanup-jobs,k8s:io.kubernetes.pod.namespace=kyverno,k8s:job-name=kyverno-cleanup-admission-reports-28281690" ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Skipped non-kubernetes labels when labelling ciliumidentity. All labels will still be used in identity determination" labels="map[k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name:kyverno]" subsys=crd-allocator
+level=info msg="Allocated new global key" key="k8s:controller-uid=59966ee7-8135-438b-8d01-7989cb4e6e7a;k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kyverno;k8s:io.cilium.k8s.policy.cluster=kubernetes;k8s:io.cilium.k8s.policy.serviceaccount=kyverno-cleanup-jobs;k8s:io.kubernetes.pod.namespace=kyverno;k8s:job-name=kyverno-cleanup-admission-reports-28281690;" subsys=allocator
+level=info msg="Identity of endpoint changed" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=2262 identity=49900 identityLabels="k8s:controller-uid=59966ee7-8135-438b-8d01-7989cb4e6e7a,k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kyverno,k8s:io.cilium.k8s.policy.cluster=kubernetes,k8s:io.cilium.k8s.policy.serviceaccount=kyverno-cleanup-jobs,k8s:io.kubernetes.pod.namespace=kyverno,k8s:job-name=kyverno-cleanup-admission-reports-28281690" ipv4= ipv6= k8sPodName=/ oldIdentity="no identity" subsys=endpoint
+level=info msg="Waiting for endpoint to be generated" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=2262 identity=49900 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Rewrote endpoint BPF program" containerID= datapathPolicyRevision=0 desiredPolicyRevision=1 endpointID=3255 identity=35933 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Successful endpoint creation" containerID= datapathPolicyRevision=1 desiredPolicyRevision=1 endpointID=3255 identity=35933 ipv4= ipv6= k8sPodName=/ subsys=daemon
+level=info msg="Rewrote endpoint BPF program" containerID= datapathPolicyRevision=0 desiredPolicyRevision=1 endpointID=2262 identity=49900 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Successful endpoint creation" containerID= datapathPolicyRevision=1 desiredPolicyRevision=1 endpointID=2262 identity=49900 ipv4= ipv6= k8sPodName=/ subsys=daemon
+level=info msg="regenerating all endpoints" reason="one or more identities created or deleted" subsys=endpoint-manager
+level=info msg="regenerating all endpoints" reason= subsys=endpoint-manager
+level=info msg="Delete endpoint request" containerID=56d98a078f endpointID=3255 k8sNamespace=kyverno k8sPodName=kyverno-cleanup-cluster-admission-reports-28281690-s6lzm subsys=daemon
+level=info msg="Releasing key" key="[k8s:controller-uid=0104ebbd-9e52-48f3-b4ce-0e111b2215d6 k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kyverno k8s:io.cilium.k8s.policy.cluster=kubernetes k8s:io.cilium.k8s.policy.serviceaccount=kyverno-cleanup-jobs k8s:io.kubernetes.pod.namespace=kyverno k8s:job-name=kyverno-cleanup-cluster-admission-reports-28281690]" subsys=allocator
+level=info msg="Delete endpoint request" containerID=da83068c72 endpointID=2262 k8sNamespace=kyverno k8sPodName=kyverno-cleanup-admission-reports-28281690-w9l57 subsys=daemon
+level=info msg="Releasing key" key="[k8s:controller-uid=59966ee7-8135-438b-8d01-7989cb4e6e7a k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kyverno k8s:io.cilium.k8s.policy.cluster=kubernetes k8s:io.cilium.k8s.policy.serviceaccount=kyverno-cleanup-jobs k8s:io.kubernetes.pod.namespace=kyverno k8s:job-name=kyverno-cleanup-admission-reports-28281690]" subsys=allocator
+level=info msg="Removed endpoint" containerID= datapathPolicyRevision=1 desiredPolicyRevision=1 endpointID=3255 identity=35933 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Removed endpoint" containerID= datapathPolicyRevision=1 desiredPolicyRevision=1 endpointID=2262 identity=49900 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Delete endpoint request" containerID=ab0707bae2 endpointID=2952 k8sNamespace=kyverno k8sPodName=kyverno-admission-controller-6c578c7bcf-9bnwl subsys=daemon
+level=info msg="Releasing key" key="[k8s:app.kubernetes.io/component=admission-controller k8s:app.kubernetes.io/instance=kyverno k8s:app.kubernetes.io/part-of=kyverno k8s:app.kubernetes.io/version=3.0.5-rc1 k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kyverno k8s:io.cilium.k8s.policy.cluster=kubernetes k8s:io.cilium.k8s.policy.serviceaccount=kyverno-admission-controller k8s:io.kubernetes.pod.namespace=kyverno]" subsys=allocator
+level=info msg="Delete endpoint request" containerID=6ea4f64d99 endpointID=89 k8sNamespace=kyverno k8sPodName=kyverno-admission-controller-6c578c7bcf-6kbw9 subsys=daemon
+level=info msg="Releasing key" key="[k8s:app.kubernetes.io/component=admission-controller k8s:app.kubernetes.io/instance=kyverno k8s:app.kubernetes.io/part-of=kyverno k8s:app.kubernetes.io/version=3.0.5-rc1 k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kyverno k8s:io.cilium.k8s.policy.cluster=kubernetes k8s:io.cilium.k8s.policy.serviceaccount=kyverno-admission-controller k8s:io.kubernetes.pod.namespace=kyverno]" subsys=allocator
+level=info msg="Delete endpoint request" containerID=2b2446f1b9 endpointID=2676 k8sNamespace=kyverno k8sPodName=kyverno-admission-controller-6c578c7bcf-d7q98 subsys=daemon
+level=info msg="Releasing key" key="[k8s:app.kubernetes.io/component=admission-controller k8s:app.kubernetes.io/instance=kyverno k8s:app.kubernetes.io/part-of=kyverno k8s:app.kubernetes.io/version=3.0.5-rc1 k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kyverno k8s:io.cilium.k8s.policy.cluster=kubernetes k8s:io.cilium.k8s.policy.serviceaccount=kyverno-admission-controller k8s:io.kubernetes.pod.namespace=kyverno]" subsys=allocator
+level=info msg="Delete endpoint request" containerID=e00499bf77 endpointID=719 k8sNamespace=kyverno k8sPodName=kyverno-admission-controller-6c578c7bcf-lb6pg subsys=daemon
+level=info msg="Releasing key" key="[k8s:app.kubernetes.io/component=admission-controller k8s:app.kubernetes.io/instance=kyverno k8s:app.kubernetes.io/part-of=kyverno k8s:app.kubernetes.io/version=3.0.5-rc1 k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kyverno k8s:io.cilium.k8s.policy.cluster=kubernetes k8s:io.cilium.k8s.policy.serviceaccount=kyverno-admission-controller k8s:io.kubernetes.pod.namespace=kyverno]" subsys=allocator
+level=info msg="Delete endpoint request" containerID=bf0b3581e9 endpointID=3453 k8sNamespace=kyverno k8sPodName=kyverno-admission-controller-6c578c7bcf-gmd88 subsys=daemon
+level=info msg="Delete endpoint request" containerID=b5419fb0a5 endpointID=1890 k8sNamespace=kyverno k8sPodName=kyverno-admission-controller-6c578c7bcf-zdk2v subsys=daemon
+level=info msg="Releasing key" key="[k8s:app.kubernetes.io/component=admission-controller k8s:app.kubernetes.io/instance=kyverno k8s:app.kubernetes.io/part-of=kyverno k8s:app.kubernetes.io/version=3.0.5-rc1 k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kyverno k8s:io.cilium.k8s.policy.cluster=kubernetes k8s:io.cilium.k8s.policy.serviceaccount=kyverno-admission-controller k8s:io.kubernetes.pod.namespace=kyverno]" subsys=allocator
+level=info msg="Releasing key" key="[k8s:app.kubernetes.io/component=admission-controller k8s:app.kubernetes.io/instance=kyverno k8s:app.kubernetes.io/part-of=kyverno k8s:app.kubernetes.io/version=3.0.5-rc1 k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kyverno k8s:io.cilium.k8s.policy.cluster=kubernetes k8s:io.cilium.k8s.policy.serviceaccount=kyverno-admission-controller k8s:io.kubernetes.pod.namespace=kyverno]" subsys=allocator
+level=info msg="Removed endpoint" containerID= datapathPolicyRevision=1 desiredPolicyRevision=1 endpointID=1890 identity=24345 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Removed endpoint" containerID= datapathPolicyRevision=1 desiredPolicyRevision=1 endpointID=2952 identity=24345 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Removed endpoint" containerID= datapathPolicyRevision=1 desiredPolicyRevision=1 endpointID=89 identity=24345 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Removed endpoint" containerID= datapathPolicyRevision=1 desiredPolicyRevision=1 endpointID=2676 identity=24345 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Removed endpoint" containerID= datapathPolicyRevision=1 desiredPolicyRevision=1 endpointID=719 identity=24345 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Removed endpoint" containerID= datapathPolicyRevision=1 desiredPolicyRevision=1 endpointID=3453 identity=24345 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Create endpoint request" addressing="&{10.0.0.202 17aa2ed5-a96c-4f06-9e41-d3378492b438 default   }" containerID=3de2c1f48cb8ac206d8a9ca23957b4fed82d59816e94861f6a06515d0fd15648 datapathConfiguration="&{false false false false false <nil>}" interface=lxc3e7fc617392d k8sPodName=kyverno/kyverno-admission-controller-6c578c7bcf-gqvhz labels="[]" subsys=daemon sync-build=true
+level=info msg="New endpoint" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=3933 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Resolving identity labels (blocking)" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=3933 identityLabels="k8s:app.kubernetes.io/component=admission-controller,k8s:app.kubernetes.io/instance=kyverno,k8s:app.kubernetes.io/part-of=kyverno,k8s:app.kubernetes.io/version=3.0.5-rc1,k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kyverno,k8s:io.cilium.k8s.policy.cluster=kubernetes,k8s:io.cilium.k8s.policy.serviceaccount=kyverno-admission-controller,k8s:io.kubernetes.pod.namespace=kyverno" ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Reusing existing global key" key="k8s:app.kubernetes.io/component=admission-controller;k8s:app.kubernetes.io/instance=kyverno;k8s:app.kubernetes.io/part-of=kyverno;k8s:app.kubernetes.io/version=3.0.5-rc1;k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kyverno;k8s:io.cilium.k8s.policy.cluster=kubernetes;k8s:io.cilium.k8s.policy.serviceaccount=kyverno-admission-controller;k8s:io.kubernetes.pod.namespace=kyverno;" subsys=allocator
+level=info msg="Identity of endpoint changed" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=3933 identity=24345 identityLabels="k8s:app.kubernetes.io/component=admission-controller,k8s:app.kubernetes.io/instance=kyverno,k8s:app.kubernetes.io/part-of=kyverno,k8s:app.kubernetes.io/version=3.0.5-rc1,k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kyverno,k8s:io.cilium.k8s.policy.cluster=kubernetes,k8s:io.cilium.k8s.policy.serviceaccount=kyverno-admission-controller,k8s:io.kubernetes.pod.namespace=kyverno" ipv4= ipv6= k8sPodName=/ oldIdentity="no identity" subsys=endpoint
+level=info msg="Waiting for endpoint to be generated" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=3933 identity=24345 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Rewrote endpoint BPF program" containerID= datapathPolicyRevision=0 desiredPolicyRevision=1 endpointID=3933 identity=24345 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Successful endpoint creation" containerID= datapathPolicyRevision=1 desiredPolicyRevision=1 endpointID=3933 identity=24345 ipv4= ipv6= k8sPodName=/ subsys=daemon
+level=info msg="Create endpoint request" addressing="&{10.0.0.143 21f7cc39-0e33-459e-8045-07bcf54f1506 default   }" containerID=3cc1a92fc74f58f90e51b3341d0d6c7ee204286b8e17cfa27e4e7e00b4d7a3f1 datapathConfiguration="&{false false false false false <nil>}" interface=lxcf357ce2605ef k8sPodName=kyverno/kyverno-admission-controller-6c578c7bcf-nl2ss labels="[]" subsys=daemon sync-build=true
+level=info msg="New endpoint" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=505 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Resolving identity labels (blocking)" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=505 identityLabels="k8s:app.kubernetes.io/component=admission-controller,k8s:app.kubernetes.io/instance=kyverno,k8s:app.kubernetes.io/part-of=kyverno,k8s:app.kubernetes.io/version=3.0.5-rc1,k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kyverno,k8s:io.cilium.k8s.policy.cluster=kubernetes,k8s:io.cilium.k8s.policy.serviceaccount=kyverno-admission-controller,k8s:io.kubernetes.pod.namespace=kyverno" ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Identity of endpoint changed" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=505 identity=24345 identityLabels="k8s:app.kubernetes.io/component=admission-controller,k8s:app.kubernetes.io/instance=kyverno,k8s:app.kubernetes.io/part-of=kyverno,k8s:app.kubernetes.io/version=3.0.5-rc1,k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kyverno,k8s:io.cilium.k8s.policy.cluster=kubernetes,k8s:io.cilium.k8s.policy.serviceaccount=kyverno-admission-controller,k8s:io.kubernetes.pod.namespace=kyverno" ipv4= ipv6= k8sPodName=/ oldIdentity="no identity" subsys=endpoint
+level=info msg="Waiting for endpoint to be generated" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=505 identity=24345 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Rewrote endpoint BPF program" containerID= datapathPolicyRevision=0 desiredPolicyRevision=1 endpointID=505 identity=24345 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Successful endpoint creation" containerID= datapathPolicyRevision=1 desiredPolicyRevision=1 endpointID=505 identity=24345 ipv4= ipv6= k8sPodName=/ subsys=daemon
+level=info msg="Create endpoint request" addressing="&{10.0.0.38 cc967d35-03ed-4ac9-aca3-a5b309e9bf38 default   }" containerID=150a7124310337121a5770fcfffa988f2ecd1276aa28bfd57d08616fd6403f1c datapathConfiguration="&{false false false false false <nil>}" interface=lxcf36bdc681e92 k8sPodName=kyverno/kyverno-admission-controller-6c578c7bcf-jbnvw labels="[]" subsys=daemon sync-build=true
+level=info msg="New endpoint" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=614 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Resolving identity labels (blocking)" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=614 identityLabels="k8s:app.kubernetes.io/component=admission-controller,k8s:app.kubernetes.io/instance=kyverno,k8s:app.kubernetes.io/part-of=kyverno,k8s:app.kubernetes.io/version=3.0.5-rc1,k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kyverno,k8s:io.cilium.k8s.policy.cluster=kubernetes,k8s:io.cilium.k8s.policy.serviceaccount=kyverno-admission-controller,k8s:io.kubernetes.pod.namespace=kyverno" ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Identity of endpoint changed" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=614 identity=24345 identityLabels="k8s:app.kubernetes.io/component=admission-controller,k8s:app.kubernetes.io/instance=kyverno,k8s:app.kubernetes.io/part-of=kyverno,k8s:app.kubernetes.io/version=3.0.5-rc1,k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kyverno,k8s:io.cilium.k8s.policy.cluster=kubernetes,k8s:io.cilium.k8s.policy.serviceaccount=kyverno-admission-controller,k8s:io.kubernetes.pod.namespace=kyverno" ipv4= ipv6= k8sPodName=/ oldIdentity="no identity" subsys=endpoint
+level=info msg="Waiting for endpoint to be generated" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=614 identity=24345 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Rewrote endpoint BPF program" containerID= datapathPolicyRevision=0 desiredPolicyRevision=1 endpointID=614 identity=24345 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Successful endpoint creation" containerID= datapathPolicyRevision=1 desiredPolicyRevision=1 endpointID=614 identity=24345 ipv4= ipv6= k8sPodName=/ subsys=daemon
+level=info msg="Create endpoint request" addressing="&{10.0.0.246 ecb107e3-b513-4d5b-9316-3fde0eed4ec4 default   }" containerID=863beeef3e2016faf1a494822505b14509f897ce372e011e62f2b774f17abf5f datapathConfiguration="&{false false false false false <nil>}" interface=lxca116b54134f1 k8sPodName=kyverno/kyverno-admission-controller-6c578c7bcf-69gms labels="[]" subsys=daemon sync-build=true
+level=info msg="New endpoint" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=3331 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Resolving identity labels (blocking)" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=3331 identityLabels="k8s:app.kubernetes.io/component=admission-controller,k8s:app.kubernetes.io/instance=kyverno,k8s:app.kubernetes.io/part-of=kyverno,k8s:app.kubernetes.io/version=3.0.5-rc1,k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kyverno,k8s:io.cilium.k8s.policy.cluster=kubernetes,k8s:io.cilium.k8s.policy.serviceaccount=kyverno-admission-controller,k8s:io.kubernetes.pod.namespace=kyverno" ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Identity of endpoint changed" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=3331 identity=24345 identityLabels="k8s:app.kubernetes.io/component=admission-controller,k8s:app.kubernetes.io/instance=kyverno,k8s:app.kubernetes.io/part-of=kyverno,k8s:app.kubernetes.io/version=3.0.5-rc1,k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kyverno,k8s:io.cilium.k8s.policy.cluster=kubernetes,k8s:io.cilium.k8s.policy.serviceaccount=kyverno-admission-controller,k8s:io.kubernetes.pod.namespace=kyverno" ipv4= ipv6= k8sPodName=/ oldIdentity="no identity" subsys=endpoint
+level=info msg="Waiting for endpoint to be generated" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=3331 identity=24345 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Create endpoint request" addressing="&{10.0.0.135 6bc8247c-94cd-427f-ad39-a1df36262620 default   }" containerID=b31892f4ca303f3f086914e549f50f1d0fdd97f9c360c55f1da814f88519c906 datapathConfiguration="&{false false false false false <nil>}" interface=lxc07921e490983 k8sPodName=kyverno/kyverno-admission-controller-6c578c7bcf-9qxd4 labels="[]" subsys=daemon sync-build=true
+level=info msg="New endpoint" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=585 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Resolving identity labels (blocking)" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=585 identityLabels="k8s:app.kubernetes.io/component=admission-controller,k8s:app.kubernetes.io/instance=kyverno,k8s:app.kubernetes.io/part-of=kyverno,k8s:app.kubernetes.io/version=3.0.5-rc1,k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kyverno,k8s:io.cilium.k8s.policy.cluster=kubernetes,k8s:io.cilium.k8s.policy.serviceaccount=kyverno-admission-controller,k8s:io.kubernetes.pod.namespace=kyverno" ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Identity of endpoint changed" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=585 identity=24345 identityLabels="k8s:app.kubernetes.io/component=admission-controller,k8s:app.kubernetes.io/instance=kyverno,k8s:app.kubernetes.io/part-of=kyverno,k8s:app.kubernetes.io/version=3.0.5-rc1,k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kyverno,k8s:io.cilium.k8s.policy.cluster=kubernetes,k8s:io.cilium.k8s.policy.serviceaccount=kyverno-admission-controller,k8s:io.kubernetes.pod.namespace=kyverno" ipv4= ipv6= k8sPodName=/ oldIdentity="no identity" subsys=endpoint
+level=info msg="Waiting for endpoint to be generated" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=585 identity=24345 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Rewrote endpoint BPF program" containerID= datapathPolicyRevision=0 desiredPolicyRevision=1 endpointID=3331 identity=24345 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Successful endpoint creation" containerID= datapathPolicyRevision=1 desiredPolicyRevision=1 endpointID=3331 identity=24345 ipv4= ipv6= k8sPodName=/ subsys=daemon
+level=info msg="Rewrote endpoint BPF program" containerID= datapathPolicyRevision=0 desiredPolicyRevision=1 endpointID=585 identity=24345 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Successful endpoint creation" containerID= datapathPolicyRevision=1 desiredPolicyRevision=1 endpointID=585 identity=24345 ipv4= ipv6= k8sPodName=/ subsys=daemon
+level=info msg="Create endpoint request" addressing="&{10.0.0.66 7249da39-fc8d-4d5e-b415-9e8c76ce5bc4 default   }" containerID=c896abf86795349299f86c97ef87d65ef05cc84041523f75313600b826cbbb9e datapathConfiguration="&{false false false false false <nil>}" interface=lxcbdc4e407c334 k8sPodName=kyverno/kyverno-admission-controller-6c578c7bcf-c8ljv labels="[]" subsys=daemon sync-build=true
+level=info msg="New endpoint" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=1005 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Resolving identity labels (blocking)" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=1005 identityLabels="k8s:app.kubernetes.io/component=admission-controller,k8s:app.kubernetes.io/instance=kyverno,k8s:app.kubernetes.io/part-of=kyverno,k8s:app.kubernetes.io/version=3.0.5-rc1,k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kyverno,k8s:io.cilium.k8s.policy.cluster=kubernetes,k8s:io.cilium.k8s.policy.serviceaccount=kyverno-admission-controller,k8s:io.kubernetes.pod.namespace=kyverno" ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Identity of endpoint changed" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=1005 identity=24345 identityLabels="k8s:app.kubernetes.io/component=admission-controller,k8s:app.kubernetes.io/instance=kyverno,k8s:app.kubernetes.io/part-of=kyverno,k8s:app.kubernetes.io/version=3.0.5-rc1,k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kyverno,k8s:io.cilium.k8s.policy.cluster=kubernetes,k8s:io.cilium.k8s.policy.serviceaccount=kyverno-admission-controller,k8s:io.kubernetes.pod.namespace=kyverno" ipv4= ipv6= k8sPodName=/ oldIdentity="no identity" subsys=endpoint
+level=info msg="Waiting for endpoint to be generated" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=1005 identity=24345 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Rewrote endpoint BPF program" containerID= datapathPolicyRevision=0 desiredPolicyRevision=1 endpointID=1005 identity=24345 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Successful endpoint creation" containerID= datapathPolicyRevision=1 desiredPolicyRevision=1 endpointID=1005 identity=24345 ipv4= ipv6= k8sPodName=/ subsys=daemon
+level=info msg="Conntrack garbage collector interval recalculated" deleteRatio=5.8683626865837634e-05 newInterval=7m30s subsys=map-ct
+level=info msg="Create endpoint request" addressing="&{10.0.0.194 5c8134a3-bdbb-4cc1-8409-8d1eac56834e default   }" containerID=175c3876e5a933e791137be880598e53443ca51987dda1210c63dd39f7a6c685 datapathConfiguration="&{false false false false false <nil>}" interface=lxc4ffc4364c7b5 k8sPodName=kyverno/kyverno-cleanup-cluster-admission-reports-28281700-hjjmt labels="[]" subsys=daemon sync-build=true
+level=info msg="New endpoint" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=226 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Resolving identity labels (blocking)" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=226 identityLabels="k8s:controller-uid=769e7da0-221a-4586-b000-7b9049a3cea2,k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kyverno,k8s:io.cilium.k8s.policy.cluster=kubernetes,k8s:io.cilium.k8s.policy.serviceaccount=kyverno-cleanup-jobs,k8s:io.kubernetes.pod.namespace=kyverno,k8s:job-name=kyverno-cleanup-cluster-admission-reports-28281700" ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Skipped non-kubernetes labels when labelling ciliumidentity. All labels will still be used in identity determination" labels="map[k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name:kyverno]" subsys=crd-allocator
+level=warning msg="Key allocation attempt failed" attempt=0 error="slave key creation failed 'k8s:controller-uid=769e7da0-221a-4586-b000-7b9049a3cea2;k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kyverno;k8s:io.cilium.k8s.policy.cluster=kubernetes;k8s:io.cilium.k8s.policy.serviceaccount=kyverno-cleanup-jobs;k8s:io.kubernetes.pod.namespace=kyverno;k8s:job-name=kyverno-cleanup-cluster-admission-reports-28281700;': identity (id:\"10168\",key:\"[k8s:controller-uid=769e7da0-221a-4586-b000-7b9049a3cea2 k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kyverno k8s:io.cilium.k8s.policy.cluster=kubernetes k8s:io.cilium.k8s.policy.serviceaccount=kyverno-cleanup-jobs k8s:io.kubernetes.pod.namespace=kyverno k8s:job-name=kyverno-cleanup-cluster-admission-reports-28281700]\") does not exist" key="[k8s:controller-uid=769e7da0-221a-4586-b000-7b9049a3cea2 k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kyverno k8s:io.cilium.k8s.policy.cluster=kubernetes k8s:io.cilium.k8s.policy.serviceaccount=kyverno-cleanup-jobs k8s:io.kubernetes.pod.namespace=kyverno k8s:job-name=kyverno-cleanup-cluster-admission-reports-28281700]" subsys=allocator
+level=info msg="regenerating all endpoints" reason="one or more identities created or deleted" subsys=endpoint-manager
+level=info msg="Invalid state transition skipped" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=226 endpointState.from=waiting-for-identity endpointState.to=waiting-to-regenerate file=/go/src/github.com/cilium/cilium/pkg/endpoint/policy.go ipv4= ipv6= k8sPodName=/ line=604 subsys=endpoint
+level=info msg="Reusing existing global key" key="k8s:controller-uid=769e7da0-221a-4586-b000-7b9049a3cea2;k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kyverno;k8s:io.cilium.k8s.policy.cluster=kubernetes;k8s:io.cilium.k8s.policy.serviceaccount=kyverno-cleanup-jobs;k8s:io.kubernetes.pod.namespace=kyverno;k8s:job-name=kyverno-cleanup-cluster-admission-reports-28281700;" subsys=allocator
+level=info msg="Identity of endpoint changed" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=226 identity=10168 identityLabels="k8s:controller-uid=769e7da0-221a-4586-b000-7b9049a3cea2,k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kyverno,k8s:io.cilium.k8s.policy.cluster=kubernetes,k8s:io.cilium.k8s.policy.serviceaccount=kyverno-cleanup-jobs,k8s:io.kubernetes.pod.namespace=kyverno,k8s:job-name=kyverno-cleanup-cluster-admission-reports-28281700" ipv4= ipv6= k8sPodName=/ oldIdentity="no identity" subsys=endpoint
+level=info msg="Waiting for endpoint to be generated" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=226 identity=10168 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Rewrote endpoint BPF program" containerID= datapathPolicyRevision=0 desiredPolicyRevision=1 endpointID=226 identity=10168 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Successful endpoint creation" containerID= datapathPolicyRevision=1 desiredPolicyRevision=1 endpointID=226 identity=10168 ipv4= ipv6= k8sPodName=/ subsys=daemon
+level=info msg="Create endpoint request" addressing="&{10.0.0.118 c5ab5d7e-4e45-4b4c-b1cf-22791dfe0fae default   }" containerID=0dcac19bf858b36ca539e59c0d3ec6de981f44b01fb21ef3777603aeefa598da datapathConfiguration="&{false false false false false <nil>}" interface=lxc9c3e57361a6b k8sPodName=kyverno/kyverno-cleanup-admission-reports-28281700-tbqm5 labels="[]" subsys=daemon sync-build=true
+level=info msg="New endpoint" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=597 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Resolving identity labels (blocking)" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=597 identityLabels="k8s:controller-uid=0d3405df-0c27-4ac0-a09d-c0f414b437e9,k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kyverno,k8s:io.cilium.k8s.policy.cluster=kubernetes,k8s:io.cilium.k8s.policy.serviceaccount=kyverno-cleanup-jobs,k8s:io.kubernetes.pod.namespace=kyverno,k8s:job-name=kyverno-cleanup-admission-reports-28281700" ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Skipped non-kubernetes labels when labelling ciliumidentity. All labels will still be used in identity determination" labels="map[k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name:kyverno]" subsys=crd-allocator
+level=warning msg="Key allocation attempt failed" attempt=0 error="slave key creation failed 'k8s:controller-uid=0d3405df-0c27-4ac0-a09d-c0f414b437e9;k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kyverno;k8s:io.cilium.k8s.policy.cluster=kubernetes;k8s:io.cilium.k8s.policy.serviceaccount=kyverno-cleanup-jobs;k8s:io.kubernetes.pod.namespace=kyverno;k8s:job-name=kyverno-cleanup-admission-reports-28281700;': identity (id:\"2873\",key:\"[k8s:controller-uid=0d3405df-0c27-4ac0-a09d-c0f414b437e9 k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kyverno k8s:io.cilium.k8s.policy.cluster=kubernetes k8s:io.cilium.k8s.policy.serviceaccount=kyverno-cleanup-jobs k8s:io.kubernetes.pod.namespace=kyverno k8s:job-name=kyverno-cleanup-admission-reports-28281700]\") does not exist" key="[k8s:controller-uid=0d3405df-0c27-4ac0-a09d-c0f414b437e9 k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kyverno k8s:io.cilium.k8s.policy.cluster=kubernetes k8s:io.cilium.k8s.policy.serviceaccount=kyverno-cleanup-jobs k8s:io.kubernetes.pod.namespace=kyverno k8s:job-name=kyverno-cleanup-admission-reports-28281700]" subsys=allocator
+level=info msg="Reusing existing global key" key="k8s:controller-uid=0d3405df-0c27-4ac0-a09d-c0f414b437e9;k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kyverno;k8s:io.cilium.k8s.policy.cluster=kubernetes;k8s:io.cilium.k8s.policy.serviceaccount=kyverno-cleanup-jobs;k8s:io.kubernetes.pod.namespace=kyverno;k8s:job-name=kyverno-cleanup-admission-reports-28281700;" subsys=allocator
+level=info msg="Identity of endpoint changed" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=597 identity=2873 identityLabels="k8s:controller-uid=0d3405df-0c27-4ac0-a09d-c0f414b437e9,k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kyverno,k8s:io.cilium.k8s.policy.cluster=kubernetes,k8s:io.cilium.k8s.policy.serviceaccount=kyverno-cleanup-jobs,k8s:io.kubernetes.pod.namespace=kyverno,k8s:job-name=kyverno-cleanup-admission-reports-28281700" ipv4= ipv6= k8sPodName=/ oldIdentity="no identity" subsys=endpoint
+level=info msg="Waiting for endpoint to be generated" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=597 identity=2873 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Rewrote endpoint BPF program" containerID= datapathPolicyRevision=0 desiredPolicyRevision=1 endpointID=597 identity=2873 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Successful endpoint creation" containerID= datapathPolicyRevision=1 desiredPolicyRevision=1 endpointID=597 identity=2873 ipv4= ipv6= k8sPodName=/ subsys=daemon
+level=info msg="regenerating all endpoints" reason="one or more identities created or deleted" subsys=endpoint-manager
+level=info msg="Delete endpoint request" containerID=175c3876e5 endpointID=226 k8sNamespace=kyverno k8sPodName=kyverno-cleanup-cluster-admission-reports-28281700-hjjmt subsys=daemon
+level=info msg="Releasing key" key="[k8s:controller-uid=769e7da0-221a-4586-b000-7b9049a3cea2 k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kyverno k8s:io.cilium.k8s.policy.cluster=kubernetes k8s:io.cilium.k8s.policy.serviceaccount=kyverno-cleanup-jobs k8s:io.kubernetes.pod.namespace=kyverno k8s:job-name=kyverno-cleanup-cluster-admission-reports-28281700]" subsys=allocator
+level=info msg="Delete endpoint request" containerID=0dcac19bf8 endpointID=597 k8sNamespace=kyverno k8sPodName=kyverno-cleanup-admission-reports-28281700-tbqm5 subsys=daemon
+level=info msg="Releasing key" key="[k8s:controller-uid=0d3405df-0c27-4ac0-a09d-c0f414b437e9 k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kyverno k8s:io.cilium.k8s.policy.cluster=kubernetes k8s:io.cilium.k8s.policy.serviceaccount=kyverno-cleanup-jobs k8s:io.kubernetes.pod.namespace=kyverno k8s:job-name=kyverno-cleanup-admission-reports-28281700]" subsys=allocator
+level=info msg="Removed endpoint" containerID= datapathPolicyRevision=1 desiredPolicyRevision=1 endpointID=226 identity=10168 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Removed endpoint" containerID= datapathPolicyRevision=1 desiredPolicyRevision=1 endpointID=597 identity=2873 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Create endpoint request" addressing="&{10.0.0.198 fec05e2b-769f-4805-95bd-500da8a004ed default   }" containerID=d80b43d11f0750fc933f6ee0271cd7a8c5729ea061bd0f59ef739bb3da566396 datapathConfiguration="&{false false false false false <nil>}" interface=lxc7705cb822e46 k8sPodName=tfap-lnp/load-test-shk6g labels="[]" subsys=daemon sync-build=true
+level=info msg="New endpoint" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=349 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Resolving identity labels (blocking)" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=349 identityLabels="k8s:controller-uid=f5d57ad6-02a8-4bef-88e5-6610dbe00ea4,k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=tfap-lnp,k8s:io.cilium.k8s.policy.cluster=kubernetes,k8s:io.cilium.k8s.policy.serviceaccount=load-test,k8s:io.kubernetes.pod.namespace=tfap-lnp,k8s:job-name=load-test" ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Skipped non-kubernetes labels when labelling ciliumidentity. All labels will still be used in identity determination" labels="map[k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name:tfap-lnp]" subsys=crd-allocator
+level=info msg="regenerating all endpoints" reason="one or more identities created or deleted" subsys=endpoint-manager
+level=info msg="Allocated new global key" key="k8s:controller-uid=f5d57ad6-02a8-4bef-88e5-6610dbe00ea4;k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=tfap-lnp;k8s:io.cilium.k8s.policy.cluster=kubernetes;k8s:io.cilium.k8s.policy.serviceaccount=load-test;k8s:io.kubernetes.pod.namespace=tfap-lnp;k8s:job-name=load-test;" subsys=allocator
+level=info msg="Identity of endpoint changed" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=349 identity=19723 identityLabels="k8s:controller-uid=f5d57ad6-02a8-4bef-88e5-6610dbe00ea4,k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=tfap-lnp,k8s:io.cilium.k8s.policy.cluster=kubernetes,k8s:io.cilium.k8s.policy.serviceaccount=load-test,k8s:io.kubernetes.pod.namespace=tfap-lnp,k8s:job-name=load-test" ipv4= ipv6= k8sPodName=/ oldIdentity="no identity" subsys=endpoint
+level=info msg="Waiting for endpoint to be generated" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=349 identity=19723 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Rewrote endpoint BPF program" containerID= datapathPolicyRevision=0 desiredPolicyRevision=1 endpointID=349 identity=19723 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Successful endpoint creation" containerID= datapathPolicyRevision=1 desiredPolicyRevision=1 endpointID=349 identity=19723 ipv4= ipv6= k8sPodName=/ subsys=daemon
+level=info msg="regenerating all endpoints" reason="one or more identities created or deleted" subsys=endpoint-manager
+level=info msg="Delete endpoint request" containerID=d80b43d11f endpointID=349 k8sNamespace=tfap-lnp k8sPodName=load-test-shk6g subsys=daemon
+level=info msg="Releasing key" key="[k8s:controller-uid=f5d57ad6-02a8-4bef-88e5-6610dbe00ea4 k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=tfap-lnp k8s:io.cilium.k8s.policy.cluster=kubernetes k8s:io.cilium.k8s.policy.serviceaccount=load-test k8s:io.kubernetes.pod.namespace=tfap-lnp k8s:job-name=load-test]" subsys=allocator
+level=info msg="Removed endpoint" containerID= datapathPolicyRevision=1 desiredPolicyRevision=1 endpointID=349 identity=19723 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Create endpoint request" addressing="&{10.0.0.191 889cab07-e40d-40c3-9d4f-1f48443515f1 default   }" containerID=389628c095361da1bcda0b539586227b51f23aa1c8895a68377b6e8e56c3a12b datapathConfiguration="&{false false false false false <nil>}" interface=lxcac8d70d891ab k8sPodName=tfap-lnp/load-test-t87n5 labels="[]" subsys=daemon sync-build=true
+level=info msg="New endpoint" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=297 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Resolving identity labels (blocking)" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=297 identityLabels="k8s:controller-uid=96d867fc-51e2-41d2-961b-f32c63e23233,k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=tfap-lnp,k8s:io.cilium.k8s.policy.cluster=kubernetes,k8s:io.cilium.k8s.policy.serviceaccount=load-test,k8s:io.kubernetes.pod.namespace=tfap-lnp,k8s:job-name=load-test" ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Skipped non-kubernetes labels when labelling ciliumidentity. All labels will still be used in identity determination" labels="map[k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name:tfap-lnp]" subsys=crd-allocator
+level=warning msg="Key allocation attempt failed" attempt=0 error="slave key creation failed 'k8s:controller-uid=96d867fc-51e2-41d2-961b-f32c63e23233;k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=tfap-lnp;k8s:io.cilium.k8s.policy.cluster=kubernetes;k8s:io.cilium.k8s.policy.serviceaccount=load-test;k8s:io.kubernetes.pod.namespace=tfap-lnp;k8s:job-name=load-test;': identity (id:\"38721\",key:\"[k8s:controller-uid=96d867fc-51e2-41d2-961b-f32c63e23233 k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=tfap-lnp k8s:io.cilium.k8s.policy.cluster=kubernetes k8s:io.cilium.k8s.policy.serviceaccount=load-test k8s:io.kubernetes.pod.namespace=tfap-lnp k8s:job-name=load-test]\") does not exist" key="[k8s:controller-uid=96d867fc-51e2-41d2-961b-f32c63e23233 k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=tfap-lnp k8s:io.cilium.k8s.policy.cluster=kubernetes k8s:io.cilium.k8s.policy.serviceaccount=load-test k8s:io.kubernetes.pod.namespace=tfap-lnp k8s:job-name=load-test]" subsys=allocator
+level=info msg="regenerating all endpoints" reason="one or more identities created or deleted" subsys=endpoint-manager
+level=info msg="Invalid state transition skipped" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=297 endpointState.from=waiting-for-identity endpointState.to=waiting-to-regenerate file=/go/src/github.com/cilium/cilium/pkg/endpoint/policy.go ipv4= ipv6= k8sPodName=/ line=604 subsys=endpoint
+level=info msg="Reusing existing global key" key="k8s:controller-uid=96d867fc-51e2-41d2-961b-f32c63e23233;k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=tfap-lnp;k8s:io.cilium.k8s.policy.cluster=kubernetes;k8s:io.cilium.k8s.policy.serviceaccount=load-test;k8s:io.kubernetes.pod.namespace=tfap-lnp;k8s:job-name=load-test;" subsys=allocator
+level=info msg="Identity of endpoint changed" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=297 identity=38721 identityLabels="k8s:controller-uid=96d867fc-51e2-41d2-961b-f32c63e23233,k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=tfap-lnp,k8s:io.cilium.k8s.policy.cluster=kubernetes,k8s:io.cilium.k8s.policy.serviceaccount=load-test,k8s:io.kubernetes.pod.namespace=tfap-lnp,k8s:job-name=load-test" ipv4= ipv6= k8sPodName=/ oldIdentity="no identity" subsys=endpoint
+level=info msg="Waiting for endpoint to be generated" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=297 identity=38721 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Rewrote endpoint BPF program" containerID= datapathPolicyRevision=0 desiredPolicyRevision=1 endpointID=297 identity=38721 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Successful endpoint creation" containerID= datapathPolicyRevision=1 desiredPolicyRevision=1 endpointID=297 identity=38721 ipv4= ipv6= k8sPodName=/ subsys=daemon
+level=info msg="Conntrack garbage collector interval recalculated" deleteRatio=0.001108126712148055 newInterval=11m15s subsys=map-ct
+level=info msg="Delete endpoint request" containerID=389628c095 endpointID=297 k8sNamespace=tfap-lnp k8sPodName=load-test-t87n5 subsys=daemon
+level=info msg="Releasing key" key="[k8s:controller-uid=96d867fc-51e2-41d2-961b-f32c63e23233 k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=tfap-lnp k8s:io.cilium.k8s.policy.cluster=kubernetes k8s:io.cilium.k8s.policy.serviceaccount=load-test k8s:io.kubernetes.pod.namespace=tfap-lnp k8s:job-name=load-test]" subsys=allocator
+level=info msg="Removed endpoint" containerID= datapathPolicyRevision=1 desiredPolicyRevision=1 endpointID=297 identity=38721 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Create endpoint request" addressing="&{10.0.0.31 b8d3599f-38f5-4ae8-94a3-2c10f214ba44 default   }" containerID=9b78094dfda858a54fbe10e681434839e921b62fff2639c21778c31d0c300dfa datapathConfiguration="&{false false false false false <nil>}" interface=lxcade0a15fc1b5 k8sPodName=tfap-lnp/load-test-bg7xt labels="[]" subsys=daemon sync-build=true
+level=info msg="New endpoint" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=820 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Resolving identity labels (blocking)" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=820 identityLabels="k8s:controller-uid=66e97bd5-0352-4bbd-919a-64f3f7c0a75c,k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=tfap-lnp,k8s:io.cilium.k8s.policy.cluster=kubernetes,k8s:io.cilium.k8s.policy.serviceaccount=load-test,k8s:io.kubernetes.pod.namespace=tfap-lnp,k8s:job-name=load-test" ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Skipped non-kubernetes labels when labelling ciliumidentity. All labels will still be used in identity determination" labels="map[k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name:tfap-lnp]" subsys=crd-allocator
+level=warning msg="Key allocation attempt failed" attempt=0 error="slave key creation failed 'k8s:controller-uid=66e97bd5-0352-4bbd-919a-64f3f7c0a75c;k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=tfap-lnp;k8s:io.cilium.k8s.policy.cluster=kubernetes;k8s:io.cilium.k8s.policy.serviceaccount=load-test;k8s:io.kubernetes.pod.namespace=tfap-lnp;k8s:job-name=load-test;': identity (id:\"1719\",key:\"[k8s:controller-uid=66e97bd5-0352-4bbd-919a-64f3f7c0a75c k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=tfap-lnp k8s:io.cilium.k8s.policy.cluster=kubernetes k8s:io.cilium.k8s.policy.serviceaccount=load-test k8s:io.kubernetes.pod.namespace=tfap-lnp k8s:job-name=load-test]\") does not exist" key="[k8s:controller-uid=66e97bd5-0352-4bbd-919a-64f3f7c0a75c k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=tfap-lnp k8s:io.cilium.k8s.policy.cluster=kubernetes k8s:io.cilium.k8s.policy.serviceaccount=load-test k8s:io.kubernetes.pod.namespace=tfap-lnp k8s:job-name=load-test]" subsys=allocator
+level=info msg="regenerating all endpoints" reason="one or more identities created or deleted" subsys=endpoint-manager
+level=info msg="Invalid state transition skipped" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=820 endpointState.from=waiting-for-identity endpointState.to=waiting-to-regenerate file=/go/src/github.com/cilium/cilium/pkg/endpoint/policy.go ipv4= ipv6= k8sPodName=/ line=604 subsys=endpoint
+level=info msg="Reusing existing global key" key="k8s:controller-uid=66e97bd5-0352-4bbd-919a-64f3f7c0a75c;k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=tfap-lnp;k8s:io.cilium.k8s.policy.cluster=kubernetes;k8s:io.cilium.k8s.policy.serviceaccount=load-test;k8s:io.kubernetes.pod.namespace=tfap-lnp;k8s:job-name=load-test;" subsys=allocator
+level=info msg="Identity of endpoint changed" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=820 identity=1719 identityLabels="k8s:controller-uid=66e97bd5-0352-4bbd-919a-64f3f7c0a75c,k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=tfap-lnp,k8s:io.cilium.k8s.policy.cluster=kubernetes,k8s:io.cilium.k8s.policy.serviceaccount=load-test,k8s:io.kubernetes.pod.namespace=tfap-lnp,k8s:job-name=load-test" ipv4= ipv6= k8sPodName=/ oldIdentity="no identity" subsys=endpoint
+level=info msg="Waiting for endpoint to be generated" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=820 identity=1719 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Rewrote endpoint BPF program" containerID= datapathPolicyRevision=0 desiredPolicyRevision=1 endpointID=820 identity=1719 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Successful endpoint creation" containerID= datapathPolicyRevision=1 desiredPolicyRevision=1 endpointID=820 identity=1719 ipv4= ipv6= k8sPodName=/ subsys=daemon
+level=warning msg="Network status error received, restarting client connections" error="an error on the server (\"[+]ping ok\\n[+]log ok\\n[-]etcd failed: reason withheld\\n[+]poststarthook/start-kube-apiserver-admission-initializer ok\\n[+]poststarthook/generic-apiserver-start-informers ok\\n[+]poststarthook/priority-and-fairness-config-consumer ok\\n[+]poststarthook/priority-and-fairness-filter ok\\n[+]poststarthook/start-apiextensions-informers ok\\n[+]poststarthook/start-apiextensions-controllers ok\\n[+]poststarthook/crd-informer-synced ok\\n[+]poststarthook/bootstrap-controller ok\\n[+]poststarthook/rbac/bootstrap-roles ok\\n[+]poststarthook/scheduling/bootstrap-system-priority-classes ok\\n[+]poststarthook/priority-and-fairness-config-producer ok\\n[+]poststarthook/start-cluster-authentication-info-controller ok\\n[+]poststarthook/aggregator-reload-proxy-client-cert ok\\n[+]poststarthook/start-kube-aggregator-informers ok\\n[+]poststarthook/apiservice-registration-controller ok\\n[+]poststarthook/apiservice-status-available-controller ok\\n[+]poststarthook/kube-apiserver-autoregistration ok\\n[+]autoregister-completion ok\\n[+]poststarthook/apiservice-openapi-controller ok\\nhealthz check failed\") has prevented the request from succeeding (get healthz.meta.k8s.io)" subsys=k8s-client
+level=info msg="Delete endpoint request" containerID=9b78094dfd endpointID=820 k8sNamespace=tfap-lnp k8sPodName=load-test-bg7xt subsys=daemon
+level=info msg="Releasing key" key="[k8s:controller-uid=66e97bd5-0352-4bbd-919a-64f3f7c0a75c k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=tfap-lnp k8s:io.cilium.k8s.policy.cluster=kubernetes k8s:io.cilium.k8s.policy.serviceaccount=load-test k8s:io.kubernetes.pod.namespace=tfap-lnp k8s:job-name=load-test]" subsys=allocator
+level=info msg="Removed endpoint" containerID= datapathPolicyRevision=1 desiredPolicyRevision=1 endpointID=820 identity=1719 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Create endpoint request" addressing="&{10.0.0.142 e080796a-5731-4de3-b8bc-87da84084313 default   }" containerID=b43c644259ee676d022ad39ad582c0c09eb1658f8b0ca25c191e53429d38a094 datapathConfiguration="&{false false false false false <nil>}" interface=lxcdc5ab4e2c863 k8sPodName=tfap-lnp/load-test-sz6n2 labels="[]" subsys=daemon sync-build=true
+level=info msg="New endpoint" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=55 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Resolving identity labels (blocking)" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=55 identityLabels="k8s:controller-uid=8680840a-503b-4237-a3e5-4a7fb361f9c8,k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=tfap-lnp,k8s:io.cilium.k8s.policy.cluster=kubernetes,k8s:io.cilium.k8s.policy.serviceaccount=load-test,k8s:io.kubernetes.pod.namespace=tfap-lnp,k8s:job-name=load-test" ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Skipped non-kubernetes labels when labelling ciliumidentity. All labels will still be used in identity determination" labels="map[k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name:tfap-lnp]" subsys=crd-allocator
+level=warning msg="Key allocation attempt failed" attempt=0 error="slave key creation failed 'k8s:controller-uid=8680840a-503b-4237-a3e5-4a7fb361f9c8;k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=tfap-lnp;k8s:io.cilium.k8s.policy.cluster=kubernetes;k8s:io.cilium.k8s.policy.serviceaccount=load-test;k8s:io.kubernetes.pod.namespace=tfap-lnp;k8s:job-name=load-test;': identity (id:\"23463\",key:\"[k8s:controller-uid=8680840a-503b-4237-a3e5-4a7fb361f9c8 k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=tfap-lnp k8s:io.cilium.k8s.policy.cluster=kubernetes k8s:io.cilium.k8s.policy.serviceaccount=load-test k8s:io.kubernetes.pod.namespace=tfap-lnp k8s:job-name=load-test]\") does not exist" key="[k8s:controller-uid=8680840a-503b-4237-a3e5-4a7fb361f9c8 k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=tfap-lnp k8s:io.cilium.k8s.policy.cluster=kubernetes k8s:io.cilium.k8s.policy.serviceaccount=load-test k8s:io.kubernetes.pod.namespace=tfap-lnp k8s:job-name=load-test]" subsys=allocator
+level=info msg="regenerating all endpoints" reason="one or more identities created or deleted" subsys=endpoint-manager
+level=info msg="Invalid state transition skipped" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=55 endpointState.from=waiting-for-identity endpointState.to=waiting-to-regenerate file=/go/src/github.com/cilium/cilium/pkg/endpoint/policy.go ipv4= ipv6= k8sPodName=/ line=604 subsys=endpoint
+level=info msg="Reusing existing global key" key="k8s:controller-uid=8680840a-503b-4237-a3e5-4a7fb361f9c8;k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=tfap-lnp;k8s:io.cilium.k8s.policy.cluster=kubernetes;k8s:io.cilium.k8s.policy.serviceaccount=load-test;k8s:io.kubernetes.pod.namespace=tfap-lnp;k8s:job-name=load-test;" subsys=allocator
+level=info msg="Identity of endpoint changed" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=55 identity=23463 identityLabels="k8s:controller-uid=8680840a-503b-4237-a3e5-4a7fb361f9c8,k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=tfap-lnp,k8s:io.cilium.k8s.policy.cluster=kubernetes,k8s:io.cilium.k8s.policy.serviceaccount=load-test,k8s:io.kubernetes.pod.namespace=tfap-lnp,k8s:job-name=load-test" ipv4= ipv6= k8sPodName=/ oldIdentity="no identity" subsys=endpoint
+level=info msg="Waiting for endpoint to be generated" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=55 identity=23463 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Rewrote endpoint BPF program" containerID= datapathPolicyRevision=0 desiredPolicyRevision=1 endpointID=55 identity=23463 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Successful endpoint creation" containerID= datapathPolicyRevision=1 desiredPolicyRevision=1 endpointID=55 identity=23463 ipv4= ipv6= k8sPodName=/ subsys=daemon
+level=warning msg="Network status error received, restarting client connections" error="an error on the server (\"[+]ping ok\\n[+]log ok\\n[-]etcd failed: reason withheld\\n[+]poststarthook/start-kube-apiserver-admission-initializer ok\\n[+]poststarthook/generic-apiserver-start-informers ok\\n[+]poststarthook/priority-and-fairness-config-consumer ok\\n[+]poststarthook/priority-and-fairness-filter ok\\n[+]poststarthook/start-apiextensions-informers ok\\n[+]poststarthook/start-apiextensions-controllers ok\\n[+]poststarthook/crd-informer-synced ok\\n[+]poststarthook/bootstrap-controller ok\\n[+]poststarthook/rbac/bootstrap-roles ok\\n[+]poststarthook/scheduling/bootstrap-system-priority-classes ok\\n[+]poststarthook/priority-and-fairness-config-producer ok\\n[+]poststarthook/start-cluster-authentication-info-controller ok\\n[+]poststarthook/aggregator-reload-proxy-client-cert ok\\n[+]poststarthook/start-kube-aggregator-informers ok\\n[+]poststarthook/apiservice-registration-controller ok\\n[+]poststarthook/apiservice-status-available-controller ok\\n[+]poststarthook/kube-apiserver-autoregistration ok\\n[+]autoregister-completion ok\\n[+]poststarthook/apiservice-openapi-controller ok\\nhealthz check failed\") has prevented the request from succeeding (get healthz.meta.k8s.io)" subsys=k8s-client
+level=info msg="Delete endpoint request" containerID=b43c644259 endpointID=55 k8sNamespace=tfap-lnp k8sPodName=load-test-sz6n2 subsys=daemon
+level=info msg="Releasing key" key="[k8s:controller-uid=8680840a-503b-4237-a3e5-4a7fb361f9c8 k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=tfap-lnp k8s:io.cilium.k8s.policy.cluster=kubernetes k8s:io.cilium.k8s.policy.serviceaccount=load-test k8s:io.kubernetes.pod.namespace=tfap-lnp k8s:job-name=load-test]" subsys=allocator
+level=info msg="Removed endpoint" containerID= datapathPolicyRevision=1 desiredPolicyRevision=1 endpointID=55 identity=23463 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Create endpoint request" addressing="&{10.0.0.176 dd3e2182-a39c-4473-8f90-1d8154fd9faa default   }" containerID=c08c4caea98275ef0fb9dac068e9b43ee3a65ce1ffa5a270e4763fd991acd3f3 datapathConfiguration="&{false false false false false <nil>}" interface=lxc0d42dec57227 k8sPodName=kyverno/kyverno-cleanup-admission-reports-28281710-qdlxs labels="[]" subsys=daemon sync-build=true
+level=info msg="New endpoint" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=2990 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Resolving identity labels (blocking)" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=2990 identityLabels="k8s:controller-uid=5964b2b5-78ba-4f2d-8be3-9b30da66a4b8,k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kyverno,k8s:io.cilium.k8s.policy.cluster=kubernetes,k8s:io.cilium.k8s.policy.serviceaccount=kyverno-cleanup-jobs,k8s:io.kubernetes.pod.namespace=kyverno,k8s:job-name=kyverno-cleanup-admission-reports-28281710" ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Skipped non-kubernetes labels when labelling ciliumidentity. All labels will still be used in identity determination" labels="map[k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name:kyverno]" subsys=crd-allocator
+level=warning msg="Key allocation attempt failed" attempt=0 error="slave key creation failed 'k8s:controller-uid=5964b2b5-78ba-4f2d-8be3-9b30da66a4b8;k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kyverno;k8s:io.cilium.k8s.policy.cluster=kubernetes;k8s:io.cilium.k8s.policy.serviceaccount=kyverno-cleanup-jobs;k8s:io.kubernetes.pod.namespace=kyverno;k8s:job-name=kyverno-cleanup-admission-reports-28281710;': identity (id:\"22344\",key:\"[k8s:controller-uid=5964b2b5-78ba-4f2d-8be3-9b30da66a4b8 k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kyverno k8s:io.cilium.k8s.policy.cluster=kubernetes k8s:io.cilium.k8s.policy.serviceaccount=kyverno-cleanup-jobs k8s:io.kubernetes.pod.namespace=kyverno k8s:job-name=kyverno-cleanup-admission-reports-28281710]\") does not exist" key="[k8s:controller-uid=5964b2b5-78ba-4f2d-8be3-9b30da66a4b8 k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kyverno k8s:io.cilium.k8s.policy.cluster=kubernetes k8s:io.cilium.k8s.policy.serviceaccount=kyverno-cleanup-jobs k8s:io.kubernetes.pod.namespace=kyverno k8s:job-name=kyverno-cleanup-admission-reports-28281710]" subsys=allocator
+level=info msg="regenerating all endpoints" reason="one or more identities created or deleted" subsys=endpoint-manager
+level=info msg="Invalid state transition skipped" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=2990 endpointState.from=waiting-for-identity endpointState.to=waiting-to-regenerate file=/go/src/github.com/cilium/cilium/pkg/endpoint/policy.go ipv4= ipv6= k8sPodName=/ line=604 subsys=endpoint
+level=info msg="Reusing existing global key" key="k8s:controller-uid=5964b2b5-78ba-4f2d-8be3-9b30da66a4b8;k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kyverno;k8s:io.cilium.k8s.policy.cluster=kubernetes;k8s:io.cilium.k8s.policy.serviceaccount=kyverno-cleanup-jobs;k8s:io.kubernetes.pod.namespace=kyverno;k8s:job-name=kyverno-cleanup-admission-reports-28281710;" subsys=allocator
+level=info msg="Identity of endpoint changed" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=2990 identity=22344 identityLabels="k8s:controller-uid=5964b2b5-78ba-4f2d-8be3-9b30da66a4b8,k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kyverno,k8s:io.cilium.k8s.policy.cluster=kubernetes,k8s:io.cilium.k8s.policy.serviceaccount=kyverno-cleanup-jobs,k8s:io.kubernetes.pod.namespace=kyverno,k8s:job-name=kyverno-cleanup-admission-reports-28281710" ipv4= ipv6= k8sPodName=/ oldIdentity="no identity" subsys=endpoint
+level=info msg="Waiting for endpoint to be generated" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=2990 identity=22344 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Create endpoint request" addressing="&{10.0.0.11 41228c16-79bd-4ed3-af45-0c1b034a0744 default   }" containerID=31feb4876724712c83462f4290165dcd72e128177a5a2f8c2739df33083e2165 datapathConfiguration="&{false false false false false <nil>}" interface=lxcea0377cbe846 k8sPodName=kyverno/kyverno-cleanup-cluster-admission-reports-28281710-hqprp labels="[]" subsys=daemon sync-build=true
+level=info msg="New endpoint" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=284 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Resolving identity labels (blocking)" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=284 identityLabels="k8s:controller-uid=b2fb2e89-87bc-4fce-8a3e-a3b5889d479e,k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kyverno,k8s:io.cilium.k8s.policy.cluster=kubernetes,k8s:io.cilium.k8s.policy.serviceaccount=kyverno-cleanup-jobs,k8s:io.kubernetes.pod.namespace=kyverno,k8s:job-name=kyverno-cleanup-cluster-admission-reports-28281710" ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Skipped non-kubernetes labels when labelling ciliumidentity. All labels will still be used in identity determination" labels="map[k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name:kyverno]" subsys=crd-allocator
+level=info msg="Allocated new global key" key="k8s:controller-uid=b2fb2e89-87bc-4fce-8a3e-a3b5889d479e;k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kyverno;k8s:io.cilium.k8s.policy.cluster=kubernetes;k8s:io.cilium.k8s.policy.serviceaccount=kyverno-cleanup-jobs;k8s:io.kubernetes.pod.namespace=kyverno;k8s:job-name=kyverno-cleanup-cluster-admission-reports-28281710;" subsys=allocator
+level=info msg="Identity of endpoint changed" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=284 identity=7979 identityLabels="k8s:controller-uid=b2fb2e89-87bc-4fce-8a3e-a3b5889d479e,k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kyverno,k8s:io.cilium.k8s.policy.cluster=kubernetes,k8s:io.cilium.k8s.policy.serviceaccount=kyverno-cleanup-jobs,k8s:io.kubernetes.pod.namespace=kyverno,k8s:job-name=kyverno-cleanup-cluster-admission-reports-28281710" ipv4= ipv6= k8sPodName=/ oldIdentity="no identity" subsys=endpoint
+level=info msg="Waiting for endpoint to be generated" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=284 identity=7979 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Rewrote endpoint BPF program" containerID= datapathPolicyRevision=0 desiredPolicyRevision=1 endpointID=284 identity=7979 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Successful endpoint creation" containerID= datapathPolicyRevision=1 desiredPolicyRevision=1 endpointID=284 identity=7979 ipv4= ipv6= k8sPodName=/ subsys=daemon
+level=info msg="Rewrote endpoint BPF program" containerID= datapathPolicyRevision=0 desiredPolicyRevision=1 endpointID=2990 identity=22344 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Successful endpoint creation" containerID= datapathPolicyRevision=1 desiredPolicyRevision=1 endpointID=2990 identity=22344 ipv4= ipv6= k8sPodName=/ subsys=daemon
+level=info msg="regenerating all endpoints" reason="one or more identities created or deleted" subsys=endpoint-manager
+level=info msg="regenerating all endpoints" reason= subsys=endpoint-manager
+level=info msg="Delete endpoint request" containerID=31feb48767 endpointID=284 k8sNamespace=kyverno k8sPodName=kyverno-cleanup-cluster-admission-reports-28281710-hqprp subsys=daemon
+level=info msg="Releasing key" key="[k8s:controller-uid=b2fb2e89-87bc-4fce-8a3e-a3b5889d479e k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kyverno k8s:io.cilium.k8s.policy.cluster=kubernetes k8s:io.cilium.k8s.policy.serviceaccount=kyverno-cleanup-jobs k8s:io.kubernetes.pod.namespace=kyverno k8s:job-name=kyverno-cleanup-cluster-admission-reports-28281710]" subsys=allocator
+level=info msg="Delete endpoint request" containerID=c08c4caea9 endpointID=2990 k8sNamespace=kyverno k8sPodName=kyverno-cleanup-admission-reports-28281710-qdlxs subsys=daemon
+level=info msg="Releasing key" key="[k8s:controller-uid=5964b2b5-78ba-4f2d-8be3-9b30da66a4b8 k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kyverno k8s:io.cilium.k8s.policy.cluster=kubernetes k8s:io.cilium.k8s.policy.serviceaccount=kyverno-cleanup-jobs k8s:io.kubernetes.pod.namespace=kyverno k8s:job-name=kyverno-cleanup-admission-reports-28281710]" subsys=allocator
+level=info msg="Removed endpoint" containerID= datapathPolicyRevision=1 desiredPolicyRevision=1 endpointID=284 identity=7979 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Removed endpoint" containerID= datapathPolicyRevision=1 desiredPolicyRevision=1 endpointID=2990 identity=22344 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Create endpoint request" addressing="&{10.0.0.106 f258a936-54b8-4ddf-9c8c-a2c8339663f7 default   }" containerID=c6faa59d606d82381dfdafe27c67da288ce819309311d59a98e4c5e5b16ecdc2 datapathConfiguration="&{false false false false false <nil>}" interface=lxc4338120ba29e k8sPodName=tfap-lnp/load-test-rmwpd labels="[]" subsys=daemon sync-build=true
+level=info msg="New endpoint" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=95 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Resolving identity labels (blocking)" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=95 identityLabels="k8s:controller-uid=94dcef39-a4b3-4542-a40f-ab030096ada9,k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=tfap-lnp,k8s:io.cilium.k8s.policy.cluster=kubernetes,k8s:io.cilium.k8s.policy.serviceaccount=load-test,k8s:io.kubernetes.pod.namespace=tfap-lnp,k8s:job-name=load-test" ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Skipped non-kubernetes labels when labelling ciliumidentity. All labels will still be used in identity determination" labels="map[k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name:tfap-lnp]" subsys=crd-allocator
+level=warning msg="Key allocation attempt failed" attempt=0 error="slave key creation failed 'k8s:controller-uid=94dcef39-a4b3-4542-a40f-ab030096ada9;k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=tfap-lnp;k8s:io.cilium.k8s.policy.cluster=kubernetes;k8s:io.cilium.k8s.policy.serviceaccount=load-test;k8s:io.kubernetes.pod.namespace=tfap-lnp;k8s:job-name=load-test;': identity (id:\"7851\",key:\"[k8s:controller-uid=94dcef39-a4b3-4542-a40f-ab030096ada9 k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=tfap-lnp k8s:io.cilium.k8s.policy.cluster=kubernetes k8s:io.cilium.k8s.policy.serviceaccount=load-test k8s:io.kubernetes.pod.namespace=tfap-lnp k8s:job-name=load-test]\") does not exist" key="[k8s:controller-uid=94dcef39-a4b3-4542-a40f-ab030096ada9 k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=tfap-lnp k8s:io.cilium.k8s.policy.cluster=kubernetes k8s:io.cilium.k8s.policy.serviceaccount=load-test k8s:io.kubernetes.pod.namespace=tfap-lnp k8s:job-name=load-test]" subsys=allocator
+level=info msg="regenerating all endpoints" reason="one or more identities created or deleted" subsys=endpoint-manager
+level=info msg="Invalid state transition skipped" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=95 endpointState.from=waiting-for-identity endpointState.to=waiting-to-regenerate file=/go/src/github.com/cilium/cilium/pkg/endpoint/policy.go ipv4= ipv6= k8sPodName=/ line=604 subsys=endpoint
+level=info msg="Reusing existing global key" key="k8s:controller-uid=94dcef39-a4b3-4542-a40f-ab030096ada9;k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=tfap-lnp;k8s:io.cilium.k8s.policy.cluster=kubernetes;k8s:io.cilium.k8s.policy.serviceaccount=load-test;k8s:io.kubernetes.pod.namespace=tfap-lnp;k8s:job-name=load-test;" subsys=allocator
+level=info msg="Identity of endpoint changed" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=95 identity=7851 identityLabels="k8s:controller-uid=94dcef39-a4b3-4542-a40f-ab030096ada9,k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=tfap-lnp,k8s:io.cilium.k8s.policy.cluster=kubernetes,k8s:io.cilium.k8s.policy.serviceaccount=load-test,k8s:io.kubernetes.pod.namespace=tfap-lnp,k8s:job-name=load-test" ipv4= ipv6= k8sPodName=/ oldIdentity="no identity" subsys=endpoint
+level=info msg="Waiting for endpoint to be generated" containerID= datapathPolicyRevision=0 desiredPolicyRevision=0 endpointID=95 identity=7851 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Rewrote endpoint BPF program" containerID= datapathPolicyRevision=0 desiredPolicyRevision=1 endpointID=95 identity=7851 ipv4= ipv6= k8sPodName=/ subsys=endpoint
+level=info msg="Successful endpoint creation" containerID= datapathPolicyRevision=1 desiredPolicyRevision=1 endpointID=95 identity=7851 ipv4= ipv6= k8sPodName=/ subsys=daemon
+level=warning msg="Network status error received, restarting client connections" error="an error on the server (\"[+]ping ok\\n[+]log ok\\n[-]etcd failed: reason withheld\\n[+]poststarthook/start-kube-apiserver-admission-initializer ok\\n[+]poststarthook/generic-apiserver-start-informers ok\\n[+]poststarthook/priority-and-fairness-config-consumer ok\\n[+]poststarthook/priority-and-fairness-filter ok\\n[+]poststarthook/start-apiextensions-informers ok\\n[+]poststarthook/start-apiextensions-controllers ok\\n[+]poststarthook/crd-informer-synced ok\\n[+]poststarthook/bootstrap-controller ok\\n[+]poststarthook/rbac/bootstrap-roles ok\\n[+]poststarthook/scheduling/bootstrap-system-priority-classes ok\\n[+]poststarthook/priority-and-fairness-config-producer ok\\n[+]poststarthook/start-cluster-authentication-info-controller ok\\n[+]poststarthook/aggregator-reload-proxy-client-cert ok\\n[+]poststarthook/start-kube-aggregator-informers ok\\n[+]poststarthook/apiservice-registration-controller ok\\n[+]poststarthook/apiservice-status-available-controller ok\\n[+]poststarthook/kube-apiserver-autoregistration ok\\n[+]autoregister-completion ok\\n[+]poststarthook/apiservice-openapi-controller ok\\nhealthz check failed\") has prevented the request from succeeding (get healthz.meta.k8s.io)" subsys=k8s-client

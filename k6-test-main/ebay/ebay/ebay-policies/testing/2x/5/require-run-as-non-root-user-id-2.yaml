@@ -1,0 +1,71 @@
+apiVersion: kyverno.io/v1
+kind: ClusterPolicy
+metadata:
+  name: require-run-as-non-root-2-user-id-2-dev-2
+  annotations:
+    policies.kyverno.io/title: Require Run As Non-Root User
+    policies.kyverno.io/description: >-
+      Containers must be required to run as non-root users. This policy ensures
+      `runAsUser` is either unset or set to a number greater than zero.
+spec:
+  validationFailureAction: enforce
+  background: false
+  rules:
+    - name: run-as-non-root-2-user-id-2
+      exclude:
+        any:
+        - resources:
+            kinds:
+            - Pod
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+                  - stagingrnpci
+                - key: application.tess.io/name
+                  operator: In
+                  values:
+                  - tfap-lnp
+      match:
+        any:
+        - resources:
+            kinds:
+              - Pod
+            namespaces:
+              - tfap-lnp
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+                  - stagingrnpci
+      validate:
+        message: >-
+          Running as root is not allowed. The fields spec.securityContext.runAsUser,
+          spec.containers[*].securityContext.runAsUser, spec.initContainers[*].securityContext.runAsUser,
+          and spec.ephemeralContainers[*].securityContext.runAsUser must be unset or
+          set to a number greater than zero.
+        pattern:
+          spec:
+            =(securityContext):
+              =(runAsUser): ">0"
+            =(ephemeralContainers):
+            - =(securityContext):
+                =(runAsUser): ">0"
+            =(initContainers):
+            - =(securityContext):
+                =(runAsUser): ">0"
+            containers:
+            - =(securityContext):
+                =(runAsUser): ">0"

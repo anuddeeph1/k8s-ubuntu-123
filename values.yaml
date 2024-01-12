@@ -1,0 +1,19 @@
+kyverno:
+  # Kyverno Helm Chart customizations other than those already in kyverno CR
+  helm:
+    admissionController:
+      initContainer:
+        resources:
+          limits:
+            memory: 256Mi
+          requests:
+            cpu: 10m
+            memory: 128Mi
+      container:
+        resources:
+          limits:
+            cpu: 256m
+            memory: 512Gi
+          requests:
+            cpu: 100m
+            memory: 128Mi

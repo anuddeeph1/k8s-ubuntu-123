@@ -1,0 +1,34 @@
+apiVersion: kyverno.io/v1
+kind: ClusterPolicy
+metadata:
+  name: psa
+spec:
+  background: true
+  validationFailureAction: Enforce
+  rules:
+  - name: restricted
+    match:
+      all:
+      - resources:
+          kinds:
+          - Pod
+          namespaces:
+          - tfap-lnp
+          operations:
+          - CREATE
+          - UPDATE 
+          selector:
+            matchExpressions:
+            - key: environment.tess.io/name
+              operator: In
+              values:
+              - dev
+              - feature
+              - lnp
+              - staging
+              - stagingpci
+              - stagingrnpci
+    validate:
+      podSecurity:
+        level: restricted
+        version: v1.25

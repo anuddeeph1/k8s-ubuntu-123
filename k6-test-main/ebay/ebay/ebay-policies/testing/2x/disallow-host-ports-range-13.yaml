@@ -1,0 +1,62 @@
+apiVersion: kyverno.io/v1
+kind: ClusterPolicy
+metadata:
+  name: disallow-host-policy-ports-range-dev-13
+  annotations:
+    policies.kyverno.io/title: Disallow hostPorts Range (Alternate)
+    policies.kyverno.io/description: >-
+      Access to host ports allows potential snooping of network traffic and should not be
+      allowed, or at minimum restricted to a known list. This policy ensures the `hostPort`
+      field is set to one in the designated list. 
+spec:
+  validationFailureAction: enforce
+  background: false
+  rules:
+    - name: disallow-host-rule-ports-range-13
+      exclude:
+        any:
+        - resources:
+            kinds:
+            - Pod
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+                  - stagingrnpci
+                - key: application.tess.io/name
+                  operator: In
+                  values:
+                  - tfap-lnp
+      match:
+        any:
+        - resources:
+            kinds:
+              - Pod
+            namespaces:
+              - tfap-lnp
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+                  - stagingrnpci
+      validate:
+        message: >-
+          The only permitted hostPorts are in the range 5000-6000.
+        deny:
+          conditions:
+            all:
+            - key: "{{ request.object.spec.[ephemeralContainers, initContainers, containers][].ports[].hostPort }}"
+              operator: AnyNotIn
+              value: 1024-65352

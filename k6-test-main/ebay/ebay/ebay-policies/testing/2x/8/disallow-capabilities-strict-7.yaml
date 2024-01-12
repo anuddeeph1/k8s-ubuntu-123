@@ -1,0 +1,1703 @@
+apiVersion: kyverno.io/v1
+kind: ClusterPolicy
+metadata:
+  name: disallow-capabilities-strict-dev-7
+  annotations:
+    policies.kyverno.io/title: Disallow Capabilities (Strict)
+    policies.kyverno.io/description: >-
+      Adding capabilities other than Approved is disallowed. In addition,
+      all containers must explicitly drop `ALL` capabilities.
+spec:
+  validationFailureAction: Enforce
+  webhookTimeoutSeconds: 30
+  background: false
+  rules:
+    - name: require-drop-cap_net_raw-7
+      exclude:
+        any:
+        - resources:
+            kinds:
+            - Pod
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+                  - stagingrnpci
+                - key: application.tess.io/name
+                  operator: In
+                  values:
+                  - tfap-lnp
+      match:
+        any:
+        - resources:
+            kinds:
+              - Pod
+            namespaces:
+              - tfap-lnp
+            operations: 
+              - CREATE
+              - UPDATE
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+                  - stagingrnpci
+      validate:
+        message: >-
+          Containers must drop `CAP_NET_RAW` capabilities.
+        foreach:
+          - list: request.object.spec.[ephemeralContainers, initContainers, containers][]
+            deny:
+              conditions:
+                all:
+                - key: "{{ element.securityContext.capabilities.add[] || `[]` }}"
+                  operator: AnyIn
+                  value: 
+                  - CAP_NET_RAW
+                  - ''
+    - name: require-drop-cap_net_bind_service-7
+      exclude:
+        any:
+        - resources:
+            kinds:
+            - Pod
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+                  - stagingrnpci
+                - key: application.tess.io/name
+                  operator: In
+                  values:
+                  - tfap-lnp
+      match:
+        any:
+        - resources:
+            kinds:
+              - Pod
+            namespaces:
+              - tfap-lnp
+            operations:
+              - CREATE
+              - UPDATE
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+                  - stagingrnpci
+      validate:
+        message: >-
+          Containers must drop `CAP_NET_BIND_SERVICE` capabilities.
+        foreach:
+          - list: request.object.spec.[ephemeralContainers, initContainers, containers][]
+            deny:
+              conditions:
+                all:
+                - key: "{{ element.securityContext.capabilities.add[] || `[]` }}"
+                  operator: AnyIn
+                  value: 
+                  - NET_BIND_SERVICE
+                  - ''
+    - name: require-drop-cap_setuid-7
+      exclude:
+        any:
+        - resources:
+            kinds:
+            - Pod
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+                  - stagingrnpci
+                - key: application.tess.io/name
+                  operator: In
+                  values:
+                  - tfap-lnp
+      match:
+        any:
+        - resources:
+            kinds:
+              - Pod
+            namespaces:
+              - tfap-lnp
+            operations:
+              - CREATE
+              - UPDATE
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+                  - stagingrnpci
+      validate:
+        message: >-
+          Containers must drop `CAP_SETUID` capabilities.
+        foreach:
+          - list: request.object.spec.[ephemeralContainers, initContainers, containers][]
+            deny:
+              conditions:
+                all:
+                - key: "{{ element.securityContext.capabilities.add[] || `[]` }}"
+                  operator: AnyIn
+                  value: 
+                  - SETUID
+                  - ''
+    - name: require-drop-cap_setgid-7
+      exclude:
+        any:
+        - resources:
+            kinds:
+            - Pod
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+                  - stagingrnpci
+                - key: application.tess.io/name
+                  operator: In
+                  values:
+                  - tfap-lnp
+      match:
+        any:
+        - resources:
+            kinds:
+              - Pod
+            namespaces:
+              - tfap-lnp
+            operations:
+              - CREATE
+              - UPDATE
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+                  - stagingrnpci
+      validate:
+        message: >-
+          Containers must drop `CAP_SETGID` capabilities.
+        foreach:
+          - list: request.object.spec.[ephemeralContainers, initContainers, containers][]
+            deny:
+              conditions:
+                all:
+                - key: "{{ element.securityContext.capabilities.add[] || `[]` }}"
+                  operator: AnyIn
+                  value: 
+                  - SETGID
+                  - ''
+    - name: require-drop-cap-sys_admin-7
+      exclude:
+        any:
+        - resources:
+            kinds:
+            - Pod
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+                  - stagingrnpci
+                - key: application.tess.io/name
+                  operator: In
+                  values:
+                  - tfap-lnp
+      match:
+        any:
+        - resources:
+            kinds:
+              - Pod
+            namespaces:
+              - tfap-lnp
+            operations:
+              - CREATE
+              - UPDATE
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+                  - stagingrnpci
+      validate:
+        message: >-
+          Containers must drop `SYS_ADMIN` capabilities.
+        foreach:
+          - list: request.object.spec.[ephemeralContainers, initContainers, containers][]
+            deny:
+              conditions:
+                all:
+                - key: "{{ element.securityContext.capabilities.add[] || `[]` }}"
+                  operator: AnyIn
+                  value:
+                  - SYS_ADMIN
+                  - ''
+    - name: require-drop-cap-net_admin-7
+      exclude:
+        any:
+        - resources:
+            kinds:
+            - Pod
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+                  - stagingrnpci
+                - key: application.tess.io/name
+                  operator: In
+                  values:
+                  - tfap-lnp
+      match:
+        any:
+        - resources:
+            kinds:
+              - Pod
+            namespaces:
+              - tfap-lnp
+            operations:
+              - CREATE
+              - UPDATE
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+                  - stagingrnpci
+      validate:
+        message: >-
+          Containers must drop `NET_ADMIN` capabilities.
+        foreach:
+          - list: request.object.spec.[ephemeralContainers, initContainers, containers][]
+            deny:
+              conditions:
+                all:
+                - key: "{{ element.securityContext.capabilities.add[] || `[]` }}"
+                  operator: AnyIn
+                  value:
+                  - NET_ADMIN
+                  - ''
+    - name: require-drop-cap-AUDIT_CONTROL-7
+      exclude:
+        any:
+        - resources:
+            kinds:
+            - Pod
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+                  - stagingrnpci
+                - key: application.tess.io/name
+                  operator: In
+                  values:
+                  - tfap-lnp
+      match:
+        any:
+        - resources:
+            kinds:
+              - Pod
+            namespaces:
+              - tfap-lnp
+            operations:
+              - CREATE
+              - UPDATE
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+                  - stagingrnpci
+      validate:
+        message: >-
+          Containers must drop `AUDIT_CONTROL` capabilities.
+        foreach:
+          - list: request.object.spec.[ephemeralContainers, initContainers, containers][]
+            deny:
+              conditions:
+                all:
+                - key: "{{ element.securityContext.capabilities.add[] || `[]` }}"
+                  operator: AnyIn
+                  value:
+                  - AUDIT_CONTROL
+                  - ''
+    - name: require-drop-cap-AUDIT_READ-7
+      exclude:
+        any:
+        - resources:
+            kinds:
+            - Pod
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+                  - stagingrnpci
+                - key: application.tess.io/name
+                  operator: In
+                  values:
+                  - tfap-lnp
+      match:
+        any:
+        - resources:
+            kinds:
+              - Pod
+            namespaces:
+              - tfap-lnp
+            operations:
+              - CREATE
+              - UPDATE
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+                  - stagingrnpci
+      validate:
+        message: >-
+          Containers must drop `AUDIT_READ` capabilities.
+        foreach:
+          - list: request.object.spec.[ephemeralContainers, initContainers, containers][]
+            deny:
+              conditions:
+                all:
+                - key: "{{ element.securityContext.capabilities.add[] || `[]` }}"
+                  operator: AnyIn
+                  value:
+                  - AUDIT_READ
+                  - ''
+    - name: require-drop-cap-BLOCK_SUSPEND-7
+      exclude:
+        any:
+        - resources:
+            kinds:
+            - Pod
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+                  - stagingrnpci
+                - key: application.tess.io/name
+                  operator: In
+                  values:
+                  - tfap-lnp
+      match:
+        any:
+        - resources:
+            kinds:
+              - Pod
+            namespaces:
+              - tfap-lnp
+            operations:
+              - CREATE
+              - UPDATE
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+                  - stagingrnpci
+      validate:
+        message: >-
+          Containers must drop `BLOCK_SUSPEND` capabilities.
+        foreach:
+          - list: request.object.spec.[ephemeralContainers, initContainers, containers][]
+            deny:
+              conditions:
+                all:
+                - key: "{{ element.securityContext.capabilities.add[] || `[]` }}"
+                  operator: AnyIn
+                  value:
+                  - BLOCK_SUSPEND
+                  - ''
+    - name: require-drop-cap-BPF-7
+      exclude:
+        any:
+        - resources:
+            kinds:
+            - Pod
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+                  - stagingrnpci
+                - key: application.tess.io/name
+                  operator: In
+                  values:
+                  - tfap-lnp
+      match:
+        any:
+        - resources:
+            kinds:
+              - Pod
+            namespaces:
+              - tfap-lnp
+            operations:
+              - CREATE
+              - UPDATE
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+      validate:
+        message: >-
+          Containers must drop `BPF` capabilities.
+        foreach:
+          - list: request.object.spec.[ephemeralContainers, initContainers, containers][]
+            deny:
+              conditions:
+                all:
+                - key: "{{ element.securityContext.capabilities.add[] || `[]` }}"
+                  operator: AnyIn
+                  value:
+                  - BPF
+                  - ''
+    - name: require-drop-cap-CHECKPOINT_RESTORE-7
+      exclude:
+        any:
+        - resources:
+            kinds:
+            - Pod
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+                  - stagingrnpci
+                - key: application.tess.io/name
+                  operator: In
+                  values:
+                  - tfap-lnp
+      match:
+        any:
+        - resources:
+            kinds:
+              - Pod
+            namespaces:
+              - tfap-lnp
+            operations:
+              - CREATE
+              - UPDATE
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+                  - stagingrnpci
+      validate:
+        message: >-
+          Containers must drop `CHECKPOINT_RESTORE` capabilities.
+        foreach:
+          - list: request.object.spec.[ephemeralContainers, initContainers, containers][]
+            deny:
+              conditions:
+                all:
+                - key: "{{ element.securityContext.capabilities.add[] || `[]` }}"
+                  operator: AnyIn
+                  value:
+                  - CHECKPOINT_RESTORE
+                  - ''
+    - name: require-drop-cap-DAC_READ_SEARCH-7
+      exclude:
+        any:
+        - resources:
+            kinds:
+            - Pod
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+                  - stagingrnpci
+                - key: application.tess.io/name
+                  operator: In
+                  values:
+                  - tfap-lnp
+      match:
+        any:
+        - resources:
+            kinds:
+              - Pod
+            namespaces:
+              - tfap-lnp
+            operations:
+              - CREATE
+              - UPDATE
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+                  - stagingrnpci
+      validate:
+        message: >-
+          Containers must drop `DAC_READ_SEARCH` capabilities.
+        foreach:
+          - list: request.object.spec.[ephemeralContainers, initContainers, containers][]
+            deny:
+              conditions:
+                all:
+                - key: "{{ element.securityContext.capabilities.add[] || `[]` }}"
+                  operator: AnyIn
+                  value:
+                  - DAC_READ_SEARCH
+                  - ''
+    - name: require-drop-cap-IPC_LOCK-7
+      exclude:
+        any:
+        - resources:
+            kinds:
+            - Pod
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+                  - stagingrnpci
+                - key: application.tess.io/name
+                  operator: In
+                  values:
+                  - tfap-lnp
+      match:
+        any:
+        - resources:
+            kinds:
+              - Pod
+            namespaces:
+              - tfap-lnp
+            operations:
+              - CREATE
+              - UPDATE
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+                  - stagingrnpci
+      validate:
+        message: >-                 
+          Containers must drop `IPC_LOCK` capabilities.
+        foreach:
+          - list: request.object.spec.[ephemeralContainers, initContainers, containers][]
+            deny:
+              conditions:
+                all:
+                - key: "{{ element.securityContext.capabilities.add[] || `[]` }}"
+                  operator: AnyIn
+                  value:
+                  - IPC_LOCK
+                  - ''
+    - name: require-drop-cap-IPC_OWNER-7
+      exclude:
+        any:
+        - resources:
+            kinds:
+            - Pod
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+                  - stagingrnpci
+                - key: application.tess.io/name
+                  operator: In
+                  values:
+                  - tfap-lnp
+      match:
+        any:
+        - resources:
+            kinds:
+              - Pod
+            namespaces:
+              - tfap-lnp
+            operations:
+              - CREATE
+              - UPDATE
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+                  - stagingrnpci
+      validate:
+        message: >-
+          Containers must drop `IPC_OWNER` capabilities.
+        foreach:
+          - list: request.object.spec.[ephemeralContainers, initContainers, containers][]
+            deny:
+              conditions:
+                all:
+                - key: "{{ element.securityContext.capabilities.add[] || `[]` }}"
+                  operator: AnyIn
+                  value:
+                  - IPC_OWNER
+                  - ''
+    - name: require-drop-cap-LEASE-7
+      exclude:
+        any:
+        - resources:
+            kinds:
+            - Pod
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+                  - stagingrnpci
+                - key: application.tess.io/name
+                  operator: In
+                  values:
+                  - tfap-lnp
+      match:
+        any:
+        - resources:
+            kinds:
+              - Pod
+            namespaces:
+              - tfap-lnp
+            operations:
+              - CREATE
+              - UPDATE
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+                  - stagingrnpci
+      validate:
+        message: >-
+          Containers must drop `LEASE` capabilities.
+        foreach:
+          - list: request.object.spec.[ephemeralContainers, initContainers, containers][]
+            deny:
+              conditions:
+                all:
+                - key: "{{ element.securityContext.capabilities.add[] || `[]` }}"
+                  operator: AnyIn
+                  value:
+                  - LEASE
+                  - ''
+    - name: require-drop-cap-LINUX_IMMUTABLE-7
+      exclude:
+        any:
+        - resources:
+            kinds:
+            - Pod
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+                  - stagingrnpci
+                - key: application.tess.io/name
+                  operator: In
+                  values:
+                  - tfap-lnp
+      match:
+        any:
+        - resources:
+            kinds:
+              - Pod
+            namespaces:
+              - tfap-lnp
+            operations:
+              - CREATE
+              - UPDATE
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+                  - stagingrnpci
+      validate:
+        message: >-
+          Containers must drop `LINUX_IMMUTABLE` capabilities.
+        foreach:
+          - list: request.object.spec.[ephemeralContainers, initContainers, containers][]
+            deny:
+              conditions:
+                all:
+                - key: "{{ element.securityContext.capabilities.add[] || `[]` }}"
+                  operator: AnyIn
+                  value:
+                  - LINUX_IMMUTABLE
+                  - ''
+    - name: require-drop-cap-MAC_ADMIN-7
+      exclude:
+        any:
+        - resources:
+            kinds:
+            - Pod
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+                  - stagingrnpci
+                - key: application.tess.io/name
+                  operator: In
+                  values:
+                  - tfap-lnp
+      match:
+        any:
+        - resources:
+            kinds:
+              - Pod
+            namespaces:
+              - tfap-lnp
+            operations:
+              - CREATE
+              - UPDATE
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+                  - stagingrnpci
+      validate:
+        message: >-
+          Containers must drop `MAC_ADMIN` capabilities.
+        foreach:
+          - list: request.object.spec.[ephemeralContainers, initContainers, containers][]
+            deny:
+              conditions:
+                all:
+                - key: "{{ element.securityContext.capabilities.add[] || `[]` }}"
+                  operator: AnyIn
+                  value:
+                  - MAC_ADMIN
+                  - ''
+    - name: require-drop-cap-MAC_OVERRIDE-7
+      exclude:
+        any:
+        - resources:
+            kinds:
+            - Pod
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+                  - stagingrnpci
+                - key: application.tess.io/name
+                  operator: In
+                  values:
+                  - tfap-lnp
+      match:
+        any:
+        - resources:
+            kinds:
+              - Pod
+            namespaces:
+              - tfap-lnp
+            operations:
+              - CREATE
+              - UPDATE
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+                  - stagingrnpci
+      preconditions:
+        all:
+        - key: "{{ request.operation || 'BACKGROUND' }}"
+          operator: NotEquals
+          value: DELETE
+      validate:
+        message: >-
+          Containers must drop `MAC_OVERRIDE` capabilities.
+        foreach:
+          - list: request.object.spec.[ephemeralContainers, initContainers, containers][]
+            deny:
+              conditions:
+                all:
+                - key: "{{ element.securityContext.capabilities.add[] || `[]` }}"
+                  operator: AnyIn
+                  value:
+                  - MAC_OVERRIDE
+                  - ''
+    - name: require-drop-cap-NET_BROADCAST-7
+      exclude:
+        any:
+        - resources:
+            kinds:
+            - Pod
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+                  - stagingrnpci
+                - key: application.tess.io/name
+                  operator: In
+                  values:
+                  - tfap-lnp
+      match:
+        any:
+        - resources:
+            kinds:
+              - Pod
+            namespaces:
+              - tfap-lnp
+            operations:
+              - CREATE
+              - UPDATE
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+                  - stagingrnpci
+      validate:
+        message: >-
+          Containers must drop `NET_BROADCAST` capabilities.
+        foreach:
+          - list: request.object.spec.[ephemeralContainers, initContainers, containers][]
+            deny:
+              conditions:
+                all:
+                - key: "{{ element.securityContext.capabilities.add[] || `[]` }}"
+                  operator: AnyIn
+                  value:
+                  - NET_BROADCAST
+                  - ''
+    - name: require-drop-cap-PERFMON-7
+      exclude:
+        any:
+        - resources:
+            kinds:
+            - Pod
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+                  - stagingrnpci
+                - key: application.tess.io/name
+                  operator: In
+                  values:
+                  - tfap-lnp
+      match:
+        any:
+        - resources:
+            kinds:
+              - Pod
+            namespaces:
+              - tfap-lnp
+            operations:
+              - CREATE
+              - UPDATE
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+                  - stagingrnpci
+      validate:
+        message: >-
+          Containers must drop `PERFMON` capabilities.
+        foreach:
+          - list: request.object.spec.[ephemeralContainers, initContainers, containers][]
+            deny:
+              conditions:
+                all:
+                - key: "{{ element.securityContext.capabilities.add[] || `[]` }}"
+                  operator: AnyIn
+                  value:
+                  - PERFMON
+                  - ''
+    - name: require-drop-cap-SYS_BOOT-7
+      exclude:
+        any:
+        - resources:
+            kinds:
+            - Pod
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+                  - stagingrnpci
+                - key: application.tess.io/name
+                  operator: In
+                  values:
+                  - tfap-lnp
+      match:
+        any:
+        - resources:
+            kinds:
+              - Pod
+            namespaces:
+              - tfap-lnp
+            operations:
+              - CREATE
+              - UPDATE
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+                  - stagingrnpci
+      validate:
+        message:
+          Containers must drop `SYS_BOOT` capabilities.
+        foreach:
+          - list: request.object.spec.[ephemeralContainers, initContainers, containers][]
+            deny:
+              conditions:
+                all:
+                - key: "{{ element.securityContext.capabilities.add[] || `[]` }}"
+                  operator: AnyIn
+                  value:
+                  - SYS_BOOT
+                  - ''
+    - name: require-drop-cap-SYS_MODULE-7
+      exclude:
+        any:
+        - resources:
+            kinds:
+            - Pod
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+                  - stagingrnpci
+                - key: application.tess.io/name
+                  operator: In
+                  values:
+                  - tfap-lnp
+      match:
+        any:
+        - resources:
+            kinds:
+              - Pod
+            namespaces:
+              - tfap-lnp
+            operations:
+              - CREATE
+              - UPDATE
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+                  - stagingrnpci
+      validate:
+        message: >-
+          Containers must drop `SYS_MODULE` capabilities.
+        foreach:
+          - list: request.object.spec.[ephemeralContainers, initContainers, containers][]
+            deny:
+              conditions:
+                all:
+                - key: "{{ element.securityContext.capabilities.add[] || `[]` }}"
+                  operator: AnyIn
+                  value:
+                  - SYS_MODULE
+                  - ''
+    - name: require-drop-cap-SYS_NICE-7
+      exclude:
+        any:
+        - resources:
+            kinds:
+            - Pod
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+                  - stagingrnpci
+                - key: application.tess.io/name
+                  operator: In
+                  values:
+                  - tfap-lnp
+      match:
+        any:
+        - resources:
+            kinds:
+              - Pod
+            namespaces:
+              - tfap-lnp
+            operations:
+              - CREATE
+              - UPDATE
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+                  - stagingrnpci
+      validate:
+        message: >-
+          Containers must drop `SYS_NICE` capabilities.
+        foreach:
+          - list: request.object.spec.[ephemeralContainers, initContainers, containers][]
+            deny:
+              conditions:
+                all:
+                - key: "{{ element.securityContext.capabilities.add[] || `[]` }}"
+                  operator: AnyIn
+                  value:
+                  - SYS_NICE
+                  - ''
+    - name: require-drop-cap-SYS_PACCT-7
+      exclude:
+        any:
+        - resources:
+            kinds:
+            - Pod
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+                  - stagingrnpci
+                - key: application.tess.io/name
+                  operator: In
+                  values:
+                  - tfap-lnp
+      match:
+        any:
+        - resources:
+            kinds:
+              - Pod
+            namespaces:
+              - tfap-lnp
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+                  - stagingrnpci
+      validate:
+        message: >-
+          Containers must drop `SYS_PACCT` capabilities.
+        foreach:
+          - list: request.object.spec.[ephemeralContainers, initContainers, containers][]
+            deny:
+              conditions:
+                all:
+                - key: "{{ element.securityContext.capabilities.add[] || `[]` }}"
+                  operator: AnyIn
+                  value:
+                  - SYS_PACCT
+                  - ''
+    - name: require-drop-cap-SYS_PTRACE-7
+      exclude:
+        any:
+        - resources:
+            kinds:
+            - Pod
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+                  - stagingrnpci
+                - key: application.tess.io/name
+                  operator: In
+                  values:
+                  - tfap-lnp
+      match:
+        any:
+        - resources:
+            kinds:
+              - Pod
+            namespaces:
+              - tfap-lnp
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+                  - stagingrnpci
+      validate:
+        message: >-
+          Containers must drop `SYS_PTRACE` capabilities.
+        foreach:
+          - list: request.object.spec.[ephemeralContainers, initContainers, containers][]
+            deny:
+              conditions:
+                all:
+                - key: "{{ element.securityContext.capabilities.add[] || `[]` }}"
+                  operator: AnyIn
+                  value:
+                  - SYS_PTRACE
+                  - ''
+    - name: require-drop-cap-SYS_RAWIO-7
+      exclude:
+        any:
+        - resources:
+            kinds:
+            - Pod
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+                  - stagingrnpci
+                - key: application.tess.io/name
+                  operator: In
+                  values:
+                  - tfap-lnp
+      match:
+        any:
+        - resources:
+            kinds:
+              - Pod
+            namespaces:
+              - tfap-lnp
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+                  - stagingrnpci
+      validate:
+        message: >-
+          Containers must drop `SYS_RAWIO` capabilities.
+        foreach:
+          - list: request.object.spec.[ephemeralContainers, initContainers, containers][]
+            deny:
+              conditions:
+                all:
+                - key: "{{ element.securityContext.capabilities.add[] || `[]` }}"
+                  operator: AnyIn
+                  value:
+                  - SYS_RAWIO
+                  - ''
+    - name: require-drop-cap-SYS_RESOURCE-7
+      exclude:
+        any:
+        - resources:
+            kinds:
+            - Pod
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+                  - stagingrnpci
+                - key: application.tess.io/name
+                  operator: In
+                  values:
+                  - tfap-lnp
+      match:
+        any:
+        - resources:
+            kinds:
+              - Pod
+            namespaces:
+              - tfap-lnp
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+                  - stagingrnpci
+      validate:
+        message: >-
+          Containers must drop `SYS_RESOURCE` capabilities.
+        foreach:
+          - list: request.object.spec.[ephemeralContainers, initContainers, containers][]
+            deny:
+              conditions:
+                all:
+                - key: "{{ element.securityContext.capabilities.add[] || `[]` }}"
+                  operator: AnyIn
+                  value:
+                  - SYS_RESOURCE
+                  - ''
+    - name: require-drop-cap-SYS_TIME-7
+      exclude:
+        any:
+        - resources:
+            kinds:
+            - Pod
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+                  - stagingrnpci
+                - key: application.tess.io/name
+                  operator: In
+                  values:
+                  - tfap-lnp
+      match:
+        any:
+        - resources:
+            kinds:
+              - Pod
+            namespaces:
+              - tfap-lnp
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+                  - stagingrnpci
+      validate:
+        message: >-
+          Containers must drop `SYS_TIME` capabilities.
+        foreach:
+          - list: request.object.spec.[ephemeralContainers, initContainers, containers][]
+            deny:
+              conditions:
+                all:
+                - key: "{{ element.securityContext.capabilities.add[] || `[]` }}"
+                  operator: AnyIn
+                  value:
+                  - SYS_TIME
+                  - ''
+    - name: require-drop-cap-SYS_TTY_CONFIG-7
+      exclude:
+        any:
+        - resources:
+            kinds:
+            - Pod
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+                  - stagingrnpci
+                - key: application.tess.io/name
+                  operator: In
+                  values:
+                  - tfap-lnp
+      match:
+        any:
+        - resources:
+            kinds:
+              - Pod
+            namespaces:
+              - tfap-lnp
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+                  - stagingrnpci
+      validate:
+        message: >-
+          Containers must drop `SYS_TTY_CONFIG` capabilities.
+        foreach:
+          - list: request.object.spec.[ephemeralContainers, initContainers, containers][]
+            deny:
+              conditions:
+                all:
+                - key: "{{ element.securityContext.capabilities.add[] || `[]` }}"
+                  operator: AnyIn
+                  value:
+                  - SYS_TTY_CONFIG
+                  - ''
+    - name: require-drop-cap-SYSLOG-7
+      exclude:
+        any:
+        - resources:
+            kinds:
+            - Pod
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+                  - stagingrnpci
+                - key: application.tess.io/name
+                  operator: In
+                  values:
+                  - tfap-lnp
+      match:
+        any:
+        - resources:
+            kinds:
+              - Pod
+            namespaces:
+              - tfap-lnp
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+                  - stagingrnpci
+      validate:
+        message: >-
+          Containers must drop `SYSLOG` capabilities.
+        foreach:
+          - list: request.object.spec.[ephemeralContainers, initContainers, containers][]
+            deny:
+              conditions:
+                all:
+                - key: "{{ element.securityContext.capabilities.add[] || `[]` }}"
+                  operator: AnyIn
+                  value:
+                  - SYSLOG
+                  - ''
+    - name: require-drop-cap-WAKE_ALARM-7
+      exclude:
+        any:
+        - resources:
+            kinds:
+            - Pod
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+                  - stagingrnpci
+                - key: application.tess.io/name
+                  operator: In
+                  values:
+                  - tfap-lnp
+      match:
+        any:
+        - resources:
+            kinds:
+              - Pod
+            namespaces:
+              - tfap-lnp
+            selector:
+              matchExpressions:
+                - key: environment.tess.io/name
+                  operator: In
+                  values:
+                  - dev
+                  - feature
+                  - lnp
+                  - staging
+                  - stagingpci
+                  - stagingrnpci
+      validate:
+        message: >-
+          Containers must drop `WAKE_ALARM` capabilities.
+        foreach:
+          - list: request.object.spec.[ephemeralContainers, initContainers, containers][]
+            deny:
+              conditions:
+                all:
+                - key: "{{ element.securityContext.capabilities.add[] || `[]` }}"
+                  operator: AnyIn
+                  value:
+                  - WAKE_ALARM
+                  - ''
+
+
+
+

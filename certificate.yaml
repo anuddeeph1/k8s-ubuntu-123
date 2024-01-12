@@ -1,0 +1,12 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: httpd
+  namespace: httpd
+spec:
+  secretName: httpd-cert
+  issuerRef:
+    name: private-ca-issuer 
+    kind: ClusterIssuer
+  dnsNames:
+    - httpd.certmanager-private.nirmata.co

@@ -1,0 +1,53 @@
+import http from 'k6/http';
+import { check } from 'k6';
+import { buildKubernetesBaseUrl, generatePod, getParamsWithAuth, yourProvidedPodYAML, getTestNamespace, randomString } from './util.js';
+
+const baseUrl = buildKubernetesBaseUrl();
+const namespace = getTestNamespace();
+
+http.setResponseCallback(http.expectedStatuses(201));
+
+export default function() {
+    // Your existing test code for creating a pod with Kyverno policy violation
+    const podName = 'good-pod'; // using the specified name
+    const pod = yourProvidedPodYAML(podName);
+  
+    const params = getParamsWithAuth();
+    params.headers['Content-Type'] = 'application/json';
+  
+    // Deploy the provided Pod YAML
+    const createPodRes = http.post(`${baseUrl}/api/v1/namespaces/${namespace}/pods`, JSON.stringify(yourProvidedPodYAML), params);
+    console.log("received response " + createPodRes.status + " " + createPodRes.status_text);
+  
+    // Wrap the 'check' function and its object parameter in a block
+    check(createPodRes, {
+        'verify response code of POST is 201': r => r.status === 201 // Change the expected status code if necessary
+    });
+}
+
+export function teardown() {}
+
+const yourProvidedPodYAML = {
+  apiVersion: 'v1',
+  kind: 'Pod',
+  metadata: {
+    name: 'busybox-pod',
+    labels: {
+      app: 'busybox'
+    }
+  },
+  spec: {
+    containers: [
+      {
+        name: 'busybox-container',
+        image: 'busybox',
+        command: ["/bin/sh"],
+        args: ["-c", "while true; do echo hello; sleep 100; done"],
+        securityContext: {
+          allowPrivilegeEscalation: false
+        }
+      }
+    ]
+  }
+};
+

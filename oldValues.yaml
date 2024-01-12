@@ -1,0 +1,15 @@
+USER-SUPPLIED VALUES:
+apiKey: 4Gw3SVePI/UJk3/BGdgWttjqRmTWhu8Vma+wm0c1j/ECeEq2265jyyIXIgZRGNjqIRmJDaTInk8TeEExUBXG1g==
+kyverno:
+  helm:
+    licenseManager:
+      callHomeServer: npm-pov.nirmata.co
+      clusterId: 067bc1f3-3e78-4e19-b612-965199916ab3
+      clusterName: k8s-123
+      productName: Policy Manager Enterprise
+  image:
+    tag: v1.9.5-n4k.nirmata.1
+  replicaCount: 3
+licenseKey: ouOA/Zp/0+rS5r3NejN1KwSoIcxQUFOyHDN9GD15yw61TUcJgq9d1gnfhdK4UB15IvE1tnokdfi/vKOvpZfxUbT0AzAfXJqZfXk7gZmzxDIXoCi0NITGLkX5WsUfWT0YqmNu3JdcBCr+WcW+ZpNyJasFRxidf8ub7xbS1W9Q+ezsg5pxmSDVyxZ+bs5dQF40RhsW7+qa/Z2r9/aB3Nv6dGztH4jwuwZG1lL0sHXOsFAPOaKkt2q1cPd2wBZRY2rTzBvNkUimBHn4zVuJpH+Rk4RzQuaPjZFcZvsTARHTNgNkBysHNdBMsFrOas5iHcgE4h9mHU6bjXZ7DPduCQT8hoXMMo/90GGX8kteJKTe8+mIY4waajub+1RIrkPq6+xK
+policies:
+  policySets: '[]'

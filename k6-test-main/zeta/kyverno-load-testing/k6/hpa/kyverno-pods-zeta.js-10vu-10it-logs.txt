@@ -1,0 +1,1039 @@
+
+          /\      |‾‾| /‾‾/   /‾‾/   
+     /\  /  \     |  |/  /   /  /    
+    /  \/    \    |     (   /   ‾‾\  
+   /          \   |  |\  \ |  (‾)  | 
+  / __________ \  |__| \__\ \_____/ .io
+
+  execution: local
+     script: /script/script.js
+     output: -
+
+  scenarios: (100.00%) 1 scenario, 10 max VUs, 1m30s max duration (incl. graceful stop):
+           * default: 10 looping VUs for 1m0s (gracefulStop: 30s)
+
+time="2023-12-26T13:28:15Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:15Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:15Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:15Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:15Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:15Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:15Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:15Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:15Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:15Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:15Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:15Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:15Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:15Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:15Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:15Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:15Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:15Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:15Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:15Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:15Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:15Z" level=info msg="received response 201 201 Created" source=console
+
+running (0m01.0s), 10/10 VUs, 22 complete and 0 interrupted iterations
+default   [   2% ] 10 VUs  0m01.0s/1m0s
+time="2023-12-26T13:28:16Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:16Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:16Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:16Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:16Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:16Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:16Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:16Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:16Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:16Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:16Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:16Z" level=info msg="received response 201 201 Created" source=console
+
+running (0m02.0s), 10/10 VUs, 34 complete and 0 interrupted iterations
+default   [   3% ] 10 VUs  0m02.0s/1m0s
+time="2023-12-26T13:28:17Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:17Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:17Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:17Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:17Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:17Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:17Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:17Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:17Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:17Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:17Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:17Z" level=info msg="received response 201 201 Created" source=console
+
+running (0m03.0s), 10/10 VUs, 46 complete and 0 interrupted iterations
+default   [   5% ] 10 VUs  0m03.0s/1m0s
+time="2023-12-26T13:28:18Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:18Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:18Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:18Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:18Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:18Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:18Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:18Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:18Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:18Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:18Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:18Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:18Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:18Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:18Z" level=info msg="received response 201 201 Created" source=console
+
+running (0m04.0s), 10/10 VUs, 61 complete and 0 interrupted iterations
+default   [   7% ] 10 VUs  0m04.0s/1m0s
+time="2023-12-26T13:28:19Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:19Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:19Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:19Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:19Z" level=info msg="received response 201 201 Created" source=console
+
+running (0m05.0s), 10/10 VUs, 66 complete and 0 interrupted iterations
+default   [   8% ] 10 VUs  0m05.0s/1m0s
+time="2023-12-26T13:28:20Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:20Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:20Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:20Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:20Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:20Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:20Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:20Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:20Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:20Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:20Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:20Z" level=info msg="received response 201 201 Created" source=console
+
+running (0m06.0s), 10/10 VUs, 78 complete and 0 interrupted iterations
+default   [  10% ] 10 VUs  0m06.0s/1m0s
+time="2023-12-26T13:28:21Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:21Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:21Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:21Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:21Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:21Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:21Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:21Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:21Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:21Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:21Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:21Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:21Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:21Z" level=info msg="received response 201 201 Created" source=console
+
+running (0m07.0s), 10/10 VUs, 92 complete and 0 interrupted iterations
+default   [  12% ] 10 VUs  0m07.0s/1m0s
+time="2023-12-26T13:28:22Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:22Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:22Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:22Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:22Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:22Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:22Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:22Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:22Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:22Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:22Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:22Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:22Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:22Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:22Z" level=info msg="received response 201 201 Created" source=console
+
+running (0m08.0s), 10/10 VUs, 107 complete and 0 interrupted iterations
+default   [  13% ] 10 VUs  0m08.0s/1m0s
+time="2023-12-26T13:28:23Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:23Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:23Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:23Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:23Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:23Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:23Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:23Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:23Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:23Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:23Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:23Z" level=info msg="received response 201 201 Created" source=console
+
+running (0m09.0s), 10/10 VUs, 119 complete and 0 interrupted iterations
+default   [  15% ] 10 VUs  0m09.0s/1m0s
+time="2023-12-26T13:28:24Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:24Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:24Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:24Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:24Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:24Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:24Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:24Z" level=info msg="received response 201 201 Created" source=console
+
+running (0m10.0s), 10/10 VUs, 127 complete and 0 interrupted iterations
+default   [  17% ] 10 VUs  0m10.0s/1m0s
+time="2023-12-26T13:28:25Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:25Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:25Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:25Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:25Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:25Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:25Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:25Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:25Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:25Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:25Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:25Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:25Z" level=info msg="received response 201 201 Created" source=console
+
+running (0m11.0s), 10/10 VUs, 140 complete and 0 interrupted iterations
+default   [  18% ] 10 VUs  0m11.0s/1m0s
+time="2023-12-26T13:28:26Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:26Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:26Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:26Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:26Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:26Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:26Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:26Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:26Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:26Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:26Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:26Z" level=info msg="received response 201 201 Created" source=console
+
+running (0m12.0s), 10/10 VUs, 152 complete and 0 interrupted iterations
+default   [  20% ] 10 VUs  0m12.0s/1m0s
+time="2023-12-26T13:28:27Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:27Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:27Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:27Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:27Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:27Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:27Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:27Z" level=info msg="received response 201 201 Created" source=console
+
+running (0m13.0s), 10/10 VUs, 160 complete and 0 interrupted iterations
+default   [  22% ] 10 VUs  0m13.0s/1m0s
+time="2023-12-26T13:28:28Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:28Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:28Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:28Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:28Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:28Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:28Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:28Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:28Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:28Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:28Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:28Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:28Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:28Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:28Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:28Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:28Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:28Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:28Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:28Z" level=info msg="received response 201 201 Created" source=console
+
+running (0m14.0s), 10/10 VUs, 180 complete and 0 interrupted iterations
+default   [  23% ] 10 VUs  0m14.0s/1m0s
+time="2023-12-26T13:28:29Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:29Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:29Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:29Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:29Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:29Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:29Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:29Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:29Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:29Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:29Z" level=info msg="received response 201 201 Created" source=console
+
+running (0m15.0s), 10/10 VUs, 191 complete and 0 interrupted iterations
+default   [  25% ] 10 VUs  0m15.0s/1m0s
+time="2023-12-26T13:28:30Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:30Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:30Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:30Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:30Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:30Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:31Z" level=info msg="received response 201 201 Created" source=console
+
+running (0m16.0s), 10/10 VUs, 198 complete and 0 interrupted iterations
+default   [  27% ] 10 VUs  0m16.0s/1m0s
+time="2023-12-26T13:28:31Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:31Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:31Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:31Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:31Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:31Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:31Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:31Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:31Z" level=info msg="received response 201 201 Created" source=console
+
+running (0m17.0s), 10/10 VUs, 207 complete and 0 interrupted iterations
+default   [  28% ] 10 VUs  0m17.0s/1m0s
+time="2023-12-26T13:28:32Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:32Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:32Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:32Z" level=info msg="received response 201 201 Created" source=console
+
+running (0m18.0s), 10/10 VUs, 211 complete and 0 interrupted iterations
+default   [  30% ] 10 VUs  0m18.0s/1m0s
+time="2023-12-26T13:28:33Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:33Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:33Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:33Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:33Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:33Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:33Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:33Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:33Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:33Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:33Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:33Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:33Z" level=info msg="received response 201 201 Created" source=console
+
+running (0m19.0s), 10/10 VUs, 224 complete and 0 interrupted iterations
+default   [  32% ] 10 VUs  0m19.0s/1m0s
+time="2023-12-26T13:28:34Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:34Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:34Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:34Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:34Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:34Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:34Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:34Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:34Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:34Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:34Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:34Z" level=info msg="received response 201 201 Created" source=console
+
+running (0m20.0s), 10/10 VUs, 236 complete and 0 interrupted iterations
+default   [  33% ] 10 VUs  0m20.0s/1m0s
+time="2023-12-26T13:28:35Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:35Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:35Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:35Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:35Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:35Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:35Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:35Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:35Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:35Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:35Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:35Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:35Z" level=info msg="received response 201 201 Created" source=console
+
+running (0m21.0s), 10/10 VUs, 249 complete and 0 interrupted iterations
+default   [  35% ] 10 VUs  0m21.0s/1m0s
+time="2023-12-26T13:28:36Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:36Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:36Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:36Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:36Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:36Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:36Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:36Z" level=info msg="received response 201 201 Created" source=console
+
+running (0m22.0s), 10/10 VUs, 257 complete and 0 interrupted iterations
+default   [  37% ] 10 VUs  0m22.0s/1m0s
+time="2023-12-26T13:28:37Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:37Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:37Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:37Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:37Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:37Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:37Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:37Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:37Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:37Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:37Z" level=info msg="received response 201 201 Created" source=console
+
+running (0m23.0s), 10/10 VUs, 268 complete and 0 interrupted iterations
+default   [  38% ] 10 VUs  0m23.0s/1m0s
+time="2023-12-26T13:28:38Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:38Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:38Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:38Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:38Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:38Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:38Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:38Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:38Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:38Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:38Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:38Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:38Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:38Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:38Z" level=info msg="received response 201 201 Created" source=console
+
+running (0m24.0s), 10/10 VUs, 283 complete and 0 interrupted iterations
+default   [  40% ] 10 VUs  0m24.0s/1m0s
+time="2023-12-26T13:28:39Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:39Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:39Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:39Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:39Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:39Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:39Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:39Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:39Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:39Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:39Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:39Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:39Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:39Z" level=info msg="received response 201 201 Created" source=console
+
+running (0m25.0s), 10/10 VUs, 297 complete and 0 interrupted iterations
+default   [  42% ] 10 VUs  0m25.0s/1m0s
+time="2023-12-26T13:28:40Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:40Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:40Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:40Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:40Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:40Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:40Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:40Z" level=info msg="received response 201 201 Created" source=console
+
+running (0m26.0s), 10/10 VUs, 305 complete and 0 interrupted iterations
+default   [  43% ] 10 VUs  0m26.0s/1m0s
+
+running (0m27.0s), 10/10 VUs, 305 complete and 0 interrupted iterations
+default   [  45% ] 10 VUs  0m27.0s/1m0s
+time="2023-12-26T13:28:42Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:42Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:42Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:42Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:42Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:42Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:42Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:42Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:42Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:42Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:42Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:42Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:42Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:42Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:42Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:42Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:42Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:42Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:42Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:42Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:42Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:42Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:43Z" level=info msg="received response 201 201 Created" source=console
+
+running (0m28.0s), 10/10 VUs, 328 complete and 0 interrupted iterations
+default   [  47% ] 10 VUs  0m28.0s/1m0s
+time="2023-12-26T13:28:43Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:43Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:43Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:43Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:43Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:43Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:43Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:43Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:43Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:43Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:43Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:43Z" level=info msg="received response 201 201 Created" source=console
+
+running (0m29.0s), 10/10 VUs, 340 complete and 0 interrupted iterations
+default   [  48% ] 10 VUs  0m29.0s/1m0s
+time="2023-12-26T13:28:44Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:44Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:44Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:44Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:44Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:44Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:44Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:44Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:44Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:44Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:44Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:44Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:44Z" level=info msg="received response 201 201 Created" source=console
+
+running (0m30.0s), 10/10 VUs, 353 complete and 0 interrupted iterations
+default   [  50% ] 10 VUs  0m30.0s/1m0s
+time="2023-12-26T13:28:45Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:45Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:45Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:45Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:45Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:45Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:45Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:45Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:45Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:45Z" level=info msg="received response 201 201 Created" source=console
+
+running (0m31.0s), 10/10 VUs, 363 complete and 0 interrupted iterations
+default   [  52% ] 10 VUs  0m31.0s/1m0s
+time="2023-12-26T13:28:46Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:46Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:46Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:46Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:46Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:46Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:46Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:46Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:46Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:46Z" level=info msg="received response 201 201 Created" source=console
+
+running (0m32.0s), 10/10 VUs, 373 complete and 0 interrupted iterations
+default   [  53% ] 10 VUs  0m32.0s/1m0s
+time="2023-12-26T13:28:47Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:47Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:47Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:47Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:47Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:47Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:47Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:47Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:47Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:47Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:47Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:47Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:47Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:47Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:47Z" level=info msg="received response 201 201 Created" source=console
+
+running (0m33.0s), 10/10 VUs, 388 complete and 0 interrupted iterations
+default   [  55% ] 10 VUs  0m33.0s/1m0s
+time="2023-12-26T13:28:48Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:48Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:48Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:48Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:48Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:48Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:48Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:48Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:48Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:48Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:48Z" level=info msg="received response 201 201 Created" source=console
+
+running (0m34.0s), 10/10 VUs, 399 complete and 0 interrupted iterations
+default   [  57% ] 10 VUs  0m34.0s/1m0s
+time="2023-12-26T13:28:49Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:49Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:49Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:49Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:49Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:49Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:49Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:49Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:49Z" level=info msg="received response 201 201 Created" source=console
+
+running (0m35.0s), 10/10 VUs, 408 complete and 0 interrupted iterations
+default   [  58% ] 10 VUs  0m35.0s/1m0s
+time="2023-12-26T13:28:50Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:50Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:50Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:50Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:50Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:50Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:50Z" level=info msg="received response 201 201 Created" source=console
+
+running (0m36.0s), 10/10 VUs, 415 complete and 0 interrupted iterations
+default   [  60% ] 10 VUs  0m36.0s/1m0s
+time="2023-12-26T13:28:51Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:51Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:51Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:51Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:51Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:51Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:51Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:51Z" level=info msg="received response 201 201 Created" source=console
+
+running (0m37.0s), 10/10 VUs, 423 complete and 0 interrupted iterations
+default   [  62% ] 10 VUs  0m37.0s/1m0s
+time="2023-12-26T13:28:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:52Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:52Z" level=info msg="received response 201 201 Created" source=console
+
+running (0m38.0s), 10/10 VUs, 437 complete and 0 interrupted iterations
+default   [  63% ] 10 VUs  0m38.0s/1m0s
+time="2023-12-26T13:28:53Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:53Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:53Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:53Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:53Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:53Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:53Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:53Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:53Z" level=info msg="received response 201 201 Created" source=console
+
+running (0m39.0s), 10/10 VUs, 446 complete and 0 interrupted iterations
+default   [  65% ] 10 VUs  0m39.0s/1m0s
+time="2023-12-26T13:28:54Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:54Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:54Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:54Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:54Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:54Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:54Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:54Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:54Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:54Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:54Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:54Z" level=info msg="received response 201 201 Created" source=console
+
+running (0m40.0s), 10/10 VUs, 458 complete and 0 interrupted iterations
+default   [  67% ] 10 VUs  0m40.0s/1m0s
+time="2023-12-26T13:28:55Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:55Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:55Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:55Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:55Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:55Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:55Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:55Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:55Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:55Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:55Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:55Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:55Z" level=info msg="received response 201 201 Created" source=console
+
+running (0m41.0s), 10/10 VUs, 471 complete and 0 interrupted iterations
+default   [  68% ] 10 VUs  0m41.0s/1m0s
+time="2023-12-26T13:28:56Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:56Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:56Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:56Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:56Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:56Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:56Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:56Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:56Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:56Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:56Z" level=info msg="received response 201 201 Created" source=console
+
+running (0m42.0s), 10/10 VUs, 482 complete and 0 interrupted iterations
+default   [  70% ] 10 VUs  0m42.0s/1m0s
+time="2023-12-26T13:28:57Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:57Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:57Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:57Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:57Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:57Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:57Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:57Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:57Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:57Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:57Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:57Z" level=info msg="received response 201 201 Created" source=console
+
+running (0m43.0s), 10/10 VUs, 494 complete and 0 interrupted iterations
+default   [  72% ] 10 VUs  0m43.0s/1m0s
+time="2023-12-26T13:28:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:58Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:58Z" level=info msg="received response 201 201 Created" source=console
+
+running (0m44.0s), 10/10 VUs, 504 complete and 0 interrupted iterations
+default   [  73% ] 10 VUs  0m44.0s/1m0s
+time="2023-12-26T13:28:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:59Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:28:59Z" level=info msg="received response 201 201 Created" source=console
+
+running (0m45.0s), 10/10 VUs, 517 complete and 0 interrupted iterations
+default   [  75% ] 10 VUs  0m45.0s/1m0s
+time="2023-12-26T13:29:00Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:00Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:00Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:00Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:00Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:00Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:00Z" level=info msg="received response 201 201 Created" source=console
+
+running (0m46.0s), 10/10 VUs, 524 complete and 0 interrupted iterations
+default   [  77% ] 10 VUs  0m46.0s/1m0s
+time="2023-12-26T13:29:01Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:01Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:01Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:01Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:01Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:01Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:01Z" level=info msg="received response 201 201 Created" source=console
+
+running (0m47.0s), 10/10 VUs, 531 complete and 0 interrupted iterations
+default   [  78% ] 10 VUs  0m47.0s/1m0s
+time="2023-12-26T13:29:02Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:02Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:02Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:02Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:02Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:02Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:02Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:02Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:02Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:02Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:02Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:02Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:03Z" level=info msg="received response 201 201 Created" source=console
+
+running (0m48.0s), 10/10 VUs, 544 complete and 0 interrupted iterations
+default   [  80% ] 10 VUs  0m48.0s/1m0s
+time="2023-12-26T13:29:03Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:03Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:03Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:03Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:03Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:03Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:03Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:03Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:03Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:03Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:03Z" level=info msg="received response 201 201 Created" source=console
+
+running (0m49.0s), 10/10 VUs, 555 complete and 0 interrupted iterations
+default   [  82% ] 10 VUs  0m49.0s/1m0s
+time="2023-12-26T13:29:04Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:04Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:04Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:04Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:04Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:04Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:04Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:04Z" level=info msg="received response 201 201 Created" source=console
+
+running (0m50.0s), 10/10 VUs, 563 complete and 0 interrupted iterations
+default   [  83% ] 10 VUs  0m50.0s/1m0s
+time="2023-12-26T13:29:05Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:05Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:05Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:05Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:05Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:05Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:05Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:05Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:05Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:05Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:05Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:05Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:05Z" level=info msg="received response 201 201 Created" source=console
+
+running (0m51.0s), 10/10 VUs, 576 complete and 0 interrupted iterations
+default   [  85% ] 10 VUs  0m51.0s/1m0s
+time="2023-12-26T13:29:06Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:06Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:06Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:06Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:06Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:06Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:06Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:06Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:06Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:06Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:06Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:06Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:07Z" level=info msg="received response 201 201 Created" source=console
+
+running (0m52.0s), 10/10 VUs, 589 complete and 0 interrupted iterations
+default   [  87% ] 10 VUs  0m52.0s/1m0s
+time="2023-12-26T13:29:07Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:07Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:07Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:07Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:07Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:07Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:07Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:07Z" level=info msg="received response 201 201 Created" source=console
+
+running (0m53.0s), 10/10 VUs, 597 complete and 0 interrupted iterations
+default   [  88% ] 10 VUs  0m53.0s/1m0s
+time="2023-12-26T13:29:08Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:08Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:08Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:08Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:08Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:08Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:08Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:08Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:08Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:08Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:08Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:08Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:08Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:08Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:08Z" level=info msg="received response 201 201 Created" source=console
+
+running (0m54.0s), 10/10 VUs, 612 complete and 0 interrupted iterations
+default   [  90% ] 10 VUs  0m54.0s/1m0s
+time="2023-12-26T13:29:09Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:09Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:09Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:09Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:09Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:09Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:09Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:09Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:09Z" level=info msg="received response 201 201 Created" source=console
+
+running (0m55.0s), 10/10 VUs, 621 complete and 0 interrupted iterations
+default   [  92% ] 10 VUs  0m55.0s/1m0s
+time="2023-12-26T13:29:10Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:10Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:10Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:10Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:10Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:10Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:10Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:10Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:10Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:10Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:10Z" level=info msg="received response 201 201 Created" source=console
+
+running (0m56.0s), 10/10 VUs, 632 complete and 0 interrupted iterations
+default   [  93% ] 10 VUs  0m56.0s/1m0s
+time="2023-12-26T13:29:11Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:11Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:11Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:11Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:11Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:11Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:11Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:11Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:11Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:11Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:11Z" level=info msg="received response 201 201 Created" source=console
+
+running (0m57.0s), 10/10 VUs, 643 complete and 0 interrupted iterations
+default   [  95% ] 10 VUs  0m57.0s/1m0s
+time="2023-12-26T13:29:12Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:12Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:12Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:12Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:12Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:12Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:12Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:12Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:12Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:12Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:12Z" level=info msg="received response 201 201 Created" source=console
+
+running (0m58.0s), 10/10 VUs, 654 complete and 0 interrupted iterations
+default   [  97% ] 10 VUs  0m58.0s/1m0s
+
+running (0m59.0s), 10/10 VUs, 654 complete and 0 interrupted iterations
+default   [  98% ] 10 VUs  0m59.0s/1m0s
+time="2023-12-26T13:29:14Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:14Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:14Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:14Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:14Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:14Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:14Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:14Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:14Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:14Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:14Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:14Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:14Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:14Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:14Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:15Z" level=info msg="received response 201 201 Created" source=console
+
+running (1m00.0s), 10/10 VUs, 670 complete and 0 interrupted iterations
+default   [ 100% ] 10 VUs  1m00.0s/1m0s
+time="2023-12-26T13:29:15Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:15Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:15Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:15Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:15Z" level=info msg="received response 201 201 Created" source=console
+
+running (1m01.0s), 05/10 VUs, 675 complete and 0 interrupted iterations
+default ↓ [ 100% ] 10 VUs  1m0s
+time="2023-12-26T13:29:16Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:16Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:16Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:16Z" level=info msg="received response 201 201 Created" source=console
+time="2023-12-26T13:29:16Z" level=info msg="received response 201 201 Created" source=console
+
+     ✓ verify response code of POST is 201
+
+     █ teardown
+
+     checks.........................: 100.00% ✓ 680       ✗ 0   
+     data_received..................: 1.6 MB  26 kB/s
+     data_sent......................: 236 kB  3.8 kB/s
+     http_req_blocked...............: avg=81.67µs  min=197ns   med=461ns    max=6.44ms   p(90)=713ns    p(95)=872ns   
+     http_req_connecting............: avg=5.05µs   min=0s      med=0s       max=833.97µs p(90)=0s       p(95)=0s      
+     http_req_duration..............: avg=892.29ms min=8.7ms   med=603.82ms max=5.39s    p(90)=1.9s     p(95)=2.34s   
+       { expected_response:true }...: avg=892.29ms min=8.7ms   med=603.82ms max=5.39s    p(90)=1.9s     p(95)=2.34s   
+     http_req_failed................: 0.00%   ✓ 0         ✗ 680 
+     http_req_receiving.............: avg=171.33µs min=21.72µs med=82.9µs   max=6.69ms   p(90)=137.97µs p(95)=280.48µs
+     http_req_sending...............: avg=87.64µs  min=39.91µs med=74.32µs  max=4.69ms   p(90)=98.87µs  p(95)=110.31µs
+     http_req_tls_handshaking.......: avg=73.44µs  min=0s      med=0s       max=5.93ms   p(90)=0s       p(95)=0s      
+     http_req_waiting...............: avg=892.03ms min=8.52ms  med=603.7ms  max=5.39s    p(90)=1.9s     p(95)=2.34s   
+     http_reqs......................: 680     11.051584/s
+     iteration_duration.............: avg=891.42ms min=4.36µs  med=603.92ms max=5.39s    p(90)=1.9s     p(95)=2.34s   
+     iterations.....................: 680     11.051584/s
+     vus............................: 5       min=5       max=10
+     vus_max........................: 10      min=10      max=10
+
+
+running (1m01.5s), 00/10 VUs, 680 complete and 0 interrupted iterations
+default ✓ [ 100% ] 10 VUs  1m0s
+============== STRIP ==============
+{
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "teardown": {
+                "name": "teardown",
+                "path": "::teardown",
+                "id": "a8a9942382e8ffe2e56ef29e664b8229",
+                "groups": {},
+                "checks": {}
+            }
+        },
+        "checks": {
+            "verify response code of POST is 201": {
+                "id": "8c3ca26510f8061c444b510eb133612e",
+                "passes": 680,
+                "fails": 0,
+                "name": "verify response code of POST is 201",
+                "path": "::verify response code of POST is 201"
+            }
+        }
+    },
+    "metrics": {
+        "data_sent": {
+            "count": 235985,
+            "rate": 3835.306069918683
+        },
+        "vus": {
+            "value": 5,
+            "min": 5,
+            "max": 10
+        },
+        "http_req_receiving": {
+            "p(95)": 0.28048649999999925,
+            "avg": 0.17133195882352922,
+            "min": 0.021726,
+            "med": 0.082901,
+            "max": 6.698463,
+            "p(90)": 0.1379792
+        },
+        "checks": {
+            "passes": 680,
+            "fails": 0,
+            "value": 1
+        },
+        "http_req_duration": {
+            "avg": 892.2942535294117,
+            "min": 8.703041,
+            "med": 603.822527,
+            "max": 5395.127293,
+            "p(90)": 1901.4472726000001,
+            "p(95)": 2346.92969695
+        },
+        "data_received": {
+            "count": 1566489,
+            "rate": 25459.096002546128
+        },
+        "vus_max": {
+            "value": 10,
+            "min": 10,
+            "max": 10
+        },
+        "http_req_blocked": {
+            "max": 6.441864,
+            "p(90)": 0.0007137000000000002,
+            "p(95)": 0.0008721,
+            "avg": 0.08167673235294105,
+            "min": 0.000197,
+            "med": 0.000461
+        },
+        "http_req_duration{expected_response:true}": {
+            "avg": 892.2942535294117,
+            "min": 8.703041,
+            "med": 603.822527,
+            "max": 5395.127293,
+            "p(90)": 1901.4472726000001,
+            "p(95)": 2346.92969695
+        },
+        "http_req_connecting": {
+            "med": 0,
+            "max": 0.833974,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0.005059636764705881,
+            "min": 0
+        },
+        "http_req_sending": {
+            "avg": 0.08764301029411758,
+            "min": 0.039919,
+            "med": 0.07432949999999999,
+            "max": 4.699869,
+            "p(90)": 0.0988719,
+            "p(95)": 0.11031719999999999
+        },
+        "http_req_tls_handshaking": {
+            "p(95)": 0,
+            "avg": 0.07344642205882353,
+            "min": 0,
+            "med": 0,
+            "max": 5.93886,
+            "p(90)": 0
+        },
+        "iterations": {
+            "count": 680,
+            "rate": 11.051584327583129
+        },
+        "http_reqs": {
+            "count": 680,
+            "rate": 11.051584327583129
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 680,
+            "value": 0
+        },
+        "iteration_duration": {
+            "p(95)": 2347.119452,
+            "avg": 891.4228405256986,
+            "min": 0.004369,
+            "med": 603.929953,
+            "max": 5395.353496,
+            "p(90)": 1901.336914
+        },
+        "http_req_waiting": {
+            "avg": 892.0352785602942,
+            "min": 8.521078,
+            "med": 603.701037,
+            "max": 5395.016709,
+            "p(90)": 1901.282537,
+            "p(95)": 2345.94644845
+        }
+    }
+}

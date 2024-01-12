@@ -1,0 +1,15 @@
+apiVersion: enterprise.splunk.com/v4
+kind: Standalone
+metadata:
+  name: s1
+  finalizers:
+  - enterprise.splunk.com/delete-pvc
+spec:
+  etcVolumeStorageConfig:
+    storageClassName: nirmata-hostpath
+    storageCapacity: 15Gi
+    ephemeralStorage: true
+  varVolumeStorageConfig:
+    storageClassName: nirmata-hostpath
+    storageCapacity: 25Gi
+    ephemeralStorage: true

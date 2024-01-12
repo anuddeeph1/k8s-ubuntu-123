@@ -1,0 +1,13 @@
+I1010 01:32:26.000446       1 configmap_cafile_content.go:201] "Starting controller" name="client-ca::kube-system::extension-apiserver-authentication::client-ca-file"
+I1010 01:32:26.000545       1 secure_serving.go:267] Serving securely on [::]:4443
+I1010 01:32:26.000551       1 dynamic_serving_content.go:131] "Starting controller" name="serving-cert::/tmp/apiserver.crt::/tmp/apiserver.key"
+I1010 01:32:26.000446       1 configmap_cafile_content.go:201] "Starting controller" name="client-ca::kube-system::extension-apiserver-authentication::requestheader-client-ca-file"
+I1010 01:32:26.000709       1 shared_informer.go:240] Waiting for caches to sync for client-ca::kube-system::extension-apiserver-authentication::requestheader-client-ca-file
+I1010 01:32:26.000548       1 shared_informer.go:240] Waiting for caches to sync for client-ca::kube-system::extension-apiserver-authentication::client-ca-file
+W1010 01:32:26.000744       1 shared_informer.go:372] The sharedIndexInformer has started, run more than once is not allowed
+I1010 01:32:26.007303       1 tlsconfig.go:240] "Starting DynamicServingCertificateController"
+I1010 01:32:26.007299       1 requestheader_controller.go:169] Starting RequestHeaderAuthRequestController
+I1010 01:32:26.007346       1 shared_informer.go:240] Waiting for caches to sync for RequestHeaderAuthRequestController
+I1010 01:32:26.101402       1 shared_informer.go:247] Caches are synced for client-ca::kube-system::extension-apiserver-authentication::requestheader-client-ca-file 
+I1010 01:32:26.101502       1 shared_informer.go:247] Caches are synced for client-ca::kube-system::extension-apiserver-authentication::client-ca-file 
+I1010 01:32:26.107848       1 shared_informer.go:247] Caches are synced for RequestHeaderAuthRequestController 

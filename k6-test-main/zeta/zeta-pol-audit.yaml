@@ -1,0 +1,1585 @@
+apiVersion: v1
+items:
+- apiVersion: kyverno.io/v1
+  kind: ClusterPolicy
+  metadata:
+    annotations:
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"kyverno.io/v1","kind":"ClusterPolicy","metadata":{"annotations":{"kyverno.io/kubernetes-version":"1.22-1.23","kyverno.io/kyverno-version":"1.6.0","policies.kyverno.io/category":"Pod Security Standards (Baseline)","policies.kyverno.io/description":"Adding capabilities beyond those listed in the policy must be disallowed.","policies.kyverno.io/minversion":"1.6.0","policies.kyverno.io/severity":"medium","policies.kyverno.io/subject":"Pod","policies.kyverno.io/title":"Disallow Capabilities"},"creationTimestamp":"2023-08-08T09:07:35Z","generation":2,"labels":{"app.kubernetes.io/component":"kyverno","app.kubernetes.io/instance":"zone-secops","app.kubernetes.io/managed-by":"Helm","app.kubernetes.io/name":"olympus-atlantis-policy","app.kubernetes.io/part-of":"olympus-atlantis-policy","app.kubernetes.io/version":"2.5.13","argocd.argoproj.io/instance":"zone-secops-hdfc-beta","helm.sh/chart":"olympus-atlantis-policy-2.5.13"},"name":"disallow-capabilities","resourceVersion":"3971870645","uid":"811e7f68-5d4a-4612-8eff-6eae87c56e0e"},"spec":{"background":true,"failurePolicy":"Ignore","rules":[{"exclude":{"any":[{"resources":{"kinds":["Deployment","Pod","ReplicaSet"],"names":["hdfcuatauradispute-ganymede-shared-postgrest*","venus-ganymede-shared-postgrest*","charge-ganymede-shared-postgrest*","auraextentions-ganymede-shared-postgrest*","hdfcuatauratachyoning-ganymede-shared-postgrest*","daybook-ganymede-shared-postgrest*","interest-ganymede-shared-postgrest*","cloudcard-ganymede-shared-postgrest*","hdfcuataurastatement-ganymede-shared-postgrest*","hdfczetaauratachyoning-ganymede-shared-postgrest*","extensions-ganymede-shared-postgrest*","hdfczetaaurastatement-ganymede-shared-postgrest*","hdfczetaaurapolicyservice-ganymede-shared-postgrest*"],"namespaces":["aura-ganymede"]}},{"resources":{"kinds":["DaemonSet","Pod","ReplicaSet"],"names":["gadget*"],"namespaces":["gadget"]}},{"resources":{"kinds":["Deployment","Pod","ReplicaSet"],"names":["payzappbillpayments-ganymede-shared-postgrest*"],"namespaces":["plutus-perf"]}},{"resources":{"kinds":["DaemonSet","Pod","ReplicaSet"],"names":["twistlock-defender-ds*"],"namespaces":["twistlock"]}}]},"match":{"any":[{"resources":{"kinds":["Pod"]}}]},"name":"adding-capabilities","validate":{"deny":{"conditions":{"all":[{"key":"{{ request.object.spec.[ephemeralContainers, initContainers, containers][].securityContext.capabilities.add[] }}","operator":"AnyNotIn","value":["AUDIT_WRITE","CHOWN","DAC_OVERRIDE","FOWNER","FSETID","KILL","MKNOD","NET_BIND_SERVICE","SETFCAP","SETGID","SETPCAP","SETUID","SYS_CHROOT"]}]}},"message":"Any capabilities added beyond the allowed list (AUDIT_WRITE, CHOWN, DAC_OVERRIDE, FOWNER, FSETID, KILL, MKNOD, NET_BIND_SERVICE, SETFCAP, SETGID, SETPCAP, SETUID, SYS_CHROOT) are disallowed."}}],"validationFailureAction":"Audit"},"status":{"autogen":{},"conditions":[{"lastTransitionTime":"2023-09-03T07:08:54Z","message":"Ready","reason":"Succeeded","status":"True","type":"Ready"}],"ready":true,"rulecount":{"generate":0,"mutate":0,"validate":1,"verifyimages":0}}}
+      kyverno.io/kubernetes-version: 1.22-1.23
+      kyverno.io/kyverno-version: 1.6.0
+      policies.kyverno.io/category: Pod Security Standards (Baseline)
+      policies.kyverno.io/description: Adding capabilities beyond those listed in
+        the policy must be disallowed.
+      policies.kyverno.io/minversion: 1.6.0
+      policies.kyverno.io/severity: medium
+      policies.kyverno.io/subject: Pod
+      policies.kyverno.io/title: Disallow Capabilities
+    creationTimestamp: "2023-10-23T13:49:48Z"
+    generation: 1
+    labels:
+      app.kubernetes.io/component: kyverno
+      app.kubernetes.io/instance: zone-secops
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: olympus-atlantis-policy
+      app.kubernetes.io/part-of: olympus-atlantis-policy
+      app.kubernetes.io/version: 2.5.13
+      argocd.argoproj.io/instance: zone-secops-hdfc-beta
+      helm.sh/chart: olympus-atlantis-policy-2.5.13
+    name: disallow-capabilities
+    resourceVersion: "92249"
+    uid: c84c4500-1973-4927-9c93-38f8c35d11a8
+  spec:
+    background: true
+    failurePolicy: Ignore
+    rules:
+    - exclude:
+        any:
+        - resources:
+            kinds:
+            - Deployment
+            - Pod
+            - ReplicaSet
+            names:
+            - hdfcuatauradispute-ganymede-shared-postgrest*
+            - venus-ganymede-shared-postgrest*
+            - charge-ganymede-shared-postgrest*
+            - auraextentions-ganymede-shared-postgrest*
+            - hdfcuatauratachyoning-ganymede-shared-postgrest*
+            - daybook-ganymede-shared-postgrest*
+            - interest-ganymede-shared-postgrest*
+            - cloudcard-ganymede-shared-postgrest*
+            - hdfcuataurastatement-ganymede-shared-postgrest*
+            - hdfczetaauratachyoning-ganymede-shared-postgrest*
+            - extensions-ganymede-shared-postgrest*
+            - hdfczetaaurastatement-ganymede-shared-postgrest*
+            - hdfczetaaurapolicyservice-ganymede-shared-postgrest*
+            namespaces:
+            - aura-ganymede
+        - resources:
+            kinds:
+            - DaemonSet
+            - Pod
+            - ReplicaSet
+            names:
+            - gadget*
+            namespaces:
+            - gadget
+        - resources:
+            kinds:
+            - Deployment
+            - Pod
+            - ReplicaSet
+            names:
+            - payzappbillpayments-ganymede-shared-postgrest*
+            namespaces:
+            - plutus-perf
+        - resources:
+            kinds:
+            - DaemonSet
+            - Pod
+            - ReplicaSet
+            names:
+            - twistlock-defender-ds*
+            namespaces:
+            - twistlock
+      match:
+        any:
+        - resources:
+            kinds:
+            - Pod
+      name: adding-capabilities
+      validate:
+        deny:
+          conditions:
+            all:
+            - key: '{{ request.object.spec.[ephemeralContainers, initContainers, containers][].securityContext.capabilities.add[]
+                }}'
+              operator: AnyNotIn
+              value:
+              - AUDIT_WRITE
+              - CHOWN
+              - DAC_OVERRIDE
+              - FOWNER
+              - FSETID
+              - KILL
+              - MKNOD
+              - NET_BIND_SERVICE
+              - SETFCAP
+              - SETGID
+              - SETPCAP
+              - SETUID
+              - SYS_CHROOT
+        message: Any capabilities added beyond the allowed list (AUDIT_WRITE, CHOWN,
+          DAC_OVERRIDE, FOWNER, FSETID, KILL, MKNOD, NET_BIND_SERVICE, SETFCAP, SETGID,
+          SETPCAP, SETUID, SYS_CHROOT) are disallowed.
+    validationFailureAction: Audit
+  status:
+    autogen: {}
+    conditions:
+    - lastTransitionTime: "2023-10-23T13:49:49Z"
+      message: Ready
+      reason: Succeeded
+      status: "True"
+      type: Ready
+    ready: true
+    rulecount:
+      generate: 0
+      mutate: 0
+      validate: 1
+      verifyimages: 0
+- apiVersion: kyverno.io/v1
+  kind: ClusterPolicy
+  metadata:
+    annotations:
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"kyverno.io/v1","kind":"ClusterPolicy","metadata":{"annotations":{"kyverno.io/kubernetes-version":"1.22-1.23","kyverno.io/kyverno-version":"1.6.0","policies.kyverno.io/category":"Pod Security Standards (Baseline)","policies.kyverno.io/description":"Host namespaces (Process ID namespace, Inter-Process Communication namespace, and network namespace) allow access to shared information and can be used to elevate privileges. Pods should not be allowed access to host namespaces. This policy ensures fields which make use of these host namespaces are unset or set to `false`.","policies.kyverno.io/severity":"medium","policies.kyverno.io/subject":"Pod","policies.kyverno.io/title":"Disallow Host Namespaces"},"creationTimestamp":"2023-08-08T09:07:35Z","generation":2,"labels":{"app.kubernetes.io/component":"kyverno","app.kubernetes.io/instance":"zone-secops","app.kubernetes.io/managed-by":"Helm","app.kubernetes.io/name":"olympus-atlantis-policy","app.kubernetes.io/part-of":"olympus-atlantis-policy","app.kubernetes.io/version":"2.5.13","argocd.argoproj.io/instance":"zone-secops-hdfc-beta","helm.sh/chart":"olympus-atlantis-policy-2.5.13"},"name":"disallow-host-namespaces","resourceVersion":"3971870675","uid":"1188e6cb-1491-4a9e-b20d-c2b208f7d642"},"spec":{"background":true,"failurePolicy":"Ignore","rules":[{"exclude":{"any":[{"resources":{"kinds":["DaemonSet","Pod","ReplicaSet"],"names":["gadget*"],"namespaces":["gadget"]}},{"resources":{"kinds":["Deployment","Pod","ReplicaSet"],"names":["pontus-spark-operator*"],"namespaces":["jupiter-pontus"]}},{"resources":{"kinds":["DaemonSet","Pod","ReplicaSet"],"names":["twistlock-defender-ds*"],"namespaces":["twistlock"]}}]},"match":{"any":[{"resources":{"kinds":["Pod"]}}]},"name":"host-namespaces","validate":{"message":"Sharing the host namespaces is disallowed. The fields spec.hostNetwork, spec.hostIPC, and spec.hostPID must be unset or set to `false`.","pattern":{"spec":{"=(hostIPC)":"false","=(hostNetwork)":"false","=(hostPID)":"false"}}}}],"validationFailureAction":"Audit"},"status":{"autogen":{},"conditions":[{"lastTransitionTime":"2023-09-03T07:08:54Z","message":"Ready","reason":"Succeeded","status":"True","type":"Ready"}],"ready":true,"rulecount":{"generate":0,"mutate":0,"validate":1,"verifyimages":0}}}
+      kyverno.io/kubernetes-version: 1.22-1.23
+      kyverno.io/kyverno-version: 1.6.0
+      policies.kyverno.io/category: Pod Security Standards (Baseline)
+      policies.kyverno.io/description: Host namespaces (Process ID namespace, Inter-Process
+        Communication namespace, and network namespace) allow access to shared information
+        and can be used to elevate privileges. Pods should not be allowed access to
+        host namespaces. This policy ensures fields which make use of these host namespaces
+        are unset or set to `false`.
+      policies.kyverno.io/severity: medium
+      policies.kyverno.io/subject: Pod
+      policies.kyverno.io/title: Disallow Host Namespaces
+    creationTimestamp: "2023-10-23T13:49:49Z"
+    generation: 1
+    labels:
+      app.kubernetes.io/component: kyverno
+      app.kubernetes.io/instance: zone-secops
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: olympus-atlantis-policy
+      app.kubernetes.io/part-of: olympus-atlantis-policy
+      app.kubernetes.io/version: 2.5.13
+      argocd.argoproj.io/instance: zone-secops-hdfc-beta
+      helm.sh/chart: olympus-atlantis-policy-2.5.13
+    name: disallow-host-namespaces
+    resourceVersion: "92264"
+    uid: 909d55ad-57a0-4b4d-b6ac-a024462f49e0
+  spec:
+    background: true
+    failurePolicy: Ignore
+    rules:
+    - exclude:
+        any:
+        - resources:
+            kinds:
+            - DaemonSet
+            - Pod
+            - ReplicaSet
+            names:
+            - gadget*
+            namespaces:
+            - gadget
+        - resources:
+            kinds:
+            - Deployment
+            - Pod
+            - ReplicaSet
+            names:
+            - pontus-spark-operator*
+            namespaces:
+            - jupiter-pontus
+        - resources:
+            kinds:
+            - DaemonSet
+            - Pod
+            - ReplicaSet
+            names:
+            - twistlock-defender-ds*
+            namespaces:
+            - twistlock
+      match:
+        any:
+        - resources:
+            kinds:
+            - Pod
+      name: host-namespaces
+      validate:
+        message: Sharing the host namespaces is disallowed. The fields spec.hostNetwork,
+          spec.hostIPC, and spec.hostPID must be unset or set to `false`.
+        pattern:
+          spec:
+            =(hostIPC): "false"
+            =(hostNetwork): "false"
+            =(hostPID): "false"
+    validationFailureAction: Audit
+  status:
+    autogen: {}
+    conditions:
+    - lastTransitionTime: "2023-10-23T13:49:49Z"
+      message: Ready
+      reason: Succeeded
+      status: "True"
+      type: Ready
+    ready: true
+    rulecount:
+      generate: 0
+      mutate: 0
+      validate: 1
+      verifyimages: 0
+- apiVersion: kyverno.io/v1
+  kind: ClusterPolicy
+  metadata:
+    annotations:
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"kyverno.io/v1","kind":"ClusterPolicy","metadata":{"annotations":{"kyverno.io/kubernetes-version":"1.22-1.23","kyverno.io/kyverno-version":"1.6.0","policies.kyverno.io/category":"Pod Security Standards (Baseline)","policies.kyverno.io/description":"HostPath volumes let Pods use host directories and volumes in containers. Using host resources can be used to access shared data or escalate privileges and should not be allowed. This policy ensures no hostPath volumes are in use.","policies.kyverno.io/severity":"medium","policies.kyverno.io/subject":"Pod,Volume","policies.kyverno.io/title":"Disallow hostPath"},"creationTimestamp":"2023-08-21T12:19:23Z","generation":6,"labels":{"app.kubernetes.io/component":"kyverno","app.kubernetes.io/instance":"zone-secops","app.kubernetes.io/managed-by":"Helm","app.kubernetes.io/name":"olympus-atlantis-policy","app.kubernetes.io/part-of":"olympus-atlantis-policy","app.kubernetes.io/version":"2.5.13","argocd.argoproj.io/instance":"zone-secops-hdfc-beta","helm.sh/chart":"olympus-atlantis-policy-2.5.13"},"name":"disallow-host-path","resourceVersion":"4056575111","uid":"d348a7c7-d2cb-4a47-95d6-82a2fda97643"},"spec":{"background":true,"failurePolicy":"Ignore","rules":[{"exclude":{"any":[{"resources":{"kinds":["DaemonSet","ReplicaSet","Pod"],"names":["castle-heap-dump-pusher-s3*"],"namespaces":["castle"]}},{"resources":{"kinds":["DaemonSet","Pod","ReplicaSet"],"names":["gadget*"],"namespaces":["gadget"]}},{"resources":{"kinds":["DaemonSet","Pod","ReplicaSet"],"names":["node-latency-for-k8s-node-latency-for-k8s-chart*"],"namespaces":["node-latency-for-k8s"]}},{"resources":{"kinds":["DaemonSet","Pod","ReplicaSet"],"names":["twistlock-defender-ds*"],"namespaces":["twistlock"]}},{"resources":{"kinds":["DaemonSet","Pod","ReplicaSet"],"names":["hades*"],"namespaces":["hades"]}},{"resources":{"kinds":["DaemonSet","Pod","ReplicaSet"],"names":["atropos-ebs-fluentd*"],"namespaces":["app-infra"]}}]},"match":{"any":[{"resources":{"kinds":["Pod"]}}]},"name":"host-path","validate":{"message":"HostPath volumes are forbidden. The field spec.volumes[*].hostPath must be unset.","pattern":{"spec":{"=(volumes)":[{"=(hostPath)":{"path":"/atropos/?*"}}]}}}}],"validationFailureAction":"Audit"},"status":{"autogen":{},"conditions":[{"lastTransitionTime":"2023-09-03T07:08:54Z","message":"Ready","reason":"Succeeded","status":"True","type":"Ready"}],"ready":true,"rulecount":{"generate":0,"mutate":0,"validate":1,"verifyimages":0}}}
+      kyverno.io/kubernetes-version: 1.22-1.23
+      kyverno.io/kyverno-version: 1.6.0
+      policies.kyverno.io/category: Pod Security Standards (Baseline)
+      policies.kyverno.io/description: HostPath volumes let Pods use host directories
+        and volumes in containers. Using host resources can be used to access shared
+        data or escalate privileges and should not be allowed. This policy ensures
+        no hostPath volumes are in use.
+      policies.kyverno.io/severity: medium
+      policies.kyverno.io/subject: Pod,Volume
+      policies.kyverno.io/title: Disallow hostPath
+    creationTimestamp: "2023-10-23T13:49:49Z"
+    generation: 1
+    labels:
+      app.kubernetes.io/component: kyverno
+      app.kubernetes.io/instance: zone-secops
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: olympus-atlantis-policy
+      app.kubernetes.io/part-of: olympus-atlantis-policy
+      app.kubernetes.io/version: 2.5.13
+      argocd.argoproj.io/instance: zone-secops-hdfc-beta
+      helm.sh/chart: olympus-atlantis-policy-2.5.13
+    name: disallow-host-path
+    resourceVersion: "92277"
+    uid: a62ddbcd-c093-498b-bb50-046f70aad659
+  spec:
+    background: true
+    failurePolicy: Ignore
+    rules:
+    - exclude:
+        any:
+        - resources:
+            kinds:
+            - DaemonSet
+            - ReplicaSet
+            - Pod
+            names:
+            - castle-heap-dump-pusher-s3*
+            namespaces:
+            - castle
+        - resources:
+            kinds:
+            - DaemonSet
+            - Pod
+            - ReplicaSet
+            names:
+            - gadget*
+            namespaces:
+            - gadget
+        - resources:
+            kinds:
+            - DaemonSet
+            - Pod
+            - ReplicaSet
+            names:
+            - node-latency-for-k8s-node-latency-for-k8s-chart*
+            namespaces:
+            - node-latency-for-k8s
+        - resources:
+            kinds:
+            - DaemonSet
+            - Pod
+            - ReplicaSet
+            names:
+            - twistlock-defender-ds*
+            namespaces:
+            - twistlock
+        - resources:
+            kinds:
+            - DaemonSet
+            - Pod
+            - ReplicaSet
+            names:
+            - hades*
+            namespaces:
+            - hades
+        - resources:
+            kinds:
+            - DaemonSet
+            - Pod
+            - ReplicaSet
+            names:
+            - atropos-ebs-fluentd*
+            namespaces:
+            - app-infra
+      match:
+        any:
+        - resources:
+            kinds:
+            - Pod
+      name: host-path
+      validate:
+        message: HostPath volumes are forbidden. The field spec.volumes[*].hostPath
+          must be unset.
+        pattern:
+          spec:
+            =(volumes):
+            - =(hostPath):
+                path: /atropos/?*
+    validationFailureAction: Audit
+  status:
+    autogen: {}
+    conditions:
+    - lastTransitionTime: "2023-10-23T13:49:49Z"
+      message: Ready
+      reason: Succeeded
+      status: "True"
+      type: Ready
+    ready: true
+    rulecount:
+      generate: 0
+      mutate: 0
+      validate: 1
+      verifyimages: 0
+- apiVersion: kyverno.io/v1
+  kind: ClusterPolicy
+  metadata:
+    annotations:
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"kyverno.io/v1","kind":"ClusterPolicy","metadata":{"annotations":{"kyverno.io/kubernetes-version":"1.22-1.23","kyverno.io/kyverno-version":"1.6.0","policies.kyverno.io/category":"Pod Security Standards (Baseline)","policies.kyverno.io/description":"Access to host ports allows potential snooping of network traffic and should not be allowed, or at minimum restricted to a known list. This policy ensures the `hostPort` field is unset or set to `0`.","policies.kyverno.io/severity":"medium","policies.kyverno.io/subject":"Pod","policies.kyverno.io/title":"Disallow hostPorts"},"creationTimestamp":"2023-08-08T09:07:35Z","generation":2,"labels":{"app.kubernetes.io/component":"kyverno","app.kubernetes.io/instance":"zone-secops","app.kubernetes.io/managed-by":"Helm","app.kubernetes.io/name":"olympus-atlantis-policy","app.kubernetes.io/part-of":"olympus-atlantis-policy","app.kubernetes.io/version":"2.5.13","argocd.argoproj.io/instance":"zone-secops-hdfc-beta","helm.sh/chart":"olympus-atlantis-policy-2.5.13"},"name":"disallow-host-ports","resourceVersion":"3971870641","uid":"313f9890-fdcd-40ad-9cd9-07e864ea1aa9"},"spec":{"background":true,"failurePolicy":"Ignore","rules":[{"exclude":{"any":[{"resources":{"kinds":["Deployment","Pod","ReplicaSet"],"names":["redis-cluster-haproxy*"],"namespaces":["aries","atlas","aura","cipher","elenchos","fusionconnect","gwplutus","gwplutusonboarding","hermes","plutus-perf","plutus","plutusbatch","plutuscommons","plutuscore","plutusintegration","plutuspayments","plutusrewards","prepaidcore","tachyoncommons","turbo"]}},{"resources":{"kinds":["Deployment","Pod","ReplicaSet"],"names":["nginx-s3-proxy*"],"namespaces":["hercules"]}},{"resources":{"kinds":["Deployment","Pod","ReplicaSet"],"names":["pontus-spark-operator*"],"namespaces":["jupiter-pontus"]}}]},"match":{"any":[{"resources":{"kinds":["Pod"]}}]},"name":"host-ports-none","validate":{"message":"Use of host ports is disallowed. The fields spec.containers[*].ports[*].hostPort , spec.initContainers[*].ports[*].hostPort, and spec.ephemeralContainers[*].ports[*].hostPort must either be unset or set to `0`.","pattern":{"spec":{"=(ephemeralContainers)":[{"=(ports)":[{"=(hostPort)":0}]}],"=(initContainers)":[{"=(ports)":[{"=(hostPort)":0}]}],"containers":[{"=(ports)":[{"=(hostPort)":0}]}]}}}}],"validationFailureAction":"Audit"},"status":{"autogen":{},"conditions":[{"lastTransitionTime":"2023-09-03T07:08:54Z","message":"Ready","reason":"Succeeded","status":"True","type":"Ready"}],"ready":true,"rulecount":{"generate":0,"mutate":0,"validate":1,"verifyimages":0}}}
+      kyverno.io/kubernetes-version: 1.22-1.23
+      kyverno.io/kyverno-version: 1.6.0
+      policies.kyverno.io/category: Pod Security Standards (Baseline)
+      policies.kyverno.io/description: Access to host ports allows potential snooping
+        of network traffic and should not be allowed, or at minimum restricted to
+        a known list. This policy ensures the `hostPort` field is unset or set to
+        `0`.
+      policies.kyverno.io/severity: medium
+      policies.kyverno.io/subject: Pod
+      policies.kyverno.io/title: Disallow hostPorts
+    creationTimestamp: "2023-10-23T13:49:49Z"
+    generation: 1
+    labels:
+      app.kubernetes.io/component: kyverno
+      app.kubernetes.io/instance: zone-secops
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: olympus-atlantis-policy
+      app.kubernetes.io/part-of: olympus-atlantis-policy
+      app.kubernetes.io/version: 2.5.13
+      argocd.argoproj.io/instance: zone-secops-hdfc-beta
+      helm.sh/chart: olympus-atlantis-policy-2.5.13
+    name: disallow-host-ports
+    resourceVersion: "92297"
+    uid: 9f3922a8-54a9-4560-87c6-42e8af11fd06
+  spec:
+    background: true
+    failurePolicy: Ignore
+    rules:
+    - exclude:
+        any:
+        - resources:
+            kinds:
+            - Deployment
+            - Pod
+            - ReplicaSet
+            names:
+            - redis-cluster-haproxy*
+            namespaces:
+            - aries
+            - atlas
+            - aura
+            - cipher
+            - elenchos
+            - fusionconnect
+            - gwplutus
+            - gwplutusonboarding
+            - hermes
+            - plutus-perf
+            - plutus
+            - plutusbatch
+            - plutuscommons
+            - plutuscore
+            - plutusintegration
+            - plutuspayments
+            - plutusrewards
+            - prepaidcore
+            - tachyoncommons
+            - turbo
+        - resources:
+            kinds:
+            - Deployment
+            - Pod
+            - ReplicaSet
+            names:
+            - nginx-s3-proxy*
+            namespaces:
+            - hercules
+        - resources:
+            kinds:
+            - Deployment
+            - Pod
+            - ReplicaSet
+            names:
+            - pontus-spark-operator*
+            namespaces:
+            - jupiter-pontus
+      match:
+        any:
+        - resources:
+            kinds:
+            - Pod
+      name: host-ports-none
+      validate:
+        message: Use of host ports is disallowed. The fields spec.containers[*].ports[*].hostPort
+          , spec.initContainers[*].ports[*].hostPort, and spec.ephemeralContainers[*].ports[*].hostPort
+          must either be unset or set to `0`.
+        pattern:
+          spec:
+            =(ephemeralContainers):
+            - =(ports):
+              - =(hostPort): 0
+            =(initContainers):
+            - =(ports):
+              - =(hostPort): 0
+            containers:
+            - =(ports):
+              - =(hostPort): 0
+    validationFailureAction: Audit
+  status:
+    autogen: {}
+    conditions:
+    - lastTransitionTime: "2023-10-23T13:49:50Z"
+      message: Ready
+      reason: Succeeded
+      status: "True"
+      type: Ready
+    ready: true
+    rulecount:
+      generate: 0
+      mutate: 0
+      validate: 1
+      verifyimages: 0
+- apiVersion: kyverno.io/v1
+  kind: ClusterPolicy
+  metadata:
+    annotations:
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"kyverno.io/v1","kind":"ClusterPolicy","metadata":{"annotations":{"kyverno.io/kubernetes-version":"1.22-1.23","kyverno.io/kyverno-version":"1.6.0","policies.kyverno.io/category":"Pod Security Standards (Baseline)","policies.kyverno.io/description":"Windows pods offer the ability to run HostProcess containers which enables privileged access to the Windows node. Privileged access to the host is disallowed in the baseline policy. HostProcess pods are an alpha feature as of Kubernetes v1.22. This policy ensures the `hostProcess` field, if present, is set to `false`.","policies.kyverno.io/severity":"medium","policies.kyverno.io/subject":"Pod","policies.kyverno.io/title":"Disallow hostProcess"},"creationTimestamp":"2023-08-08T09:07:35Z","generation":2,"labels":{"app.kubernetes.io/component":"kyverno","app.kubernetes.io/instance":"zone-secops","app.kubernetes.io/managed-by":"Helm","app.kubernetes.io/name":"olympus-atlantis-policy","app.kubernetes.io/part-of":"olympus-atlantis-policy","app.kubernetes.io/version":"2.5.13","argocd.argoproj.io/instance":"zone-secops-hdfc-beta","helm.sh/chart":"olympus-atlantis-policy-2.5.13"},"name":"disallow-host-process","resourceVersion":"3971870648","uid":"4ff6b6d8-3a54-480b-8946-04c6456f73a4"},"spec":{"background":true,"failurePolicy":"Ignore","rules":[{"match":{"any":[{"resources":{"kinds":["Pod"]}}]},"name":"host-process-containers","validate":{"message":"HostProcess containers are disallowed. The fields spec.securityContext.windowsOptions.hostProcess, spec.containers[*].securityContext.windowsOptions.hostProcess, spec.initContainers[*].securityContext.windowsOptions.hostProcess, and spec.ephemeralContainers[*].securityContext.windowsOptions.hostProcess must either be undefined or set to `false`.","pattern":{"spec":{"=(ephemeralContainers)":[{"=(securityContext)":{"=(windowsOptions)":{"=(hostProcess)":"false"}}}],"=(initContainers)":[{"=(securityContext)":{"=(windowsOptions)":{"=(hostProcess)":"false"}}}],"containers":[{"=(securityContext)":{"=(windowsOptions)":{"=(hostProcess)":"false"}}}]}}}}],"validationFailureAction":"Audit"},"status":{"autogen":{"rules":[{"exclude":{"resources":{}},"generate":{"clone":{},"cloneList":{}},"match":{"any":[{"resources":{"kinds":["DaemonSet","Deployment","Job","StatefulSet","ReplicaSet","ReplicationController"]}}],"resources":{}},"mutate":{},"name":"autogen-host-process-containers","validate":{"message":"HostProcess containers are disallowed. The fields spec.securityContext.windowsOptions.hostProcess, spec.containers[*].securityContext.windowsOptions.hostProcess, spec.initContainers[*].securityContext.windowsOptions.hostProcess, and spec.ephemeralContainers[*].securityContext.windowsOptions.hostProcess must either be undefined or set to `false`.","pattern":{"spec":{"template":{"spec":{"=(ephemeralContainers)":[{"=(securityContext)":{"=(windowsOptions)":{"=(hostProcess)":"false"}}}],"=(initContainers)":[{"=(securityContext)":{"=(windowsOptions)":{"=(hostProcess)":"false"}}}],"containers":[{"=(securityContext)":{"=(windowsOptions)":{"=(hostProcess)":"false"}}}]}}}}}},{"exclude":{"resources":{}},"generate":{"clone":{},"cloneList":{}},"match":{"any":[{"resources":{"kinds":["CronJob"]}}],"resources":{}},"mutate":{},"name":"autogen-cronjob-host-process-containers","validate":{"message":"HostProcess containers are disallowed. The fields spec.securityContext.windowsOptions.hostProcess, spec.containers[*].securityContext.windowsOptions.hostProcess, spec.initContainers[*].securityContext.windowsOptions.hostProcess, and spec.ephemeralContainers[*].securityContext.windowsOptions.hostProcess must either be undefined or set to `false`.","pattern":{"spec":{"jobTemplate":{"spec":{"template":{"spec":{"=(ephemeralContainers)":[{"=(securityContext)":{"=(windowsOptions)":{"=(hostProcess)":"false"}}}],"=(initContainers)":[{"=(securityContext)":{"=(windowsOptions)":{"=(hostProcess)":"false"}}}],"containers":[{"=(securityContext)":{"=(windowsOptions)":{"=(hostProcess)":"false"}}}]}}}}}}}}]},"conditions":[{"lastTransitionTime":"2023-09-03T07:08:54Z","message":"Ready","reason":"Succeeded","status":"True","type":"Ready"}],"ready":true,"rulecount":{"generate":0,"mutate":0,"validate":1,"verifyimages":0}}}
+      kyverno.io/kubernetes-version: 1.22-1.23
+      kyverno.io/kyverno-version: 1.6.0
+      policies.kyverno.io/category: Pod Security Standards (Baseline)
+      policies.kyverno.io/description: Windows pods offer the ability to run HostProcess
+        containers which enables privileged access to the Windows node. Privileged
+        access to the host is disallowed in the baseline policy. HostProcess pods
+        are an alpha feature as of Kubernetes v1.22. This policy ensures the `hostProcess`
+        field, if present, is set to `false`.
+      policies.kyverno.io/severity: medium
+      policies.kyverno.io/subject: Pod
+      policies.kyverno.io/title: Disallow hostProcess
+    creationTimestamp: "2023-10-23T13:49:50Z"
+    generation: 1
+    labels:
+      app.kubernetes.io/component: kyverno
+      app.kubernetes.io/instance: zone-secops
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: olympus-atlantis-policy
+      app.kubernetes.io/part-of: olympus-atlantis-policy
+      app.kubernetes.io/version: 2.5.13
+      argocd.argoproj.io/instance: zone-secops-hdfc-beta
+      helm.sh/chart: olympus-atlantis-policy-2.5.13
+    name: disallow-host-process
+    resourceVersion: "92318"
+    uid: 22e86dc3-5b6f-413f-9ffb-2cbb5bce00be
+  spec:
+    background: true
+    failurePolicy: Ignore
+    rules:
+    - match:
+        any:
+        - resources:
+            kinds:
+            - Pod
+      name: host-process-containers
+      validate:
+        message: HostProcess containers are disallowed. The fields spec.securityContext.windowsOptions.hostProcess,
+          spec.containers[*].securityContext.windowsOptions.hostProcess, spec.initContainers[*].securityContext.windowsOptions.hostProcess,
+          and spec.ephemeralContainers[*].securityContext.windowsOptions.hostProcess
+          must either be undefined or set to `false`.
+        pattern:
+          spec:
+            =(ephemeralContainers):
+            - =(securityContext):
+                =(windowsOptions):
+                  =(hostProcess): "false"
+            =(initContainers):
+            - =(securityContext):
+                =(windowsOptions):
+                  =(hostProcess): "false"
+            containers:
+            - =(securityContext):
+                =(windowsOptions):
+                  =(hostProcess): "false"
+    validationFailureAction: Audit
+  status:
+    autogen:
+      rules:
+      - exclude:
+          resources: {}
+        generate:
+          clone: {}
+          cloneList: {}
+        match:
+          any:
+          - resources:
+              kinds:
+              - DaemonSet
+              - Deployment
+              - Job
+              - StatefulSet
+              - ReplicaSet
+              - ReplicationController
+          resources: {}
+        mutate: {}
+        name: autogen-host-process-containers
+        validate:
+          message: HostProcess containers are disallowed. The fields spec.securityContext.windowsOptions.hostProcess,
+            spec.containers[*].securityContext.windowsOptions.hostProcess, spec.initContainers[*].securityContext.windowsOptions.hostProcess,
+            and spec.ephemeralContainers[*].securityContext.windowsOptions.hostProcess
+            must either be undefined or set to `false`.
+          pattern:
+            spec:
+              template:
+                spec:
+                  =(ephemeralContainers):
+                  - =(securityContext):
+                      =(windowsOptions):
+                        =(hostProcess): "false"
+                  =(initContainers):
+                  - =(securityContext):
+                      =(windowsOptions):
+                        =(hostProcess): "false"
+                  containers:
+                  - =(securityContext):
+                      =(windowsOptions):
+                        =(hostProcess): "false"
+      - exclude:
+          resources: {}
+        generate:
+          clone: {}
+          cloneList: {}
+        match:
+          any:
+          - resources:
+              kinds:
+              - CronJob
+          resources: {}
+        mutate: {}
+        name: autogen-cronjob-host-process-containers
+        validate:
+          message: HostProcess containers are disallowed. The fields spec.securityContext.windowsOptions.hostProcess,
+            spec.containers[*].securityContext.windowsOptions.hostProcess, spec.initContainers[*].securityContext.windowsOptions.hostProcess,
+            and spec.ephemeralContainers[*].securityContext.windowsOptions.hostProcess
+            must either be undefined or set to `false`.
+          pattern:
+            spec:
+              jobTemplate:
+                spec:
+                  template:
+                    spec:
+                      =(ephemeralContainers):
+                      - =(securityContext):
+                          =(windowsOptions):
+                            =(hostProcess): "false"
+                      =(initContainers):
+                      - =(securityContext):
+                          =(windowsOptions):
+                            =(hostProcess): "false"
+                      containers:
+                      - =(securityContext):
+                          =(windowsOptions):
+                            =(hostProcess): "false"
+    conditions:
+    - lastTransitionTime: "2023-10-23T13:49:50Z"
+      message: Ready
+      reason: Succeeded
+      status: "True"
+      type: Ready
+    ready: true
+    rulecount:
+      generate: 0
+      mutate: 0
+      validate: 1
+      verifyimages: 0
+- apiVersion: kyverno.io/v1
+  kind: ClusterPolicy
+  metadata:
+    annotations:
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"kyverno.io/v1","kind":"ClusterPolicy","metadata":{"annotations":{"kyverno.io/kubernetes-version":"1.22-1.23","kyverno.io/kyverno-version":"1.6.0","policies.kyverno.io/category":"Pod Security Standards (Baseline)","policies.kyverno.io/description":"Privileged mode disables most security mechanisms and must not be allowed. This policy ensures Pods do not call for privileged mode.","policies.kyverno.io/severity":"medium","policies.kyverno.io/subject":"Pod","policies.kyverno.io/title":"Disallow Privileged Containers"},"creationTimestamp":"2023-08-08T09:07:35Z","generation":2,"labels":{"app.kubernetes.io/component":"kyverno","app.kubernetes.io/instance":"zone-secops","app.kubernetes.io/managed-by":"Helm","app.kubernetes.io/name":"olympus-atlantis-policy","app.kubernetes.io/part-of":"olympus-atlantis-policy","app.kubernetes.io/version":"2.5.13","argocd.argoproj.io/instance":"zone-secops-hdfc-beta","helm.sh/chart":"olympus-atlantis-policy-2.5.13"},"name":"disallow-privileged-containers","resourceVersion":"3971870642","uid":"df7c525a-3928-42bb-909d-11e696ca0701"},"spec":{"background":true,"failurePolicy":"Ignore","rules":[{"match":{"any":[{"resources":{"kinds":["Pod"]}}]},"name":"privileged-containers","validate":{"message":"Privileged mode is disallowed. The fields spec.containers[*].securityContext.privileged and spec.initContainers[*].securityContext.privileged must be unset or set to `false`.","pattern":{"spec":{"=(ephemeralContainers)":[{"=(securityContext)":{"=(privileged)":"false"}}],"=(initContainers)":[{"=(securityContext)":{"=(privileged)":"false"}}],"containers":[{"=(securityContext)":{"=(privileged)":"false"}}]}}}}],"validationFailureAction":"Audit"},"status":{"autogen":{"rules":[{"exclude":{"resources":{}},"generate":{"clone":{},"cloneList":{}},"match":{"any":[{"resources":{"kinds":["DaemonSet","Deployment","Job","StatefulSet","ReplicaSet","ReplicationController"]}}],"resources":{}},"mutate":{},"name":"autogen-privileged-containers","validate":{"message":"Privileged mode is disallowed. The fields spec.containers[*].securityContext.privileged and spec.initContainers[*].securityContext.privileged must be unset or set to `false`.","pattern":{"spec":{"template":{"spec":{"=(ephemeralContainers)":[{"=(securityContext)":{"=(privileged)":"false"}}],"=(initContainers)":[{"=(securityContext)":{"=(privileged)":"false"}}],"containers":[{"=(securityContext)":{"=(privileged)":"false"}}]}}}}}},{"exclude":{"resources":{}},"generate":{"clone":{},"cloneList":{}},"match":{"any":[{"resources":{"kinds":["CronJob"]}}],"resources":{}},"mutate":{},"name":"autogen-cronjob-privileged-containers","validate":{"message":"Privileged mode is disallowed. The fields spec.containers[*].securityContext.privileged and spec.initContainers[*].securityContext.privileged must be unset or set to `false`.","pattern":{"spec":{"jobTemplate":{"spec":{"template":{"spec":{"=(ephemeralContainers)":[{"=(securityContext)":{"=(privileged)":"false"}}],"=(initContainers)":[{"=(securityContext)":{"=(privileged)":"false"}}],"containers":[{"=(securityContext)":{"=(privileged)":"false"}}]}}}}}}}}]},"conditions":[{"lastTransitionTime":"2023-09-03T07:08:54Z","message":"Ready","reason":"Succeeded","status":"True","type":"Ready"}],"ready":true,"rulecount":{"generate":0,"mutate":0,"validate":1,"verifyimages":0}}}
+      kyverno.io/kubernetes-version: 1.22-1.23
+      kyverno.io/kyverno-version: 1.6.0
+      policies.kyverno.io/category: Pod Security Standards (Baseline)
+      policies.kyverno.io/description: Privileged mode disables most security mechanisms
+        and must not be allowed. This policy ensures Pods do not call for privileged
+        mode.
+      policies.kyverno.io/severity: medium
+      policies.kyverno.io/subject: Pod
+      policies.kyverno.io/title: Disallow Privileged Containers
+    creationTimestamp: "2023-10-23T13:49:50Z"
+    generation: 1
+    labels:
+      app.kubernetes.io/component: kyverno
+      app.kubernetes.io/instance: zone-secops
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: olympus-atlantis-policy
+      app.kubernetes.io/part-of: olympus-atlantis-policy
+      app.kubernetes.io/version: 2.5.13
+      argocd.argoproj.io/instance: zone-secops-hdfc-beta
+      helm.sh/chart: olympus-atlantis-policy-2.5.13
+    name: disallow-privileged-containers
+    resourceVersion: "92339"
+    uid: 7f979373-ae02-4ecc-bc64-407591f7a895
+  spec:
+    background: true
+    failurePolicy: Ignore
+    rules:
+    - match:
+        any:
+        - resources:
+            kinds:
+            - Pod
+      name: privileged-containers
+      validate:
+        message: Privileged mode is disallowed. The fields spec.containers[*].securityContext.privileged
+          and spec.initContainers[*].securityContext.privileged must be unset or set
+          to `false`.
+        pattern:
+          spec:
+            =(ephemeralContainers):
+            - =(securityContext):
+                =(privileged): "false"
+            =(initContainers):
+            - =(securityContext):
+                =(privileged): "false"
+            containers:
+            - =(securityContext):
+                =(privileged): "false"
+    validationFailureAction: Audit
+  status:
+    autogen:
+      rules:
+      - exclude:
+          resources: {}
+        generate:
+          clone: {}
+          cloneList: {}
+        match:
+          any:
+          - resources:
+              kinds:
+              - DaemonSet
+              - Deployment
+              - Job
+              - StatefulSet
+              - ReplicaSet
+              - ReplicationController
+          resources: {}
+        mutate: {}
+        name: autogen-privileged-containers
+        validate:
+          message: Privileged mode is disallowed. The fields spec.containers[*].securityContext.privileged
+            and spec.initContainers[*].securityContext.privileged must be unset or
+            set to `false`.
+          pattern:
+            spec:
+              template:
+                spec:
+                  =(ephemeralContainers):
+                  - =(securityContext):
+                      =(privileged): "false"
+                  =(initContainers):
+                  - =(securityContext):
+                      =(privileged): "false"
+                  containers:
+                  - =(securityContext):
+                      =(privileged): "false"
+      - exclude:
+          resources: {}
+        generate:
+          clone: {}
+          cloneList: {}
+        match:
+          any:
+          - resources:
+              kinds:
+              - CronJob
+          resources: {}
+        mutate: {}
+        name: autogen-cronjob-privileged-containers
+        validate:
+          message: Privileged mode is disallowed. The fields spec.containers[*].securityContext.privileged
+            and spec.initContainers[*].securityContext.privileged must be unset or
+            set to `false`.
+          pattern:
+            spec:
+              jobTemplate:
+                spec:
+                  template:
+                    spec:
+                      =(ephemeralContainers):
+                      - =(securityContext):
+                          =(privileged): "false"
+                      =(initContainers):
+                      - =(securityContext):
+                          =(privileged): "false"
+                      containers:
+                      - =(securityContext):
+                          =(privileged): "false"
+    conditions:
+    - lastTransitionTime: "2023-10-23T13:49:50Z"
+      message: Ready
+      reason: Succeeded
+      status: "True"
+      type: Ready
+    ready: true
+    rulecount:
+      generate: 0
+      mutate: 0
+      validate: 1
+      verifyimages: 0
+- apiVersion: kyverno.io/v1
+  kind: ClusterPolicy
+  metadata:
+    annotations:
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"kyverno.io/v1","kind":"ClusterPolicy","metadata":{"annotations":{"kyverno.io/kubernetes-version":"1.22-1.23","kyverno.io/kyverno-version":"1.6.0","policies.kyverno.io/category":"Pod Security Standards (Baseline)","policies.kyverno.io/description":"The default /proc masks are set up to reduce attack surface and should be required. This policy ensures nothing but the default procMount can be specified. Note that in order for users to deviate from the `Default` procMount requires setting a feature gate at the API server.","policies.kyverno.io/severity":"medium","policies.kyverno.io/subject":"Pod","policies.kyverno.io/title":"Disallow procMount"},"creationTimestamp":"2023-08-08T09:07:35Z","generation":2,"labels":{"app.kubernetes.io/component":"kyverno","app.kubernetes.io/instance":"zone-secops","app.kubernetes.io/managed-by":"Helm","app.kubernetes.io/name":"olympus-atlantis-policy","app.kubernetes.io/part-of":"olympus-atlantis-policy","app.kubernetes.io/version":"2.5.13","argocd.argoproj.io/instance":"zone-secops-hdfc-beta","helm.sh/chart":"olympus-atlantis-policy-2.5.13"},"name":"disallow-proc-mount","resourceVersion":"3971870658","uid":"6549abe5-efa7-4955-aa3a-ea4986e3378e"},"spec":{"background":true,"failurePolicy":"Ignore","rules":[{"match":{"any":[{"resources":{"kinds":["Pod"]}}]},"name":"check-proc-mount","validate":{"message":"Changing the proc mount from the default is not allowed. The fields spec.containers[*].securityContext.procMount, spec.initContainers[*].securityContext.procMount, and spec.ephemeralContainers[*].securityContext.procMount must be unset or set to `Default`.","pattern":{"spec":{"=(ephemeralContainers)":[{"=(securityContext)":{"=(procMount)":"Default"}}],"=(initContainers)":[{"=(securityContext)":{"=(procMount)":"Default"}}],"containers":[{"=(securityContext)":{"=(procMount)":"Default"}}]}}}}],"validationFailureAction":"Audit"},"status":{"autogen":{"rules":[{"exclude":{"resources":{}},"generate":{"clone":{},"cloneList":{}},"match":{"any":[{"resources":{"kinds":["DaemonSet","Deployment","Job","StatefulSet","ReplicaSet","ReplicationController"]}}],"resources":{}},"mutate":{},"name":"autogen-check-proc-mount","validate":{"message":"Changing the proc mount from the default is not allowed. The fields spec.containers[*].securityContext.procMount, spec.initContainers[*].securityContext.procMount, and spec.ephemeralContainers[*].securityContext.procMount must be unset or set to `Default`.","pattern":{"spec":{"template":{"spec":{"=(ephemeralContainers)":[{"=(securityContext)":{"=(procMount)":"Default"}}],"=(initContainers)":[{"=(securityContext)":{"=(procMount)":"Default"}}],"containers":[{"=(securityContext)":{"=(procMount)":"Default"}}]}}}}}},{"exclude":{"resources":{}},"generate":{"clone":{},"cloneList":{}},"match":{"any":[{"resources":{"kinds":["CronJob"]}}],"resources":{}},"mutate":{},"name":"autogen-cronjob-check-proc-mount","validate":{"message":"Changing the proc mount from the default is not allowed. The fields spec.containers[*].securityContext.procMount, spec.initContainers[*].securityContext.procMount, and spec.ephemeralContainers[*].securityContext.procMount must be unset or set to `Default`.","pattern":{"spec":{"jobTemplate":{"spec":{"template":{"spec":{"=(ephemeralContainers)":[{"=(securityContext)":{"=(procMount)":"Default"}}],"=(initContainers)":[{"=(securityContext)":{"=(procMount)":"Default"}}],"containers":[{"=(securityContext)":{"=(procMount)":"Default"}}]}}}}}}}}]},"conditions":[{"lastTransitionTime":"2023-09-03T07:08:54Z","message":"Ready","reason":"Succeeded","status":"True","type":"Ready"}],"ready":true,"rulecount":{"generate":0,"mutate":0,"validate":1,"verifyimages":0}}}
+      kyverno.io/kubernetes-version: 1.22-1.23
+      kyverno.io/kyverno-version: 1.6.0
+      policies.kyverno.io/category: Pod Security Standards (Baseline)
+      policies.kyverno.io/description: The default /proc masks are set up to reduce
+        attack surface and should be required. This policy ensures nothing but the
+        default procMount can be specified. Note that in order for users to deviate
+        from the `Default` procMount requires setting a feature gate at the API server.
+      policies.kyverno.io/severity: medium
+      policies.kyverno.io/subject: Pod
+      policies.kyverno.io/title: Disallow procMount
+    creationTimestamp: "2023-10-23T13:49:50Z"
+    generation: 1
+    labels:
+      app.kubernetes.io/component: kyverno
+      app.kubernetes.io/instance: zone-secops
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: olympus-atlantis-policy
+      app.kubernetes.io/part-of: olympus-atlantis-policy
+      app.kubernetes.io/version: 2.5.13
+      argocd.argoproj.io/instance: zone-secops-hdfc-beta
+      helm.sh/chart: olympus-atlantis-policy-2.5.13
+    name: disallow-proc-mount
+    resourceVersion: "92350"
+    uid: f6119016-4dd7-46bd-a61a-cff9559c438f
+  spec:
+    background: true
+    failurePolicy: Ignore
+    rules:
+    - match:
+        any:
+        - resources:
+            kinds:
+            - Pod
+      name: check-proc-mount
+      validate:
+        message: Changing the proc mount from the default is not allowed. The fields
+          spec.containers[*].securityContext.procMount, spec.initContainers[*].securityContext.procMount,
+          and spec.ephemeralContainers[*].securityContext.procMount must be unset
+          or set to `Default`.
+        pattern:
+          spec:
+            =(ephemeralContainers):
+            - =(securityContext):
+                =(procMount): Default
+            =(initContainers):
+            - =(securityContext):
+                =(procMount): Default
+            containers:
+            - =(securityContext):
+                =(procMount): Default
+    validationFailureAction: Audit
+  status:
+    autogen:
+      rules:
+      - exclude:
+          resources: {}
+        generate:
+          clone: {}
+          cloneList: {}
+        match:
+          any:
+          - resources:
+              kinds:
+              - DaemonSet
+              - Deployment
+              - Job
+              - StatefulSet
+              - ReplicaSet
+              - ReplicationController
+          resources: {}
+        mutate: {}
+        name: autogen-check-proc-mount
+        validate:
+          message: Changing the proc mount from the default is not allowed. The fields
+            spec.containers[*].securityContext.procMount, spec.initContainers[*].securityContext.procMount,
+            and spec.ephemeralContainers[*].securityContext.procMount must be unset
+            or set to `Default`.
+          pattern:
+            spec:
+              template:
+                spec:
+                  =(ephemeralContainers):
+                  - =(securityContext):
+                      =(procMount): Default
+                  =(initContainers):
+                  - =(securityContext):
+                      =(procMount): Default
+                  containers:
+                  - =(securityContext):
+                      =(procMount): Default
+      - exclude:
+          resources: {}
+        generate:
+          clone: {}
+          cloneList: {}
+        match:
+          any:
+          - resources:
+              kinds:
+              - CronJob
+          resources: {}
+        mutate: {}
+        name: autogen-cronjob-check-proc-mount
+        validate:
+          message: Changing the proc mount from the default is not allowed. The fields
+            spec.containers[*].securityContext.procMount, spec.initContainers[*].securityContext.procMount,
+            and spec.ephemeralContainers[*].securityContext.procMount must be unset
+            or set to `Default`.
+          pattern:
+            spec:
+              jobTemplate:
+                spec:
+                  template:
+                    spec:
+                      =(ephemeralContainers):
+                      - =(securityContext):
+                          =(procMount): Default
+                      =(initContainers):
+                      - =(securityContext):
+                          =(procMount): Default
+                      containers:
+                      - =(securityContext):
+                          =(procMount): Default
+    conditions:
+    - lastTransitionTime: "2023-10-23T13:49:51Z"
+      message: Ready
+      reason: Succeeded
+      status: "True"
+      type: Ready
+    ready: true
+    rulecount:
+      generate: 0
+      mutate: 0
+      validate: 1
+      verifyimages: 0
+- apiVersion: kyverno.io/v1
+  kind: ClusterPolicy
+  metadata:
+    annotations:
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"kyverno.io/v1","kind":"ClusterPolicy","metadata":{"annotations":{"kyverno.io/kubernetes-version":"1.22-1.23","kyverno.io/kyverno-version":"1.6.0","policies.kyverno.io/category":"Pod Security Standards (Baseline)","policies.kyverno.io/description":"SELinux options can be used to escalate privileges and should not be allowed. This policy ensures that the `seLinuxOptions` field is undefined.","policies.kyverno.io/severity":"medium","policies.kyverno.io/subject":"Pod","policies.kyverno.io/title":"Disallow SELinux"},"creationTimestamp":"2023-08-08T09:07:35Z","generation":2,"labels":{"app.kubernetes.io/component":"kyverno","app.kubernetes.io/instance":"zone-secops","app.kubernetes.io/managed-by":"Helm","app.kubernetes.io/name":"olympus-atlantis-policy","app.kubernetes.io/part-of":"olympus-atlantis-policy","app.kubernetes.io/version":"2.5.13","argocd.argoproj.io/instance":"zone-secops-hdfc-beta","helm.sh/chart":"olympus-atlantis-policy-2.5.13"},"name":"disallow-selinux","resourceVersion":"3971870644","uid":"6d712397-fb51-448d-9f90-281bc14ea26e"},"spec":{"background":true,"failurePolicy":"Ignore","rules":[{"exclude":{"any":[{"resources":{"kinds":["DaemonSet","Pod","ReplicaSet"],"names":["twistlock-defender-ds*"],"namespaces":["twistlock"]}}]},"match":{"any":[{"resources":{"kinds":["Pod"]}}]},"name":"selinux-type","validate":{"message":"Setting the SELinux type is restricted. The fields spec.securityContext.seLinuxOptions.type, spec.containers[*].securityContext.seLinuxOptions.type, , spec.initContainers[*].securityContext.seLinuxOptions, and spec.ephemeralContainers[*].securityContext.seLinuxOptions.type must either be unset or set to one of the allowed values (container_t, container_init_t, or container_kvm_t).","pattern":{"spec":{"=(ephemeralContainers)":[{"=(securityContext)":{"=(seLinuxOptions)":{"=(type)":"container_t | container_init_t | container_kvm_t"}}}],"=(initContainers)":[{"=(securityContext)":{"=(seLinuxOptions)":{"=(type)":"container_t | container_init_t | container_kvm_t"}}}],"=(securityContext)":{"=(seLinuxOptions)":{"=(type)":"container_t | container_init_t | container_kvm_t"}},"containers":[{"=(securityContext)":{"=(seLinuxOptions)":{"=(type)":"container_t | container_init_t | container_kvm_t"}}}]}}}},{"exclude":{"any":[{"resources":{"kinds":["DaemonSet","Pod","ReplicaSet"],"names":["twistlock-defender-ds*"],"namespaces":["twistlock"]}}]},"match":{"any":[{"resources":{"kinds":["Pod"]}}]},"name":"selinux-user-role","validate":{"message":"Setting the SELinux user or role is forbidden. The fields spec.securityContext.seLinuxOptions.user, spec.securityContext.seLinuxOptions.role, spec.containers[*].securityContext.seLinuxOptions.user, spec.containers[*].securityContext.seLinuxOptions.role, spec.initContainers[*].securityContext.seLinuxOptions.user, spec.initContainers[*].securityContext.seLinuxOptions.role, spec.ephemeralContainers[*].securityContext.seLinuxOptions.user, and spec.ephemeralContainers[*].securityContext.seLinuxOptions.role must be unset.","pattern":{"spec":{"=(ephemeralContainers)":[{"=(securityContext)":{"=(seLinuxOptions)":{"X(role)":"null","X(user)":"null"}}}],"=(initContainers)":[{"=(securityContext)":{"=(seLinuxOptions)":{"X(role)":"null","X(user)":"null"}}}],"=(securityContext)":{"=(seLinuxOptions)":{"X(role)":"null","X(user)":"null"}},"containers":[{"=(securityContext)":{"=(seLinuxOptions)":{"X(role)":"null","X(user)":"null"}}}]}}}}],"validationFailureAction":"Audit"},"status":{"autogen":{},"conditions":[{"lastTransitionTime":"2023-09-03T07:08:54Z","message":"Ready","reason":"Succeeded","status":"True","type":"Ready"}],"ready":true,"rulecount":{"generate":0,"mutate":0,"validate":2,"verifyimages":0}}}
+      kyverno.io/kubernetes-version: 1.22-1.23
+      kyverno.io/kyverno-version: 1.6.0
+      policies.kyverno.io/category: Pod Security Standards (Baseline)
+      policies.kyverno.io/description: SELinux options can be used to escalate privileges
+        and should not be allowed. This policy ensures that the `seLinuxOptions` field
+        is undefined.
+      policies.kyverno.io/severity: medium
+      policies.kyverno.io/subject: Pod
+      policies.kyverno.io/title: Disallow SELinux
+    creationTimestamp: "2023-10-23T13:49:51Z"
+    generation: 1
+    labels:
+      app.kubernetes.io/component: kyverno
+      app.kubernetes.io/instance: zone-secops
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: olympus-atlantis-policy
+      app.kubernetes.io/part-of: olympus-atlantis-policy
+      app.kubernetes.io/version: 2.5.13
+      argocd.argoproj.io/instance: zone-secops-hdfc-beta
+      helm.sh/chart: olympus-atlantis-policy-2.5.13
+    name: disallow-selinux
+    resourceVersion: "92362"
+    uid: 670ba655-5fb8-4344-a7ec-6a081d7945a8
+  spec:
+    background: true
+    failurePolicy: Ignore
+    rules:
+    - exclude:
+        any:
+        - resources:
+            kinds:
+            - DaemonSet
+            - Pod
+            - ReplicaSet
+            names:
+            - twistlock-defender-ds*
+            namespaces:
+            - twistlock
+      match:
+        any:
+        - resources:
+            kinds:
+            - Pod
+      name: selinux-type
+      validate:
+        message: Setting the SELinux type is restricted. The fields spec.securityContext.seLinuxOptions.type,
+          spec.containers[*].securityContext.seLinuxOptions.type, , spec.initContainers[*].securityContext.seLinuxOptions,
+          and spec.ephemeralContainers[*].securityContext.seLinuxOptions.type must
+          either be unset or set to one of the allowed values (container_t, container_init_t,
+          or container_kvm_t).
+        pattern:
+          spec:
+            =(ephemeralContainers):
+            - =(securityContext):
+                =(seLinuxOptions):
+                  =(type): container_t | container_init_t | container_kvm_t
+            =(initContainers):
+            - =(securityContext):
+                =(seLinuxOptions):
+                  =(type): container_t | container_init_t | container_kvm_t
+            =(securityContext):
+              =(seLinuxOptions):
+                =(type): container_t | container_init_t | container_kvm_t
+            containers:
+            - =(securityContext):
+                =(seLinuxOptions):
+                  =(type): container_t | container_init_t | container_kvm_t
+    - exclude:
+        any:
+        - resources:
+            kinds:
+            - DaemonSet
+            - Pod
+            - ReplicaSet
+            names:
+            - twistlock-defender-ds*
+            namespaces:
+            - twistlock
+      match:
+        any:
+        - resources:
+            kinds:
+            - Pod
+      name: selinux-user-role
+      validate:
+        message: Setting the SELinux user or role is forbidden. The fields spec.securityContext.seLinuxOptions.user,
+          spec.securityContext.seLinuxOptions.role, spec.containers[*].securityContext.seLinuxOptions.user,
+          spec.containers[*].securityContext.seLinuxOptions.role, spec.initContainers[*].securityContext.seLinuxOptions.user,
+          spec.initContainers[*].securityContext.seLinuxOptions.role, spec.ephemeralContainers[*].securityContext.seLinuxOptions.user,
+          and spec.ephemeralContainers[*].securityContext.seLinuxOptions.role must
+          be unset.
+        pattern:
+          spec:
+            =(ephemeralContainers):
+            - =(securityContext):
+                =(seLinuxOptions):
+                  X(role): "null"
+                  X(user): "null"
+            =(initContainers):
+            - =(securityContext):
+                =(seLinuxOptions):
+                  X(role): "null"
+                  X(user): "null"
+            =(securityContext):
+              =(seLinuxOptions):
+                X(role): "null"
+                X(user): "null"
+            containers:
+            - =(securityContext):
+                =(seLinuxOptions):
+                  X(role): "null"
+                  X(user): "null"
+    validationFailureAction: Audit
+  status:
+    autogen: {}
+    conditions:
+    - lastTransitionTime: "2023-10-23T13:49:51Z"
+      message: Ready
+      reason: Succeeded
+      status: "True"
+      type: Ready
+    ready: true
+    rulecount:
+      generate: 0
+      mutate: 0
+      validate: 2
+      verifyimages: 0
+- apiVersion: kyverno.io/v1
+  kind: ClusterPolicy
+  metadata:
+    annotations:
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"kyverno.io/v1","kind":"ClusterPolicy","metadata":{"annotations":{"kyverno.io/kubernetes-version":"1.22-1.23","kyverno.io/kyverno-version":"1.6.0","policies.kyverno.io/category":"Pod Security Standards (Restricted)","policies.kyverno.io/description":"Containers must be required to run as non-root users. This policy ensures `runAsUser` is either unset or set to a number greater than zero.","policies.kyverno.io/severity":"medium","policies.kyverno.io/subject":"Pod","policies.kyverno.io/title":"Require Run As Non-Root User"},"creationTimestamp":"2023-08-08T09:07:39Z","generation":2,"labels":{"app.kubernetes.io/component":"kyverno","app.kubernetes.io/instance":"zone-secops","app.kubernetes.io/managed-by":"Helm","app.kubernetes.io/name":"olympus-atlantis-policy","app.kubernetes.io/part-of":"olympus-atlantis-policy","app.kubernetes.io/version":"2.5.13","argocd.argoproj.io/instance":"zone-secops-hdfc-beta","helm.sh/chart":"olympus-atlantis-policy-2.5.13"},"name":"require-run-as-non-root-user","resourceVersion":"3971870665","uid":"40ef8752-3f5e-40ea-b610-cd1e891af228"},"spec":{"background":true,"failurePolicy":"Ignore","rules":[{"exclude":{"any":[{"resources":{"kinds":["Deployment","Pod","ReplicaSet"],"names":["app-infra*"],"namespaces":["app-infra"]}},{"resources":{"kinds":["StatefulSet","Pod","ReplicaSet"],"names":["gitea-postgresql*"],"namespaces":["gitea"]}},{"resources":{"kinds":["DaemonSet","Pod","ReplicaSet"],"names":["node-latency-for-k8s-node-latency-for-k8s-chart*"],"namespaces":["node-latency-for-k8s"]}},{"resources":{"kinds":["StatefulSet","Pod","ReplicaSet"],"names":["tenantex-postgresql*"],"namespaces":["tenantex"]}},{"resources":{"kinds":["Deployment","DaemonSet","ReplicaSet","Pod"],"names":["compute-infra-ops*"],"namespaces":["app-infra"]}},{"resources":{"kinds":["DaemonSet","Pod","ReplicaSet"],"names":["hades*"],"namespaces":["hades"]}}]},"match":{"any":[{"resources":{"kinds":["Pod"]}}]},"name":"run-as-non-root-user","validate":{"message":"Running as root is not allowed. The fields spec.securityContext.runAsUser, spec.containers[*].securityContext.runAsUser, spec.initContainers[*].securityContext.runAsUser, and spec.ephemeralContainers[*].securityContext.runAsUser must be unset or set to a number greater than zero.","pattern":{"spec":{"=(ephemeralContainers)":[{"=(securityContext)":{"=(runAsUser)":"\u003e0"}}],"=(initContainers)":[{"=(securityContext)":{"=(runAsUser)":"\u003e0"}}],"=(securityContext)":{"=(runAsUser)":"\u003e0"},"containers":[{"=(securityContext)":{"=(runAsUser)":"\u003e0"}}]}}}}],"validationFailureAction":"Audit"},"status":{"autogen":{},"conditions":[{"lastTransitionTime":"2023-09-03T07:08:54Z","message":"Ready","reason":"Succeeded","status":"True","type":"Ready"}],"ready":true,"rulecount":{"generate":0,"mutate":0,"validate":1,"verifyimages":0}}}
+      kyverno.io/kubernetes-version: 1.22-1.23
+      kyverno.io/kyverno-version: 1.6.0
+      policies.kyverno.io/category: Pod Security Standards (Restricted)
+      policies.kyverno.io/description: Containers must be required to run as non-root
+        users. This policy ensures `runAsUser` is either unset or set to a number
+        greater than zero.
+      policies.kyverno.io/severity: medium
+      policies.kyverno.io/subject: Pod
+      policies.kyverno.io/title: Require Run As Non-Root User
+    creationTimestamp: "2023-10-23T13:49:51Z"
+    generation: 1
+    labels:
+      app.kubernetes.io/component: kyverno
+      app.kubernetes.io/instance: zone-secops
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: olympus-atlantis-policy
+      app.kubernetes.io/part-of: olympus-atlantis-policy
+      app.kubernetes.io/version: 2.5.13
+      argocd.argoproj.io/instance: zone-secops-hdfc-beta
+      helm.sh/chart: olympus-atlantis-policy-2.5.13
+    name: require-run-as-non-root-user
+    resourceVersion: "92368"
+    uid: 7f973253-dae4-46c5-8eff-8db4237173ed
+  spec:
+    background: true
+    failurePolicy: Ignore
+    rules:
+    - exclude:
+        any:
+        - resources:
+            kinds:
+            - Deployment
+            - Pod
+            - ReplicaSet
+            names:
+            - app-infra*
+            namespaces:
+            - app-infra
+        - resources:
+            kinds:
+            - StatefulSet
+            - Pod
+            - ReplicaSet
+            names:
+            - gitea-postgresql*
+            namespaces:
+            - gitea
+        - resources:
+            kinds:
+            - DaemonSet
+            - Pod
+            - ReplicaSet
+            names:
+            - node-latency-for-k8s-node-latency-for-k8s-chart*
+            namespaces:
+            - node-latency-for-k8s
+        - resources:
+            kinds:
+            - StatefulSet
+            - Pod
+            - ReplicaSet
+            names:
+            - tenantex-postgresql*
+            namespaces:
+            - tenantex
+        - resources:
+            kinds:
+            - Deployment
+            - DaemonSet
+            - ReplicaSet
+            - Pod
+            names:
+            - compute-infra-ops*
+            namespaces:
+            - app-infra
+        - resources:
+            kinds:
+            - DaemonSet
+            - Pod
+            - ReplicaSet
+            names:
+            - hades*
+            namespaces:
+            - hades
+      match:
+        any:
+        - resources:
+            kinds:
+            - Pod
+      name: run-as-non-root-user
+      validate:
+        message: Running as root is not allowed. The fields spec.securityContext.runAsUser,
+          spec.containers[*].securityContext.runAsUser, spec.initContainers[*].securityContext.runAsUser,
+          and spec.ephemeralContainers[*].securityContext.runAsUser must be unset
+          or set to a number greater than zero.
+        pattern:
+          spec:
+            =(ephemeralContainers):
+            - =(securityContext):
+                =(runAsUser): '>0'
+            =(initContainers):
+            - =(securityContext):
+                =(runAsUser): '>0'
+            =(securityContext):
+              =(runAsUser): '>0'
+            containers:
+            - =(securityContext):
+                =(runAsUser): '>0'
+    validationFailureAction: Audit
+  status:
+    autogen: {}
+    conditions:
+    - lastTransitionTime: "2023-10-23T13:49:51Z"
+      message: Ready
+      reason: Succeeded
+      status: "True"
+      type: Ready
+    ready: true
+    rulecount:
+      generate: 0
+      mutate: 0
+      validate: 1
+      verifyimages: 0
+- apiVersion: kyverno.io/v1
+  kind: ClusterPolicy
+  metadata:
+    annotations:
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"kyverno.io/v1","kind":"ClusterPolicy","metadata":{"annotations":{"kyverno.io/kubernetes-version":"1.22-1.23","kyverno.io/kyverno-version":"1.6.0","policies.kyverno.io/category":"Pod Security Standards (Baseline)","policies.kyverno.io/description":"The seccomp profile must not be explicitly set to Unconfined. This policy, requiring Kubernetes v1.19 or later, ensures that seccomp is unset or set to `RuntimeDefault` or `Localhost`.","policies.kyverno.io/severity":"medium","policies.kyverno.io/subject":"Pod","policies.kyverno.io/title":"Restrict Seccomp"},"creationTimestamp":"2023-08-08T09:07:39Z","generation":2,"labels":{"app.kubernetes.io/component":"kyverno","app.kubernetes.io/instance":"zone-secops","app.kubernetes.io/managed-by":"Helm","app.kubernetes.io/name":"olympus-atlantis-policy","app.kubernetes.io/part-of":"olympus-atlantis-policy","app.kubernetes.io/version":"2.5.13","argocd.argoproj.io/instance":"zone-secops-hdfc-beta","helm.sh/chart":"olympus-atlantis-policy-2.5.13"},"name":"restrict-seccomp","resourceVersion":"3971870650","uid":"c3d6716c-57d3-4a98-95b3-94393cf308a8"},"spec":{"background":true,"failurePolicy":"Ignore","rules":[{"match":{"any":[{"resources":{"kinds":["Pod"]}}]},"name":"check-seccomp","validate":{"message":"Use of custom Seccomp profiles is disallowed. The fields spec.securityContext.seccompProfile.type, spec.containers[*].securityContext.seccompProfile.type, spec.initContainers[*].securityContext.seccompProfile.type, and spec.ephemeralContainers[*].securityContext.seccompProfile.type must be unset or set to `RuntimeDefault` or `Localhost`.","pattern":{"spec":{"=(ephemeralContainers)":[{"=(securityContext)":{"=(seccompProfile)":{"=(type)":"RuntimeDefault | Localhost"}}}],"=(initContainers)":[{"=(securityContext)":{"=(seccompProfile)":{"=(type)":"RuntimeDefault | Localhost"}}}],"=(securityContext)":{"=(seccompProfile)":{"=(type)":"RuntimeDefault | Localhost"}},"containers":[{"=(securityContext)":{"=(seccompProfile)":{"=(type)":"RuntimeDefault | Localhost"}}}]}}}}],"validationFailureAction":"Audit"},"status":{"autogen":{"rules":[{"exclude":{"resources":{}},"generate":{"clone":{},"cloneList":{}},"match":{"any":[{"resources":{"kinds":["DaemonSet","Deployment","Job","StatefulSet","ReplicaSet","ReplicationController"]}}],"resources":{}},"mutate":{},"name":"autogen-check-seccomp","validate":{"message":"Use of custom Seccomp profiles is disallowed. The fields spec.securityContext.seccompProfile.type, spec.containers[*].securityContext.seccompProfile.type, spec.initContainers[*].securityContext.seccompProfile.type, and spec.ephemeralContainers[*].securityContext.seccompProfile.type must be unset or set to `RuntimeDefault` or `Localhost`.","pattern":{"spec":{"template":{"spec":{"=(ephemeralContainers)":[{"=(securityContext)":{"=(seccompProfile)":{"=(type)":"RuntimeDefault | Localhost"}}}],"=(initContainers)":[{"=(securityContext)":{"=(seccompProfile)":{"=(type)":"RuntimeDefault | Localhost"}}}],"=(securityContext)":{"=(seccompProfile)":{"=(type)":"RuntimeDefault | Localhost"}},"containers":[{"=(securityContext)":{"=(seccompProfile)":{"=(type)":"RuntimeDefault | Localhost"}}}]}}}}}},{"exclude":{"resources":{}},"generate":{"clone":{},"cloneList":{}},"match":{"any":[{"resources":{"kinds":["CronJob"]}}],"resources":{}},"mutate":{},"name":"autogen-cronjob-check-seccomp","validate":{"message":"Use of custom Seccomp profiles is disallowed. The fields spec.securityContext.seccompProfile.type, spec.containers[*].securityContext.seccompProfile.type, spec.initContainers[*].securityContext.seccompProfile.type, and spec.ephemeralContainers[*].securityContext.seccompProfile.type must be unset or set to `RuntimeDefault` or `Localhost`.","pattern":{"spec":{"jobTemplate":{"spec":{"template":{"spec":{"=(ephemeralContainers)":[{"=(securityContext)":{"=(seccompProfile)":{"=(type)":"RuntimeDefault | Localhost"}}}],"=(initContainers)":[{"=(securityContext)":{"=(seccompProfile)":{"=(type)":"RuntimeDefault | Localhost"}}}],"=(securityContext)":{"=(seccompProfile)":{"=(type)":"RuntimeDefault | Localhost"}},"containers":[{"=(securityContext)":{"=(seccompProfile)":{"=(type)":"RuntimeDefault | Localhost"}}}]}}}}}}}}]},"conditions":[{"lastTransitionTime":"2023-09-03T07:08:54Z","message":"Ready","reason":"Succeeded","status":"True","type":"Ready"}],"ready":true,"rulecount":{"generate":0,"mutate":0,"validate":1,"verifyimages":0}}}
+      kyverno.io/kubernetes-version: 1.22-1.23
+      kyverno.io/kyverno-version: 1.6.0
+      policies.kyverno.io/category: Pod Security Standards (Baseline)
+      policies.kyverno.io/description: The seccomp profile must not be explicitly
+        set to Unconfined. This policy, requiring Kubernetes v1.19 or later, ensures
+        that seccomp is unset or set to `RuntimeDefault` or `Localhost`.
+      policies.kyverno.io/severity: medium
+      policies.kyverno.io/subject: Pod
+      policies.kyverno.io/title: Restrict Seccomp
+    creationTimestamp: "2023-10-23T13:49:51Z"
+    generation: 1
+    labels:
+      app.kubernetes.io/component: kyverno
+      app.kubernetes.io/instance: zone-secops
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: olympus-atlantis-policy
+      app.kubernetes.io/part-of: olympus-atlantis-policy
+      app.kubernetes.io/version: 2.5.13
+      argocd.argoproj.io/instance: zone-secops-hdfc-beta
+      helm.sh/chart: olympus-atlantis-policy-2.5.13
+    name: restrict-seccomp
+    resourceVersion: "92377"
+    uid: 3e9e02b5-e8ef-418b-993e-5f4c21f3c3e1
+  spec:
+    background: true
+    failurePolicy: Ignore
+    rules:
+    - match:
+        any:
+        - resources:
+            kinds:
+            - Pod
+      name: check-seccomp
+      validate:
+        message: Use of custom Seccomp profiles is disallowed. The fields spec.securityContext.seccompProfile.type,
+          spec.containers[*].securityContext.seccompProfile.type, spec.initContainers[*].securityContext.seccompProfile.type,
+          and spec.ephemeralContainers[*].securityContext.seccompProfile.type must
+          be unset or set to `RuntimeDefault` or `Localhost`.
+        pattern:
+          spec:
+            =(ephemeralContainers):
+            - =(securityContext):
+                =(seccompProfile):
+                  =(type): RuntimeDefault | Localhost
+            =(initContainers):
+            - =(securityContext):
+                =(seccompProfile):
+                  =(type): RuntimeDefault | Localhost
+            =(securityContext):
+              =(seccompProfile):
+                =(type): RuntimeDefault | Localhost
+            containers:
+            - =(securityContext):
+                =(seccompProfile):
+                  =(type): RuntimeDefault | Localhost
+    validationFailureAction: Audit
+  status:
+    autogen:
+      rules:
+      - exclude:
+          resources: {}
+        generate:
+          clone: {}
+          cloneList: {}
+        match:
+          any:
+          - resources:
+              kinds:
+              - DaemonSet
+              - Deployment
+              - Job
+              - StatefulSet
+              - ReplicaSet
+              - ReplicationController
+          resources: {}
+        mutate: {}
+        name: autogen-check-seccomp
+        validate:
+          message: Use of custom Seccomp profiles is disallowed. The fields spec.securityContext.seccompProfile.type,
+            spec.containers[*].securityContext.seccompProfile.type, spec.initContainers[*].securityContext.seccompProfile.type,
+            and spec.ephemeralContainers[*].securityContext.seccompProfile.type must
+            be unset or set to `RuntimeDefault` or `Localhost`.
+          pattern:
+            spec:
+              template:
+                spec:
+                  =(ephemeralContainers):
+                  - =(securityContext):
+                      =(seccompProfile):
+                        =(type): RuntimeDefault | Localhost
+                  =(initContainers):
+                  - =(securityContext):
+                      =(seccompProfile):
+                        =(type): RuntimeDefault | Localhost
+                  =(securityContext):
+                    =(seccompProfile):
+                      =(type): RuntimeDefault | Localhost
+                  containers:
+                  - =(securityContext):
+                      =(seccompProfile):
+                        =(type): RuntimeDefault | Localhost
+      - exclude:
+          resources: {}
+        generate:
+          clone: {}
+          cloneList: {}
+        match:
+          any:
+          - resources:
+              kinds:
+              - CronJob
+          resources: {}
+        mutate: {}
+        name: autogen-cronjob-check-seccomp
+        validate:
+          message: Use of custom Seccomp profiles is disallowed. The fields spec.securityContext.seccompProfile.type,
+            spec.containers[*].securityContext.seccompProfile.type, spec.initContainers[*].securityContext.seccompProfile.type,
+            and spec.ephemeralContainers[*].securityContext.seccompProfile.type must
+            be unset or set to `RuntimeDefault` or `Localhost`.
+          pattern:
+            spec:
+              jobTemplate:
+                spec:
+                  template:
+                    spec:
+                      =(ephemeralContainers):
+                      - =(securityContext):
+                          =(seccompProfile):
+                            =(type): RuntimeDefault | Localhost
+                      =(initContainers):
+                      - =(securityContext):
+                          =(seccompProfile):
+                            =(type): RuntimeDefault | Localhost
+                      =(securityContext):
+                        =(seccompProfile):
+                          =(type): RuntimeDefault | Localhost
+                      containers:
+                      - =(securityContext):
+                          =(seccompProfile):
+                            =(type): RuntimeDefault | Localhost
+    conditions:
+    - lastTransitionTime: "2023-10-23T13:49:52Z"
+      message: Ready
+      reason: Succeeded
+      status: "True"
+      type: Ready
+    ready: true
+    rulecount:
+      generate: 0
+      mutate: 0
+      validate: 1
+      verifyimages: 0
+- apiVersion: kyverno.io/v1
+  kind: ClusterPolicy
+  metadata:
+    annotations:
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"kyverno.io/v1","kind":"ClusterPolicy","metadata":{"annotations":{"kyverno.io/kubernetes-version":"1.22-1.23","kyverno.io/kyverno-version":"1.6.0","policies.kyverno.io/category":"Pod Security Standards (Baseline)","policies.kyverno.io/description":"Sysctls can disable security mechanisms or affect all containers on a host, and should be disallowed except for an allowed \"safe\" subset. A sysctl is considered safe if it is namespaced in the container or the Pod, and it is isolated from other Pods or processes on the same Node. This policy ensures that only those \"safe\" subsets can be specified in a Pod.","policies.kyverno.io/severity":"medium","policies.kyverno.io/subject":"Pod","policies.kyverno.io/title":"Restrict sysctls"},"creationTimestamp":"2023-08-08T09:07:39Z","generation":2,"labels":{"app.kubernetes.io/component":"kyverno","app.kubernetes.io/instance":"zone-secops","app.kubernetes.io/managed-by":"Helm","app.kubernetes.io/name":"olympus-atlantis-policy","app.kubernetes.io/part-of":"olympus-atlantis-policy","app.kubernetes.io/version":"2.5.13","argocd.argoproj.io/instance":"zone-secops-hdfc-beta","helm.sh/chart":"olympus-atlantis-policy-2.5.13"},"name":"restrict-sysctls","resourceVersion":"3971870640","uid":"5e53605d-b091-4f08-8910-f4e37001f440"},"spec":{"background":true,"failurePolicy":"Ignore","rules":[{"match":{"any":[{"resources":{"kinds":["Pod"]}}]},"name":"check-sysctls","validate":{"message":"Setting additional sysctls above the allowed type is disallowed. The field spec.securityContext.sysctls must be unset or not use any other names than kernel.shm_rmid_forced, net.ipv4.ip_local_port_range, net.ipv4.ip_unprivileged_port_start, net.ipv4.tcp_syncookies and net.ipv4.ping_group_range.","pattern":{"spec":{"=(securityContext)":{"=(sysctls)":[{"=(name)":"kernel.shm_rmid_forced | net.ipv4.ip_local_port_range | net.ipv4.ip_unprivileged_port_start | net.ipv4.tcp_syncookies | net.ipv4.ping_group_range"}]}}}}}],"validationFailureAction":"Audit"},"status":{"autogen":{"rules":[{"exclude":{"resources":{}},"generate":{"clone":{},"cloneList":{}},"match":{"any":[{"resources":{"kinds":["DaemonSet","Deployment","Job","StatefulSet","ReplicaSet","ReplicationController"]}}],"resources":{}},"mutate":{},"name":"autogen-check-sysctls","validate":{"message":"Setting additional sysctls above the allowed type is disallowed. The field spec.securityContext.sysctls must be unset or not use any other names than kernel.shm_rmid_forced, net.ipv4.ip_local_port_range, net.ipv4.ip_unprivileged_port_start, net.ipv4.tcp_syncookies and net.ipv4.ping_group_range.","pattern":{"spec":{"template":{"spec":{"=(securityContext)":{"=(sysctls)":[{"=(name)":"kernel.shm_rmid_forced | net.ipv4.ip_local_port_range | net.ipv4.ip_unprivileged_port_start | net.ipv4.tcp_syncookies | net.ipv4.ping_group_range"}]}}}}}}},{"exclude":{"resources":{}},"generate":{"clone":{},"cloneList":{}},"match":{"any":[{"resources":{"kinds":["CronJob"]}}],"resources":{}},"mutate":{},"name":"autogen-cronjob-check-sysctls","validate":{"message":"Setting additional sysctls above the allowed type is disallowed. The field spec.securityContext.sysctls must be unset or not use any other names than kernel.shm_rmid_forced, net.ipv4.ip_local_port_range, net.ipv4.ip_unprivileged_port_start, net.ipv4.tcp_syncookies and net.ipv4.ping_group_range.","pattern":{"spec":{"jobTemplate":{"spec":{"template":{"spec":{"=(securityContext)":{"=(sysctls)":[{"=(name)":"kernel.shm_rmid_forced | net.ipv4.ip_local_port_range | net.ipv4.ip_unprivileged_port_start | net.ipv4.tcp_syncookies | net.ipv4.ping_group_range"}]}}}}}}}}}]},"conditions":[{"lastTransitionTime":"2023-09-03T07:08:54Z","message":"Ready","reason":"Succeeded","status":"True","type":"Ready"}],"ready":true,"rulecount":{"generate":0,"mutate":0,"validate":1,"verifyimages":0}}}
+      kyverno.io/kubernetes-version: 1.22-1.23
+      kyverno.io/kyverno-version: 1.6.0
+      policies.kyverno.io/category: Pod Security Standards (Baseline)
+      policies.kyverno.io/description: Sysctls can disable security mechanisms or
+        affect all containers on a host, and should be disallowed except for an allowed
+        "safe" subset. A sysctl is considered safe if it is namespaced in the container
+        or the Pod, and it is isolated from other Pods or processes on the same Node.
+        This policy ensures that only those "safe" subsets can be specified in a Pod.
+      policies.kyverno.io/severity: medium
+      policies.kyverno.io/subject: Pod
+      policies.kyverno.io/title: Restrict sysctls
+    creationTimestamp: "2023-10-23T13:49:52Z"
+    generation: 1
+    labels:
+      app.kubernetes.io/component: kyverno
+      app.kubernetes.io/instance: zone-secops
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: olympus-atlantis-policy
+      app.kubernetes.io/part-of: olympus-atlantis-policy
+      app.kubernetes.io/version: 2.5.13
+      argocd.argoproj.io/instance: zone-secops-hdfc-beta
+      helm.sh/chart: olympus-atlantis-policy-2.5.13
+    name: restrict-sysctls
+    resourceVersion: "92381"
+    uid: fa8dab0b-4134-4ffe-99bf-3f8d283175ab
+  spec:
+    background: true
+    failurePolicy: Ignore
+    rules:
+    - match:
+        any:
+        - resources:
+            kinds:
+            - Pod
+      name: check-sysctls
+      validate:
+        message: Setting additional sysctls above the allowed type is disallowed.
+          The field spec.securityContext.sysctls must be unset or not use any other
+          names than kernel.shm_rmid_forced, net.ipv4.ip_local_port_range, net.ipv4.ip_unprivileged_port_start,
+          net.ipv4.tcp_syncookies and net.ipv4.ping_group_range.
+        pattern:
+          spec:
+            =(securityContext):
+              =(sysctls):
+              - =(name): kernel.shm_rmid_forced | net.ipv4.ip_local_port_range | net.ipv4.ip_unprivileged_port_start
+                  | net.ipv4.tcp_syncookies | net.ipv4.ping_group_range
+    validationFailureAction: Audit
+  status:
+    autogen:
+      rules:
+      - exclude:
+          resources: {}
+        generate:
+          clone: {}
+          cloneList: {}
+        match:
+          any:
+          - resources:
+              kinds:
+              - DaemonSet
+              - Deployment
+              - Job
+              - StatefulSet
+              - ReplicaSet
+              - ReplicationController
+          resources: {}
+        mutate: {}
+        name: autogen-check-sysctls
+        validate:
+          message: Setting additional sysctls above the allowed type is disallowed.
+            The field spec.securityContext.sysctls must be unset or not use any other
+            names than kernel.shm_rmid_forced, net.ipv4.ip_local_port_range, net.ipv4.ip_unprivileged_port_start,
+            net.ipv4.tcp_syncookies and net.ipv4.ping_group_range.
+          pattern:
+            spec:
+              template:
+                spec:
+                  =(securityContext):
+                    =(sysctls):
+                    - =(name): kernel.shm_rmid_forced | net.ipv4.ip_local_port_range
+                        | net.ipv4.ip_unprivileged_port_start | net.ipv4.tcp_syncookies
+                        | net.ipv4.ping_group_range
+      - exclude:
+          resources: {}
+        generate:
+          clone: {}
+          cloneList: {}
+        match:
+          any:
+          - resources:
+              kinds:
+              - CronJob
+          resources: {}
+        mutate: {}
+        name: autogen-cronjob-check-sysctls
+        validate:
+          message: Setting additional sysctls above the allowed type is disallowed.
+            The field spec.securityContext.sysctls must be unset or not use any other
+            names than kernel.shm_rmid_forced, net.ipv4.ip_local_port_range, net.ipv4.ip_unprivileged_port_start,
+            net.ipv4.tcp_syncookies and net.ipv4.ping_group_range.
+          pattern:
+            spec:
+              jobTemplate:
+                spec:
+                  template:
+                    spec:
+                      =(securityContext):
+                        =(sysctls):
+                        - =(name): kernel.shm_rmid_forced | net.ipv4.ip_local_port_range
+                            | net.ipv4.ip_unprivileged_port_start | net.ipv4.tcp_syncookies
+                            | net.ipv4.ping_group_range
+    conditions:
+    - lastTransitionTime: "2023-10-23T13:49:52Z"
+      message: Ready
+      reason: Succeeded
+      status: "True"
+      type: Ready
+    ready: true
+    rulecount:
+      generate: 0
+      mutate: 0
+      validate: 1
+      verifyimages: 0
+- apiVersion: kyverno.io/v1
+  kind: ClusterPolicy
+  metadata:
+    annotations:
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"kyverno.io/v1","kind":"ClusterPolicy","metadata":{"annotations":{"kyverno.io/kubernetes-version":"1.22-1.23","kyverno.io/kyverno-version":"1.6.0","policies.kyverno.io/category":"Pod Security Standards (Restricted)","policies.kyverno.io/description":"In addition to restricting HostPath volumes, the restricted pod security profile limits usage of non-core volume types to those defined through PersistentVolumes. This policy blocks any other type of volume other than those in the allow list.","policies.kyverno.io/minversion":"1.6.0","policies.kyverno.io/severity":"medium","policies.kyverno.io/subject":"Pod,Volume","policies.kyverno.io/title":"Restrict Volume Types"},"creationTimestamp":"2023-08-08T09:07:39Z","generation":5,"labels":{"app.kubernetes.io/component":"kyverno","app.kubernetes.io/instance":"zone-secops","app.kubernetes.io/managed-by":"Helm","app.kubernetes.io/name":"olympus-atlantis-policy","app.kubernetes.io/part-of":"olympus-atlantis-policy","app.kubernetes.io/version":"2.5.13","argocd.argoproj.io/instance":"zone-secops-hdfc-beta","helm.sh/chart":"olympus-atlantis-policy-2.5.13"},"name":"restrict-volume-types","resourceVersion":"3971870654","uid":"00555503-cb4e-4409-90df-aa0e1a62a024"},"spec":{"background":true,"failurePolicy":"Ignore","rules":[{"exclude":{"any":[{"resources":{"kinds":["Deployment","DaemonSet","Pod","ReplicaSet"],"names":["atropos-ebs-test*","atropos-ebs-fluentd*","compute-infra-ops*"],"namespaces":["app-infra"]}},{"resources":{"kinds":["DaemonSet","Pod","ReplicaSet"],"names":["castle-heap-dump-pusher-s3*"],"namespaces":["castle"]}},{"resources":{"kinds":["DaemonSet","Pod","ReplicaSet"],"names":["gadget*"],"namespaces":["gadget"]}},{"resources":{"kinds":["DaemonSet","Pod","ReplicaSet"],"names":["gadget*"],"namespaces":["gadget"]}},{"resources":{"kinds":["DaemonSet","Pod","ReplicaSet"],"names":["node-latency-for-k8s-node-latency-for-k8s-chart*"],"namespaces":["node-latency-for-k8s"]}},{"resources":{"kinds":["DaemonSet","Pod","ReplicaSet"],"names":["twistlock-defender-ds*"],"namespaces":["twistlock"]}},{"resources":{"kinds":["DaemonSet","Pod","ReplicaSet"],"names":["hades*"],"namespaces":["hades"]}}]},"match":{"any":[{"resources":{"kinds":["Pod"]}}]},"name":"restricted-volumes","validate":{"deny":{"conditions":{"all":[{"key":"{{ request.object.spec.volumes[].keys(@)[] || '' }}","operator":"AnyNotIn","value":["name","configMap","csi","downwardAPI","emptyDir","ephemeral","persistentVolumeClaim","projected","secret",""]}]}},"message":"Only the following types of volumes may be used: configMap, csi, downwardAPI, emptyDir, ephemeral, persistentVolumeClaim, projected, and secret."}}],"validationFailureAction":"Audit"},"status":{"autogen":{},"conditions":[{"lastTransitionTime":"2023-09-03T07:08:54Z","message":"Ready","reason":"Succeeded","status":"True","type":"Ready"}],"ready":true,"rulecount":{"generate":0,"mutate":0,"validate":1,"verifyimages":0}}}
+      kyverno.io/kubernetes-version: 1.22-1.23
+      kyverno.io/kyverno-version: 1.6.0
+      policies.kyverno.io/category: Pod Security Standards (Restricted)
+      policies.kyverno.io/description: In addition to restricting HostPath volumes,
+        the restricted pod security profile limits usage of non-core volume types
+        to those defined through PersistentVolumes. This policy blocks any other type
+        of volume other than those in the allow list.
+      policies.kyverno.io/minversion: 1.6.0
+      policies.kyverno.io/severity: medium
+      policies.kyverno.io/subject: Pod,Volume
+      policies.kyverno.io/title: Restrict Volume Types
+    creationTimestamp: "2023-10-23T13:49:52Z"
+    generation: 1
+    labels:
+      app.kubernetes.io/component: kyverno
+      app.kubernetes.io/instance: zone-secops
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: olympus-atlantis-policy
+      app.kubernetes.io/part-of: olympus-atlantis-policy
+      app.kubernetes.io/version: 2.5.13
+      argocd.argoproj.io/instance: zone-secops-hdfc-beta
+      helm.sh/chart: olympus-atlantis-policy-2.5.13
+    name: restrict-volume-types
+    resourceVersion: "92388"
+    uid: 238ceefd-2f9d-435d-a378-a49fb3477ff8
+  spec:
+    background: true
+    failurePolicy: Ignore
+    rules:
+    - exclude:
+        any:
+        - resources:
+            kinds:
+            - Deployment
+            - DaemonSet
+            - Pod
+            - ReplicaSet
+            names:
+            - atropos-ebs-test*
+            - atropos-ebs-fluentd*
+            - compute-infra-ops*
+            namespaces:
+            - app-infra
+        - resources:
+            kinds:
+            - DaemonSet
+            - Pod
+            - ReplicaSet
+            names:
+            - castle-heap-dump-pusher-s3*
+            namespaces:
+            - castle
+        - resources:
+            kinds:
+            - DaemonSet
+            - Pod
+            - ReplicaSet
+            names:
+            - gadget*
+            namespaces:
+            - gadget
+        - resources:
+            kinds:
+            - DaemonSet
+            - Pod
+            - ReplicaSet
+            names:
+            - gadget*
+            namespaces:
+            - gadget
+        - resources:
+            kinds:
+            - DaemonSet
+            - Pod
+            - ReplicaSet
+            names:
+            - node-latency-for-k8s-node-latency-for-k8s-chart*
+            namespaces:
+            - node-latency-for-k8s
+        - resources:
+            kinds:
+            - DaemonSet
+            - Pod
+            - ReplicaSet
+            names:
+            - twistlock-defender-ds*
+            namespaces:
+            - twistlock
+        - resources:
+            kinds:
+            - DaemonSet
+            - Pod
+            - ReplicaSet
+            names:
+            - hades*
+            namespaces:
+            - hades
+      match:
+        any:
+        - resources:
+            kinds:
+            - Pod
+      name: restricted-volumes
+      validate:
+        deny:
+          conditions:
+            all:
+            - key: '{{ request.object.spec.volumes[].keys(@)[] || '''' }}'
+              operator: AnyNotIn
+              value:
+              - name
+              - configMap
+              - csi
+              - downwardAPI
+              - emptyDir
+              - ephemeral
+              - persistentVolumeClaim
+              - projected
+              - secret
+              - ""
+        message: 'Only the following types of volumes may be used: configMap, csi,
+          downwardAPI, emptyDir, ephemeral, persistentVolumeClaim, projected, and
+          secret.'
+    validationFailureAction: Audit
+  status:
+    autogen: {}
+    conditions:
+    - lastTransitionTime: "2023-10-23T13:49:52Z"
+      message: Ready
+      reason: Succeeded
+      status: "True"
+      type: Ready
+    ready: true
+    rulecount:
+      generate: 0
+      mutate: 0
+      validate: 1
+      verifyimages: 0
+kind: List
+metadata:
+  resourceVersion: ""
